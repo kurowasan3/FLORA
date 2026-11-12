@@ -1,0 +1,64 @@
+{
+ "id": "ECO-CYC-006",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-03",
+ "topic": "窒素の変化",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "土壌中で、遺体の有機窒素化合物が植物に吸収されやすい形になるまでの変化を順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "有機窒素化合物 → NH₄⁺ → NO₂⁻ → NO₃⁻",
+    "grading": "並べる{NO₃⁻（硝酸イオン）|NH₄⁺（アンモニウムイオン）|有機窒素化合物|NO₂⁻（亜硝酸イオン）}=3>2>4>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "分解者が有機物を NH₄⁺ に分解し、亜硝酸菌が NO₂⁻ に、硝酸菌が NO₃⁻ に酸化する（硝化）。植物は NH₄⁺ や NO₃⁻ を吸収して窒素同化を行う。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ecosystem"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "窒素循環",
+  "硝化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

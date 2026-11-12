@@ -1,0 +1,67 @@
+{
+ "id": "DEV-EMB-003",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-02",
+ "topic": "胚葉と器官",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中胚葉に由来する器官をすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "骨格筋・心臓・腎臓",
+    "grading": "すべて選ぶ{脳|骨格筋|心臓|肝臓|表皮|腎臓}=2,3,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "外胚葉：表皮・神経系（脳・脊髄）・眼の水晶体など。中胚葉：脊索・骨格・筋肉・心臓・血管・腎臓など。内胚葉：消化管の上皮・肝臓・すい臓・肺など。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "animal-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "胚葉"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "gastrula"
+ }
+}

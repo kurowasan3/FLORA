@@ -1,0 +1,64 @@
+{
+ "id": "ECO-CON-007",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-04",
+ "topic": "生物濃縮の倍率",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある湖で DDT の濃度が、水中 0.00005 ppm、プランクトン 0.04 ppm、小魚 0.5 ppm、大型の魚食性の鳥 25 ppm であった。鳥の DDT の濃度は水中の何倍か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "50 万倍",
+    "grading": "約{500000|2} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$25\\div0.00005=5\\times10^5$ 倍。脂肪に溶けやすく分解・排出されにくい物質は、食物連鎖の上位ほど濃縮される。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生物濃縮",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

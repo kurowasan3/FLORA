@@ -1,0 +1,67 @@
+{
+ "id": "EVO-PHY-005",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "脊椎動物の系統",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "羊膜をもつ動物の組合せとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "は虫類・鳥類・哺乳類",
+    "grading": "選ぶ{魚類・両生類|両生類・は虫類|は虫類・鳥類・哺乳類|鳥類・哺乳類だけ}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "羊膜で胚を包むことで、乾燥した陸上に殻のある卵を産めるようになった（羊膜類）。両生類は水中に卵を産む。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "脊椎動物"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "vertebrates"
+ }
+}

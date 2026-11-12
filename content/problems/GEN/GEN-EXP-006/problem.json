@@ -1,0 +1,64 @@
+{
+ "id": "GEN-EXP-006",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "翻訳とアミノ酸の数",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "開始コドン AUG から終止コドン UAA までを含む mRNA の、AUG の A から UAA の最後の A までが 600 塩基であった。この部分から翻訳されるポリペプチドは、何個のアミノ酸からなるか（翻訳後に切りとられないものとする）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "199 個",
+    "grading": "199"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "600 塩基は 200 コドン。そのうち終止コドン 1 つはアミノ酸を指定しないので 199 個（開始コドンのメチオニンを含む）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "翻訳",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

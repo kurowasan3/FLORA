@@ -1,0 +1,63 @@
+{
+ "id": "CEL-CST-006",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "細胞骨格",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "細胞骨格のうち、紡錘体や鞭毛・繊毛をつくり、モータータンパク質（ダイニン・キネシン）が物質を運ぶレールにもなる繊維は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "微小管",
+    "grading": "語{微小管}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "細胞骨格はアクチンフィラメント（細い・筋収縮や細胞質分裂のくびれ）、中間径フィラメント（細胞や核の形を保つ）、微小管（太い・紡錘体・鞭毛・繊毛・物質輸送のレール）の3種類。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "細胞骨格"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

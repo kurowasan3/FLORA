@@ -1,0 +1,64 @@
+{
+ "id": "MET-ATP-008",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-01",
+ "topic": "酵素と代謝",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "代謝について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "代謝の反応の多くは酵素によって触媒される",
+    "grading": "選ぶ{代謝は動物だけが行う|代謝の反応の多くは酵素によって触媒される|同化ではエネルギーが放出される|異化では ATP が消費されるだけで合成されない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "代謝は全生物が行い、多くの段階の化学反応からなり、それぞれ酵素が触媒する。同化はエネルギーを吸収、異化は放出（その一部で ATP を合成）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atp",
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "代謝"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

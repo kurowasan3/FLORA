@@ -1,0 +1,63 @@
+{
+ "id": "RES-SEN-001",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "適刺激",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "眼の網膜の視細胞が受け取ることのできる刺激（光）のように、受容器ごとに決まっている刺激を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "適刺激",
+    "grading": "語{適刺激}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "眼：光、耳のうずまき管：音波、半規管：からだの回転、前庭：からだの傾き、嗅上皮：空気中の化学物質。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "受容器"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

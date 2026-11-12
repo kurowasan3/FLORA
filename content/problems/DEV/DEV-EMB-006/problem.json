@@ -1,0 +1,67 @@
+{
+ "id": "DEV-EMB-006",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-02",
+ "topic": "カエルの発生",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カエルの発生の時期を、早い順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "桑実胚 → 胞胚 → 原腸胚 → 神経胚 → 尾芽胚",
+    "grading": "並べる{神経胚|胞胚|尾芽胚|桑実胚|原腸胚}=4>2>5>1>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "胞胚で胞胚腔ができ、原腸胚で 3 胚葉が分かれ、神経胚で神経管ができ、尾芽胚で尾芽が伸びる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "animal-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "発生"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "develop"
+ }
+}

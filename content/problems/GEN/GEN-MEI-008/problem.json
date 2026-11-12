@@ -1,0 +1,81 @@
+{
+ "id": "GEN-MEI-008",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-06",
+ "topic": "致死遺伝子",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハツカネズミの毛色で、黄色の遺伝子 Y は灰色の遺伝子 y に対して毛色について顕性であるが、YY の個体は胎児のうちに死ぬ。黄色どうしを交配したときに生まれる子の黄色：灰色の比を答えよ。また、生まれた子のうち黄色の個体どうしをさらに交配したときの結果も同じになるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "黄色：灰色"
+     },
+     {
+      "id": "2",
+      "tex": "黄色どうしの交配の結果"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 : 1",
+    "grading": "2:1"
+   },
+   {
+    "id": "2",
+    "tex": "同じ 2:1 になる（生まれた黄色はすべて Yy なので）",
+    "grading": "選ぶ{同じになる|異なる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Yy × Yy → YY:Yy:yy = 1:2:1 だが YY が死ぬので、黄色(Yy):灰色(yy) = 2:1。生まれる黄色はすべて Yy なので、何度交配しても 2:1。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mendel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "致死遺伝子"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "DEV-EMB-005",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-02",
+ "topic": "卵の種類と卵割",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カエルの卵の第 3 卵割が動物極側に偏って起こる（不等割）理由として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "卵黄が植物極側に多く、卵割を妨げるから",
+    "grading": "選ぶ{卵黄が植物極側に多く、卵割を妨げるから|動物極側に核が 2 つあるから|精子が動物極側から進入したから|卵黄が動物極側に多いから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "カエルの卵は端黄卵で、卵黄は植物極側に多い。ウニは等黄卵で等割、鳥類は卵黄が極端に多く盤割、昆虫は心黄卵で表割。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "animal-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "卵割",
+  "卵の種類"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "develop"
+ }
+}

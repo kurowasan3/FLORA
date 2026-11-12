@@ -1,0 +1,63 @@
+{
+ "id": "GEN-MEI-005",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-06",
+ "topic": "検定交雑",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "遺伝子型のわからない黄色・丸形のエンドウ（黄色 Y、丸形 R が顕性）を、緑色・しわ形（yyrr）と交配すると、子は黄色丸：黄色しわ：緑色丸：緑色しわ ＝ 1:1:1:1 になった。もとのエンドウの遺伝子型を答えよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "YyRr",
+    "grading": "語{YyRr}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "検定交雑では、子の表現型の比がもとの個体の配偶子の比になる。YR:Yr:yR:yr = 1:1:1:1 の配偶子をつくるのは YyRr。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mendel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "検定交雑"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "RES-MUS-003",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-03",
+ "topic": "サルコメアの構造",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はサルコメアの模式図である。ア〜ウの名称を答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア"
+     },
+     {
+      "id": "2",
+      "tex": "イ"
+     },
+     {
+      "id": "3",
+      "tex": "ウ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "筋原繊維のサルコメアの図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Z 膜",
+    "grading": "語{Z膜|Z線}"
+   },
+   {
+    "id": "2",
+    "tex": "アクチンフィラメント",
+    "grading": "語{アクチンフィラメント|アクチン}"
+   },
+   {
+    "id": "3",
+    "tex": "ミオシンフィラメント",
+    "grading": "語{ミオシンフィラメント|ミオシン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "細いアクチンフィラメントは Z 膜から伸び、太いミオシンフィラメントは中央にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "muscle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "サルコメア",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "sarcomere"
+ }
+}

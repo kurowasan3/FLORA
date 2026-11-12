@@ -1,0 +1,63 @@
+{
+ "id": "CEL-PRO-006",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-03",
+ "topic": "シャペロン",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "新しく合成されたポリペプチドが正しく折りたたまれるのを助けたり、変性したタンパク質の立体構造を修復したりするタンパク質を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "シャペロン",
+    "grading": "語{シャペロン|分子シャペロン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "熱ショックで増える熱ショックタンパク質（HSP）の多くはシャペロンとしてはたらく。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "シャペロン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

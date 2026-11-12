@@ -1,0 +1,63 @@
+{
+ "id": "HOM-HOR-007",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "内分泌腺とホルモン",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "内分泌腺とホルモンの組合せとして誤っているものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "脳下垂体後葉 — 成長ホルモン",
+    "grading": "選ぶ{甲状腺 — チロキシン|副腎髄質 — アドレナリン|脳下垂体後葉 — 成長ホルモン|すい臓ランゲルハンス島 A 細胞 — グルカゴン|副甲状腺 — パラトルモン}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "成長ホルモンは脳下垂体前葉から分泌される。後葉から分泌されるのはバソプレシン。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホルモン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

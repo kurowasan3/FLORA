@@ -1,0 +1,66 @@
+{
+ "id": "GEN-LNK-006",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-07",
+ "topic": "組換え価と検定交雑",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "AABB と aabb を交配して得た F₁（AaBb）を aabb と検定交雑すると、[AB] 420、[Ab] 80、[aB] 80、[ab] 420 個体が得られた。A–B 間の組換え価は何％か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "16％",
+    "grading": "約{16|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "組換え型は [Ab] と [aB]（親の AABB・aabb にない組合せ）。$\\dfrac{80+80}{1000}\\times100=16$％。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "linkage"
+ ],
+ "laws": [
+  "recombination-value"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "組換え価",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

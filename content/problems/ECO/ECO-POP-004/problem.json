@@ -1,0 +1,95 @@
+{
+ "id": "ECO-POP-004",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-02",
+ "topic": "キーストーン種",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ラッコ・ウニ・ケルプ（海藻）の生態系で、シャチがラッコを多く捕食するようになった。次の生物の量はどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ウニ"
+     },
+     {
+      "id": "2",
+      "tex": "ケルプ"
+     },
+     {
+      "id": "3",
+      "tex": "ケルプの林にすむ魚"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "ウニ：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "減る",
+    "grading": "ケルプ：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "3",
+    "tex": "減る",
+    "grading": "魚：選ぶ{増える|減る|変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ラッコが減るとウニが増え、ウニがケルプを食べつくす。ケルプの林をすみかとする生物も減る。ラッコのように生態系のバランスに大きな影響をもつ種をキーストーン種という。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "population"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "キーストーン種",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "kelp"
+ }
+}

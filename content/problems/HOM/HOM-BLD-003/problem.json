@@ -1,0 +1,67 @@
+{
+ "id": "HOM-BLD-003",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-01",
+ "topic": "動脈血と静脈血",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "静脈血が流れている血管を1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "肺動脈",
+    "grading": "選ぶ{肺静脈|肺動脈|大動脈|冠動脈}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "肺動脈は右心室から肺へ、酸素の少ない静脈血を運ぶ。肺静脈には酸素の多い動脈血が流れる。「動脈・静脈」は心臓から出るか戻るかで決まり、血液の種類とは一致しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "body-fluid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "循環"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "heart"
+ }
+}

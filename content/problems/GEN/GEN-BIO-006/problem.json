@@ -1,0 +1,64 @@
+{
+ "id": "GEN-BIO-006",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-05",
+ "topic": "制限酵素地図",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ 10 kb の環状プラスミドを制限酵素 E で切ると 10 kb の断片 1 本、制限酵素 H で切ると 3 kb と 7 kb の断片、E と H の両方で切ると 3 kb・2 kb・5 kb の断片ができた。E の切断部位は、H で生じる 7 kb の断片と 3 kb の断片のどちらの中にあるか。また、その断片のどの位置か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "7 kb の断片の中にあり、一方の端の H の切断部位から 2 kb（もう一方の端から 5 kb）の位置",
+    "grading": "選ぶ{3 kb の断片の中|7 kb の断片の中}=2 ; E と近い方の H 部位との距離：約{2|1} [kb]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "両方で切ると 3 kb 断片はそのまま残り、7 kb 断片が 2 kb と 5 kb に分かれた。よって E は 7 kb 断片の中で、片方の H 部位から 2 kb の位置にある。環状 DNA を 1 か所で切ると 1 本の直鎖になる（E で 10 kb 1 本）ことにも注意。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biotech"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "制限酵素",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

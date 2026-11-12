@@ -1,0 +1,67 @@
+{
+ "id": "DEV-PDV-001",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-04",
+ "topic": "重複受精",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "被子植物で、2 個の精細胞のうち 1 個が卵細胞と、もう 1 個が中央細胞と受精することを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "重複受精",
+    "grading": "語{重複受精}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "卵細胞と精細胞の受精で胚（2n）が、中央細胞（極核 2 個）と精細胞の受精で胚乳（3n）ができる。被子植物だけに見られる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重複受精"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "embryo-sac"
+ }
+}

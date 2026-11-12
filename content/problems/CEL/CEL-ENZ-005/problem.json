@@ -1,0 +1,82 @@
+{
+ "id": "CEL-ENZ-005",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "競争的阻害",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある酵素反応に、基質とよく似た構造の物質 X を加えると反応速度が下がった。基質濃度を十分に高くすると、X を加えても加えないときとほぼ同じ最大反応速度に達した。X による阻害を何というか。また、基質濃度を高くすると影響が小さくなる理由として正しいものを選べ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この阻害の名称"
+     },
+     {
+      "id": "2",
+      "tex": "理由"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "競争的阻害",
+    "grading": "語{競争的阻害|拮抗阻害}"
+   },
+   {
+    "id": "2",
+    "tex": "基質と X が活性部位を奪い合うので、基質が多いほど基質が結合する割合が大きくなるから",
+    "grading": "選ぶ{X が基質と結合して基質を分解するから|基質と X が活性部位を奪い合い、基質が多いほど基質の結合する割合が大きくなるから|X が酵素の活性部位以外に結合して立体構造を変えるから|基質濃度が高いと X が変性するから}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "活性部位以外に結合して立体構造を変える阻害（非競争的阻害）では、基質を増やしても最大反応速度は回復しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "阻害",
+  "グラフ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

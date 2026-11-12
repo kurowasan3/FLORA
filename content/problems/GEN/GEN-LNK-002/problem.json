@@ -1,0 +1,70 @@
+{
+ "id": "GEN-LNK-002",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-07",
+ "topic": "組換え価",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "AaBb（A と B、a と b が連鎖）の個体を aabb と検定交雑すると、子の表現型 [AB]:[Ab]:[aB]:[ab] = 9:1:1:9 になった。A–B 間の組換え価は何％か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "10％",
+    "grading": "約{10|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "組換えで生じた [Ab] と [aB] の割合：$\\dfrac{1+1}{9+1+1+9}\\times100=10$％。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "linkage"
+ ],
+ "laws": [
+  "recombination-value"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "組換え価",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "recombination-value"
+ }
+}

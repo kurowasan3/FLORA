@@ -1,0 +1,63 @@
+{
+ "id": "HOM-KID-005",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-02",
+ "topic": "肝臓のはたらき",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "肝臓のはたらきとして誤っているものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "インスリンを分泌する",
+    "grading": "選ぶ{グリコーゲンを合成・分解して血糖濃度を調節する|アンモニアを尿素に変える|胆汁をつくる|アルコールなどを解毒する|インスリンを分泌する}=5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "インスリンはすい臓のランゲルハンス島 B 細胞から分泌される。肝臓は代謝の中心で、発熱も盛んである。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kidney-liver"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "肝臓"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

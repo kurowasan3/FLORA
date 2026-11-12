@@ -1,0 +1,63 @@
+{
+ "id": "CEL-PRO-002",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-03",
+ "topic": "タンパク質の構造の階層",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タンパク質の構造を、小さいレベルから順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "一次構造（アミノ酸配列）→ 二次構造（αヘリックス・βシート）→ 三次構造（ポリペプチド全体の立体構造）→ 四次構造（複数のポリペプチドの集合）",
+    "grading": "並べる{四次構造|一次構造|三次構造|二次構造}=2>4>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ヘモグロビンは 4 本のポリペプチドが集まった四次構造をもつ。立体構造は一次構造（遺伝子の塩基配列で決まる）にもとづいて決まる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "タンパク質の構造"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

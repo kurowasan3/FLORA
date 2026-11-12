@@ -1,0 +1,69 @@
+{
+ "id": "DEV-FER-006",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-01",
+ "topic": "核相と DNA 量",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "精子の DNA 量を 1 とすると、一次精母細胞（減数分裂の直前、DNA 複製後）の DNA 量はいくらか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "4",
+    "grading": "4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "精子（n）の DNA 量 1、体細胞の G₁ 期（2n）は 2、複製後の一次精母細胞は 4、二次精母細胞は 2、精細胞は 1。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fertilization",
+  "meiosis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "配偶子形成",
+  "DNA量"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "meiosis"
+ }
+}

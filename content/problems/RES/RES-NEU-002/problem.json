@@ -1,0 +1,67 @@
+{
+ "id": "RES-NEU-002",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "活動電位",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "刺激を受けたニューロンで、電位依存性のナトリウムチャネルが開いて Na⁺ が流入し、膜電位が一時的に逆転する変化を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "活動電位",
+    "grading": "語{活動電位}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "静止電位（約 −70 mV）から +40 mV 程度まで変化し、1〜2 ミリ秒でもとに戻る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "興奮"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "action"
+ }
+}

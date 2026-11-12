@@ -1,0 +1,64 @@
+{
+ "id": "CEL-ENZ-006",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "補酵素と透析",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵母のしぼり汁を透析して、セロハン膜の内側の液 A と外側の液 B に分けた。A だけ、B だけではグルコースを分解できなかったが、A と B を混ぜると分解した。また、B を煮沸してから A と混ぜても分解したが、A を煮沸してから B と混ぜると分解しなかった。補酵素を含むのは A・B のどちらか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "B",
+    "grading": "選ぶ{A|B}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "補酵素は低分子なのでセロハン膜を通って外液 B に出る。また補酵素は熱に強いので、B を煮沸してもはたらく。酵素本体（タンパク質）は高分子で A に残り、熱で失活する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "補酵素",
+  "透析"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

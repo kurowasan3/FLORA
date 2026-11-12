@@ -1,0 +1,63 @@
+{
+ "id": "GEN-EXP-004",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "コドンの数",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "mRNA の連続した 3 つの塩基（コドン）の組合せは全部で何通りあるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "64 通り",
+    "grading": "64"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "4 種類の塩基が 3 つ並ぶので $4^3=64$ 通り。20 種類のアミノ酸と終止を指定するのに十分（2 塩基では 16 通りで足りない）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝暗号"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "MET-RSP-003",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "呼吸の過程",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グルコースが呼吸で分解されるときの過程を、順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "解糖系 → クエン酸回路 → 電子伝達系",
+    "grading": "並べる{電子伝達系|解糖系|クエン酸回路}=2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "グルコースは解糖系でピルビン酸 2 分子に、ピルビン酸はクエン酸回路で CO₂ に分解される。そこでできた NADH・FADH₂ の電子が電子伝達系で O₂ に渡され、多くの ATP がつくられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "呼吸"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "etc"
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "DEV-IND-008",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-03",
+ "topic": "ビコイド",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ショウジョウバエの卵の前方に偏って存在する mRNA から翻訳され、濃度勾配によって頭部側を決めるタンパク質は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ビコイド",
+    "grading": "語{ビコイド|ビコイドタンパク質}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "母親の遺伝子からつくられる母性因子。後方にはナノスが偏って存在する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "位置情報"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

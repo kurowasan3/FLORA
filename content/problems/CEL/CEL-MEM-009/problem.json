@@ -1,0 +1,82 @@
+{
+ "id": "CEL-MEM-009",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "浸透と体積",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "植物細胞を、細胞液より濃いスクロース溶液（高張液）に浸した。次の量はどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "細胞の体積（細胞膜に囲まれた部分）"
+     },
+     {
+      "id": "2",
+      "tex": "細胞液の濃度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "減る",
+    "grading": "細胞の体積：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "細胞液の濃度：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "水が浸透で細胞外へ出ていくので、液胞が縮み細胞液は濃くなる。さらに進むと細胞膜が細胞壁から離れる（原形質分離）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

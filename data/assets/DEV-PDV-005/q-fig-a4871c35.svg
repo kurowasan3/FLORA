@@ -1,0 +1,12 @@
+<svg class="dg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<path d="M200 296V230" class="stem"/>
+<path d="M200 232C150 236 110 226 92 206C120 206 160 214 200 226Z" class="fsep"/>
+<path d="M200 232C250 236 290 226 308 206C280 206 240 214 200 226Z" class="fsep"/>
+<path d="M196 224C140 190 96 120 120 76C150 110 186 170 200 216Z" class="fpet"/>
+<path d="M204 224C260 190 304 120 280 76C250 110 214 170 200 216Z" class="fpet"/>
+<path d="M200 220C178 200 180 170 200 168C220 170 222 200 200 220Z" class="fova"/>
+<circle cx="194" cy="196" r="4" class="fovu"/><circle cx="206" cy="196" r="4" class="fovu"/><circle cx="200" cy="184" r="4" class="fovu"/>
+<path d="M200 168V92" class="style"/><ellipse cx="200" cy="86" rx="12" ry="6" class="fstig"/>
+<path d="M188 214Q160 170 156 116M212 214Q240 170 244 116" class="fil"/>
+<ellipse cx="155" cy="108" rx="7" ry="12" class="fanth"/><ellipse cx="245" cy="108" rx="7" ry="12" class="fanth"/>
+<g class="pin"><circle cx="200" cy="86" r="11"/><text x="200" y="90">ア</text></g><g class="pin"><circle cx="200" cy="178" r="11"/><text x="200" y="182">イ</text></g><g class="pin"><path class="lead" d="M236 212L206 196"/><circle cx="236" cy="212" r="11"/><text x="236" y="216">ウ</text></g></svg>

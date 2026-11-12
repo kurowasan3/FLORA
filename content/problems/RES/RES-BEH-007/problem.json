@@ -1,0 +1,63 @@
+{
+ "id": "RES-BEH-007",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-04",
+ "topic": "フェロモン",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アリが仲間をえさの場所まで導くときに使う物質を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "道しるべフェロモン",
+    "grading": "選ぶ{性フェロモン|道しるべフェロモン|警報フェロモン|集合フェロモン}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "カイコガの雌が雄を引き寄せるのが性フェロモン、アリの道しるべフェロモン、ゴキブリの集合フェロモン、ミツバチの警報フェロモンなど。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "behavior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フェロモン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "RES-SEN-004",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "遠近調節",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "近くのものを見るとき、次の部分はどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "毛様筋の収縮"
+     },
+     {
+      "id": "2",
+      "tex": "チン小帯の張力"
+     },
+     {
+      "id": "3",
+      "tex": "水晶体の厚さ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える（収縮する）",
+    "grading": "毛様筋の収縮：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "減る（ゆるむ）",
+    "grading": "チン小帯の張力：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "3",
+    "tex": "増える（厚くなる）",
+    "grading": "水晶体の厚さ：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "毛様筋が収縮すると毛様体が内側に寄り、チン小帯がゆるむ。水晶体は自身の弾性で厚くなり、焦点距離が短くなって近くにピントが合う。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遠近調節",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "eye"
+ }
+}

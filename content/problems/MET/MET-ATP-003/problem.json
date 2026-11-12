@@ -1,0 +1,64 @@
+{
+ "id": "MET-ATP-003",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-01",
+ "topic": "ATP のはたらき",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ATP のエネルギーが直接使われるはたらきとして適当でないものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "拡散による O₂ の取り込み",
+    "grading": "選ぶ{筋収縮|ナトリウムポンプによる能動輸送|タンパク質の合成|拡散による O₂ の取り込み|ホタルの発光}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "拡散は濃度勾配による受動的な移動で、エネルギーを使わない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atp",
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ATP"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

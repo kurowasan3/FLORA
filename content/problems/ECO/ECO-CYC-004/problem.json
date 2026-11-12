@@ -1,0 +1,65 @@
+{
+ "id": "ECO-CYC-004",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-03",
+ "topic": "エネルギーの流れ",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生態系の物質とエネルギーについて正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "物質は循環するが、エネルギーは循環せず、最終的に熱として生態系外へ出ていく",
+    "grading": "選ぶ{物質もエネルギーも生態系内を循環する|物質は循環するが、エネルギーは循環せず、最終的に熱として生態系外へ出ていく|エネルギーは循環するが、物質は循環しない|栄養段階が上がるほど利用できるエネルギーは増える}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光エネルギーは化学エネルギーとして有機物に蓄えられ、食物連鎖を通じて移り、呼吸で熱として放出される。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ecosystem"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ENERGY-CYCLE"
+ ],
+ "tags": [
+  "エネルギーの流れ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

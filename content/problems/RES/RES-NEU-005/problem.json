@@ -1,0 +1,67 @@
+{
+ "id": "RES-NEU-005",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "全か無かの法則",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 本の神経繊維に与える刺激を、閾値より強くしていくと活動電位はどうなるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "大きさは変わらない（発生頻度が増える）",
+    "grading": "選ぶ{大きさがしだいに大きくなる|大きさは変わらない|しだいに小さくなる|発生しなくなる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 本の繊維の活動電位の大きさは一定（全か無かの法則）。刺激の強さは、活動電位の発生頻度や、興奮する繊維の数で伝えられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [
+  "all-or-none"
+ ],
+ "misconceptions": [
+  "MC-STIM-STRONG"
+ ],
+ "tags": [
+  "全か無かの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "RES-BEH-004",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-04",
+ "topic": "8 の字ダンス",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ミツバチの 8 の字ダンスで、巣板の上で直進部分が鉛直上向きから右へ 60° の向きであった。えさ場はどの方向にあるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "太陽の方向から右へ 60°",
+    "grading": "選ぶ{太陽の方向から右へ 60°|太陽の方向から左へ 60°|太陽と反対の方向から右へ 60°|巣から真上へ 60°}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "直進方向と重力の反対方向（鉛直上向き）との角度が、太陽の方向とえさ場の方向の角度を表す。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "behavior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "8の字ダンス"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "RES-NEU-006",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "シナプスでの伝達",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "シナプスで興奮が伝達される過程を順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "活動電位が神経終末に届く → Ca²⁺ が流入する → シナプス小胞から神経伝達物質が放出される → 受容体に結合しイオンチャネルが開く",
+    "grading": "並べる{神経伝達物質が受容体に結合し、イオンチャネルが開く|Ca²⁺ が神経終末に流入する|活動電位が神経終末に届く|シナプス小胞から神経伝達物質が放出される}=3>2>4>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "伝達物質は神経終末からしか放出されないので、興奮はシナプスで一方向にしか伝わらない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "シナプス"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "synapse"
+ }
+}

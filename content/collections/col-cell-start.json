@@ -1,0 +1,45 @@
+{
+ "id": "col-cell-start",
+ "schema": "flora.collection/1",
+ "title": "生物基礎のはじめ：細胞と遺伝子",
+ "description": "細胞のつくり・DNA・体細胞分裂・転写と翻訳。図とアニメーションで確かめながら。",
+ "order": 1,
+ "items": [
+  {
+   "id": "CEL-CST-001"
+  },
+  {
+   "id": "CEL-CST-002"
+  },
+  {
+   "id": "CEL-CST-004"
+  },
+  {
+   "id": "GEN-DNA-001"
+  },
+  {
+   "id": "GEN-DNA-002"
+  },
+  {
+   "id": "GEN-DNA-004"
+  },
+  {
+   "id": "GEN-MIT-001"
+  },
+  {
+   "id": "GEN-MIT-002"
+  },
+  {
+   "id": "GEN-EXP-001"
+  },
+  {
+   "id": "GEN-EXP-003"
+  },
+  {
+   "id": "GEN-EXP-005"
+  },
+  {
+   "id": "MET-ATP-001"
+  }
+ ]
+}

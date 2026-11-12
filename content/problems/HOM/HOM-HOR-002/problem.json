@@ -1,0 +1,67 @@
+{
+ "id": "HOM-HOR-002",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "脳下垂体後葉のホルモン",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "脳下垂体後葉から分泌され、腎臓の集合管での水の再吸収を促進するホルモンは何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "バソプレシン",
+    "grading": "語{バソプレシン|抗利尿ホルモン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "バソプレシンは視床下部の神経分泌細胞でつくられ、軸索を通って後葉まで運ばれ、そこから血液中に分泌される。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホルモン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "osmotic"
+ }
+}

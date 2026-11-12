@@ -1,0 +1,63 @@
+{
+ "id": "CEL-ENZ-001",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "基質特異性",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素が特定の物質にしかはたらかない性質を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "基質特異性",
+    "grading": "語{基質特異性}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酵素の活性部位の立体構造に合う基質だけが結合して反応する。アミラーゼはデンプンを分解するが、タンパク質は分解しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

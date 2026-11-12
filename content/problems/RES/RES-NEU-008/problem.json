@@ -1,0 +1,68 @@
+{
+ "id": "RES-NEU-008",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "興奮の伝導の方向",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "神経繊維の中央を刺激すると、興奮は両方向に伝導するが、いったん生じた興奮が逆戻りすることはない。逆戻りしない理由を説明せよ。また、シナプスを含む経路で興奮が一方向にしか伝わらない理由も説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "興奮した直後の部分は不応期にあり、刺激を受けてもすぐには興奮しないので、興奮は逆戻りせず前方へだけ伝導する。シナプスでは、神経伝達物質は神経終末（シナプス前細胞）からしか放出されず、受容体はシナプス後細胞にしかないので、一方向にしか伝わらない。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "神経繊維の上の伝導は両方向（刺激点から両側へ）、シナプスでの伝達は一方向。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "論述",
+  "不応期"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "synapse"
+ }
+}

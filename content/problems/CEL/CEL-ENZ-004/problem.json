@@ -1,0 +1,82 @@
+{
+ "id": "CEL-ENZ-004",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "基質濃度と反応速度",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素の量を一定にして基質濃度を上げていくと、反応速度ははじめ増加するが、やがて一定になる。基質濃度が十分高いときに、さらに次の操作をすると反応速度はどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "酵素の量を2倍にする"
+     },
+     {
+      "id": "2",
+      "tex": "基質の量をさらに2倍にする"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える（約2倍）",
+    "grading": "反応速度：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "変わらない",
+    "grading": "反応速度：選ぶ{増える|減る|変わらない}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "基質濃度が高いと、ほぼすべての酵素が基質と結合している（飽和）。このときの反応速度は酵素の量で決まるので、基質を増やしても変わらず、酵素を増やすと速くなる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "飽和"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

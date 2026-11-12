@@ -1,0 +1,64 @@
+{
+ "id": "PLA-PHM-007",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "オーキシンの極性移動",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マカラスムギの幼葉鞘の一部を切り出し、上端（先端側）にオーキシンを含む寒天片を、下端に何も含まない寒天片をあてて置いた。しばらくして下端の寒天片にオーキシンが移動していた。切片の上下を逆さまにして同じことをすると、どうなると考えられるか。理由も述べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "下の寒天片（もとの先端側の寒天）にはオーキシンが移動しない。オーキシンは重力の向きに関係なく、茎の先端側から基部側へだけ移動する（極性移動）から。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "極性移動は、オーキシンを細胞外へ運び出す輸送タンパク質（PIN タンパク質）が細胞の基部側の膜に偏って分布しているために起こる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "極性移動",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

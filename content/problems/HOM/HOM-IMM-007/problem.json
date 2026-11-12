@@ -1,0 +1,64 @@
+{
+ "id": "HOM-IMM-007",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-05",
+ "topic": "ワクチンと血清療法",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "予防接種（ワクチン）と血清療法は、どちらも獲得免疫を利用した医療である。両者の違いを、何を体内に入れるか・効果の現れ方と持続の点から説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ワクチンは弱毒化・無毒化した抗原を接種し、本人の体内で抗体や記憶細胞をつくらせる。効果が現れるまで時間がかかるが、記憶細胞により長く続く（予防向き）。血清療法は、ほかの動物につくらせた抗体を含む血清を注射するので、すぐに効くが、自分で抗体をつくるわけではないので効果は短い（ヘビ毒など、緊急の治療向き）。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ワクチンは能動的、血清療法は受動的な免疫。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "論述",
+  "ワクチン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "GEN-MEI-004",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-06",
+ "topic": "二遺伝子雑種",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2 組の対立遺伝子 A/a、B/b が別々の染色体にある。AaBb どうしを交配したとき、子の表現型 [AB]:[Ab]:[aB]:[ab] の比を答えよ（A・B が顕性）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "9 : 3 : 3 : 1",
+    "grading": "9:3:3:1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "独立の法則により、(3:1) × (3:1) = 9:3:3:1。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mendel"
+ ],
+ "laws": [
+  "independent-assortment"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "メンデル",
+  "分離比"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "independent-assortment"
+ }
+}

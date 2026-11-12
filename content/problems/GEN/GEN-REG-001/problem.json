@@ -1,0 +1,67 @@
+{
+ "id": "GEN-REG-001",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-04",
+ "topic": "オペロン",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原核生物で、1 つのプロモーターから一緒に転写される機能的に関連した遺伝子のまとまりを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "オペロン",
+    "grading": "語{オペロン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ラクトースオペロンには、ラクトースの取り込み・分解にかかわる 3 つの遺伝子が並んでいる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-regulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オペロン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "lacoperon"
+ }
+}

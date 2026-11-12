@@ -1,0 +1,63 @@
+{
+ "id": "CEL-MEM-006",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "エンドサイトーシス",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "細胞膜が物質を包み込んで小胞をつくり、細胞内に取り込むはたらきを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "エンドサイトーシス",
+    "grading": "語{エンドサイトーシス|飲食作用}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "取り込むのがエンドサイトーシス（食作用・飲作用）、小胞の内容物を膜の融合で外へ出すのがエキソサイトーシス（ホルモン・消化酵素・神経伝達物質の分泌）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "膜輸送"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

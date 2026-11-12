@@ -1,0 +1,63 @@
+{
+ "id": "ECO-VEG-004",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "二次遷移",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二次遷移が一次遷移よりも速く進む理由として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "土壌や、土壌中の種子・根などがすでにあるから",
+    "grading": "選ぶ{気温が高いから|土壌や、土壌中の種子・根などがすでにあるから|陰樹がはじめから生えているから|地衣類が多いから}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "山火事・伐採・耕作放棄地などから始まる二次遷移は、土壌があり、埋土種子や地下部が残っているので速い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二次遷移"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

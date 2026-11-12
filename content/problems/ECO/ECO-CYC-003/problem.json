@@ -1,0 +1,63 @@
+{
+ "id": "ECO-CYC-003",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-03",
+ "topic": "窒素の循環",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空気中の窒素（N₂）を直接利用して窒素固定を行う生物を1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "根粒菌",
+    "grading": "選ぶ{硝酸菌|根粒菌|亜硝酸菌|ダイズ|脱窒素細菌}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "窒素固定を行うのは根粒菌・アゾトバクター・クロストリジウム・一部のシアノバクテリア。植物は N₂ を直接利用できず、NH₄⁺ や NO₃⁻ を吸収する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ecosystem"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "窒素循環"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

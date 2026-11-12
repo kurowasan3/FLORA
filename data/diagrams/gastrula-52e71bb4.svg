@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<circle cx="200" cy="150" r="120" class="fecto"/>
+<circle cx="200" cy="150" r="104" class="fmeso"/>
+<path d="M200 46A104 104 0 0 0 96 150A104 104 0 0 0 200 254Q260 250 290 210Q250 180 210 172Q170 160 160 120Q170 70 200 46Z" class="fendo"/>
+<path d="M290 214Q240 196 200 190Q160 186 150 150Q150 110 180 92Q240 90 266 140Q280 176 300 206Z" class="farch"/>
+<path d="M150 150Q120 130 130 100Q150 70 180 66" class="fblas"/>
+<path d="M286 222L302 204" class="lip"/>
+</svg>

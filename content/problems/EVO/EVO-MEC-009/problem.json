@@ -1,0 +1,67 @@
+{
+ "id": "EVO-MEC-009",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "びん首効果",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "個体数が一時的に大きく減ったときに、遺伝的浮動によって集団の遺伝子頻度が大きく変化することを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "びん首効果",
+    "grading": "語{びん首効果|ボトルネック効果}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "生き残った少数の個体の遺伝子頻度が、もとの集団とたまたま違っていると、その後の集団はそれを受け継ぐ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝的浮動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "popgen"
+ }
+}

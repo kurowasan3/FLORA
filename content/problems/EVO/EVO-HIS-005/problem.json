@@ -1,0 +1,69 @@
+{
+ "id": "EVO-HIS-005",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-01",
+ "topic": "人類の特徴",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "人類（ヒトの系統）を、ほかの類人猿と区別する最も基本的な特徴は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "直立二足歩行",
+    "grading": "語{直立二足歩行|二足歩行}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "直立二足歩行に伴って、大後頭孔が頭骨の真下に開き、骨盤が幅広く短くなった。脳の大型化はその後に起こった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "history-of-life"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-HUMAN-CHIMP"
+ ],
+ "tags": [
+  "人類"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "eras"
+ }
+}

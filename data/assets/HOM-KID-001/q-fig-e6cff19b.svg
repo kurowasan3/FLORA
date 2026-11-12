@@ -1,0 +1,8 @@
+<svg class="dg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<path d="M20 60H86" class="vessel art"/><path d="M86 74H20" class="vessel art2"/>
+<circle cx="110" cy="66" r="34" class="fbow"/><circle cx="110" cy="66" r="26" class="fcell"/>
+<path d="M88 62q6 -18 18 -6q8 -16 16 -2q14 -2 6 12q10 10 -4 16q-2 14 -16 6q-12 8 -14 -6q-12 -4 -6 -20z" class="fglo"/>
+<path d="M140 80C170 90 150 120 180 118C210 116 190 70 222 74C254 78 236 120 250 132L250 250Q250 270 266 270Q282 270 282 250L282 120C282 96 312 96 312 120C312 140 290 150 316 160L336 160" class="tub"/>
+<path d="M336 30V284" class="duct"/>
+<path d="M330 290L344 290M337 284v12l-5 -5M337 296l5 -5" class="thin"/>
+<g class="pin"><circle cx="106" cy="66" r="11"/><text x="106" y="70">ア</text></g><g class="pin"><circle cx="120" cy="32" r="11"/><text x="120" y="36">イ</text></g><g class="pin"><circle cx="336" cy="220" r="11"/><text x="336" y="224">ウ</text></g></svg>

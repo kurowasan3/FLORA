@@ -1,0 +1,65 @@
+{
+ "id": "GEN-REG-006",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-04",
+ "topic": "分化と遺伝子発現",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヒトの肝臓の細胞と皮膚の細胞は同じ受精卵からできているが、形やはたらきが大きく異なる。DNA と遺伝子発現の関係から、この理由を説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "どの体細胞も受精卵と同じ遺伝情報（ゲノム）をもっているが、細胞の種類ごとに発現する（転写・翻訳される）遺伝子の組合せが異なるため、つくられるタンパク質が異なり、形やはたらきが異なる（選択的な遺伝子発現）。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "どの遺伝子を発現させるかは、調節タンパク質（転写因子）の組合せなどで決まる。クローンガエル・iPS 細胞は、分化した細胞もすべての遺伝情報をもっていることを示す。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-regulation",
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分化",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

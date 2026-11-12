@@ -1,0 +1,66 @@
+{
+ "id": "HOM-KID-004",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-02",
+ "topic": "尿素の再吸収量",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "前問と同じ人で、尿素の濃度が血しょう中 0.3 mg/mL、尿中 20 mg/mL であった。1 分間に再吸収された尿素は何 mg か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "16 mg",
+    "grading": "約{16|2} [mg]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ろ過された尿素 = 0.3 × 120 = 36 mg。尿中の尿素 = 20 × 1 = 20 mg。再吸収量 = 36 − 20 = 16 mg。尿素も一部は再吸収される。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kidney-liver"
+ ],
+ "laws": [
+  "reabsorption"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "再吸収",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

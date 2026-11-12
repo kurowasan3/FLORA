@@ -1,0 +1,63 @@
+{
+ "id": "ECO-CYC-008",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-03",
+ "topic": "窒素同化",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "植物が根から吸収した NH₄⁺ や NO₃⁻ を使って、アミノ酸などの有機窒素化合物をつくるはたらきを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "窒素同化",
+    "grading": "語{窒素同化}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "NO₃⁻ は還元されて NH₄⁺ になり、グルタミンなどを経てさまざまなアミノ酸がつくられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ecosystem"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "窒素循環"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

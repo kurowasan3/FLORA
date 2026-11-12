@@ -1,0 +1,67 @@
+{
+ "id": "GEN-DNA-001",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-01",
+ "topic": "DNA の糖",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA を構成するヌクレオチドの糖は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "デオキシリボース",
+    "grading": "語{デオキシリボース}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "DNA の糖はデオキシリボース、RNA の糖はリボース。塩基は DNA が A・T・G・C、RNA が A・U・G・C。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "dna-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "DNA"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "dna"
+ }
+}

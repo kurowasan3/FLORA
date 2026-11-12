@@ -1,0 +1,82 @@
+{
+ "id": "ECO-CYC-005",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-03",
+ "topic": "エネルギー効率",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある湖で、生産者の総生産量が 4000、一次消費者の同化量が 600、二次消費者の同化量が 90（単位は同じ）であった。一次消費者と二次消費者のエネルギー効率はそれぞれ何％か。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "一次消費者"
+     },
+     {
+      "id": "2",
+      "tex": "二次消費者"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "15％",
+    "grading": "約{15|2} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "15％",
+    "grading": "約{15|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "一次消費者：600 ÷ 4000 × 100 = 15％。二次消費者：90 ÷ 600 × 100 = 15％。エネルギー効率はふつう 10〜20％ 程度なので、栄養段階は 4〜5 段階程度までしか続かない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ecosystem"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エネルギー効率",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

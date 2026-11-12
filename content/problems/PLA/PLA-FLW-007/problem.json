@@ -1,0 +1,63 @@
+{
+ "id": "PLA-FLW-007",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "長日植物",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長日植物を1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "アブラナ",
+    "grading": "選ぶ{アサガオ|キク|オナモミ|アブラナ}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アサガオ・キク・オナモミ・ダイズは短日植物。アブラナ・ホウレンソウ・コムギは長日植物。トマト・トウモロコシは中性植物。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光周性"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

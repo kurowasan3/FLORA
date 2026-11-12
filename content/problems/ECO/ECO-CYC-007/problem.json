@@ -1,0 +1,65 @@
+{
+ "id": "ECO-CYC-007",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-03",
+ "topic": "炭素の循環と大気中の CO₂",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気中の CO₂ 濃度は、北半球では 1 年の中で夏に低く冬に高くなる変化をくり返しながら、長期的には増加し続けている。季節変動と長期的な増加の理由をそれぞれ説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "季節変動：北半球には陸地と植物が多く、夏は光合成が盛んで CO₂ の吸収が呼吸・分解による放出を上回るので濃度が下がり、冬は光合成が減って放出が上回るので上がる。長期的な増加：化石燃料の燃焼や森林の伐採などで、人間活動による CO₂ の放出が、植物や海洋による吸収を上回っているから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "炭素は光合成で有機物になり、呼吸・分解で CO₂ に戻る。化石燃料は長い時間をかけて蓄えられた炭素で、燃焼によって短期間に大気に戻されている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ecosystem",
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "炭素循環",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

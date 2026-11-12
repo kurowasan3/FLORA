@@ -1,0 +1,64 @@
+{
+ "id": "PLA-PHM-006",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "気孔の閉鎖",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "乾燥すると葉で増え、孔辺細胞にはたらいて気孔を閉じさせる植物ホルモンは何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "アブシシン酸",
+    "grading": "語{アブシシン酸}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アブシシン酸で孔辺細胞から K⁺ などが流出し、浸透圧が下がって水が出ていき、気孔が閉じる。青色光は逆に気孔を開かせる（フォトトロピン）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気孔",
+  "アブシシン酸"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

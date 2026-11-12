@@ -1,0 +1,69 @@
+{
+ "id": "GEN-MIT-004",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-02",
+ "topic": "DNA 量の変化",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "体細胞分裂で、細胞 1 個あたりの DNA 量が G₁ 期の 2 倍になっている時期をすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "G₂ 期・前期・中期・後期",
+    "grading": "すべて選ぶ{G₁ 期|G₂ 期|前期|中期|後期|終期のあと（娘細胞）}=2,3,4,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "S 期で倍になり、細胞質分裂で娘細胞に分けられるまで 2 倍のまま。後期でも細胞はまだ 1 つなので 2 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-cycle"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-DNA-DOUBLE"
+ ],
+ "tags": [
+  "DNA量"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "mitosis"
+ }
+}

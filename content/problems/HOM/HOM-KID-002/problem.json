@@ -1,0 +1,63 @@
+{
+ "id": "HOM-KID-002",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-02",
+ "topic": "ろ過されない物質",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "健康なヒトで、糸球体からボーマンのうへろ過されない成分を1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "タンパク質",
+    "grading": "選ぶ{グルコース|尿素|タンパク質|Na⁺|水}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "血球やタンパク質のような大きな成分はろ過されない。グルコースはろ過されるが、細尿管ですべて再吸収されるので健康なら尿には出ない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kidney-liver"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "腎臓"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "PLA-PHM-008",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "果実の成熟",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リンゴと未熟なバナナを同じ袋に入れておくと、バナナの成熟が早まる。リンゴから放出され、成熟を促している気体の植物ホルモンは何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "エチレン",
+    "grading": "語{エチレン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "エチレンは果実の成熟のほか、落葉・落果や、茎の伸長抑制と肥大の促進にもはたらく。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エチレン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

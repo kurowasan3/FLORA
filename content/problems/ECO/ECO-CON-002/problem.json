@@ -1,0 +1,95 @@
+{
+ "id": "ECO-CON-002",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-04",
+ "topic": "富栄養化",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "湖に生活排水が大量に流れ込んだ。次の量はどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "植物プランクトン"
+     },
+     {
+      "id": "2",
+      "tex": "水の透明度"
+     },
+     {
+      "id": "3",
+      "tex": "底層の溶存酸素"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "植物プランクトン：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "減る",
+    "grading": "透明度：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "3",
+    "tex": "減る",
+    "grading": "溶存酸素：選ぶ{増える|減る|変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "窒素・リンが増えて植物プランクトンが大発生し（アオコ・赤潮）、その遺体を分解者が分解するときに酸素を大量に消費する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "富栄養化",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "eutrophication"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "id": "GEN-DNA-008",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-01",
+ "topic": "ゲノムと遺伝子",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヒトのゲノムは約 30 億塩基対で、遺伝子は約 2 万個ある。1 つの遺伝子のうちタンパク質のアミノ酸配列を指定する部分（翻訳される部分）を平均 1500 塩基対とすると、ゲノム全体のうちアミノ酸配列を指定する部分は約何％か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 1％",
+    "grading": "約{1|1} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$1500\\times2\\times10^4=3\\times10^7$ 塩基対。$3\\times10^7\\div(3\\times10^9)\\times100=1$％。ヒトのゲノムの大部分はイントロンや遺伝子の間の領域で、アミノ酸配列を指定しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "dna-structure"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-GENE-PROTEIN"
+ ],
+ "tags": [
+  "ゲノム",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

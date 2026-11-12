@@ -1,0 +1,63 @@
+{
+ "id": "DEV-FER-004",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-01",
+ "topic": "多精拒否",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ウニの卵で多精拒否にはたらくしくみとして正しいものをすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "膜電位の変化（速い）／受精膜の形成（遅い）",
+    "grading": "すべて選ぶ{精子が進入すると卵の膜電位が変化する|受精膜ができる|卵が分裂を始める|精子の先体が消える}=1,2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "受精直後に卵の膜電位が負から正に変わってほかの精子の融合を一時的に防ぎ、その後、表層反応でできる受精膜が持続的に進入を防ぐ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fertilization"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "受精"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

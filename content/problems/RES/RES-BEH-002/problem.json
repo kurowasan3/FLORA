@@ -1,0 +1,63 @@
+{
+ "id": "RES-BEH-002",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-04",
+ "topic": "学習",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "学習による行動を1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "パブロフのイヌがベルの音でだ液を出す",
+    "grading": "選ぶ{カイコガの雄が性フェロモンの方へ歩く|パブロフのイヌがベルの音でだ液を出す|ミツバチが 8 の字ダンスを踊る|イトヨの雄が赤い腹部を攻撃する}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ベルの音とえさを結びつける古典的条件づけは学習。フェロモンへの反応・ダンス・かぎ刺激への反応は生得的行動。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "behavior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "学習"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

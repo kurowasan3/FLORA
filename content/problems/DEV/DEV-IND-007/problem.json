@@ -1,0 +1,63 @@
+{
+ "id": "DEV-IND-007",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-03",
+ "topic": "アポトーシス",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アポトーシスの例として適当なものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "手の指の間の細胞が死んで指が分かれる",
+    "grading": "選ぶ{やけどで皮膚の細胞が死ぬ|手の指の間の細胞が死んで指が分かれる|血流が止まって心筋の細胞が死ぬ|細菌の毒素で細胞が壊れる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アポトーシスは遺伝的にプログラムされた細胞死で、細胞が縮んで断片化し、周りに炎症を起こさない。けがなどによる細胞死は壊死（ネクローシス）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アポトーシス"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "RES-MUS-007",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-03",
+ "topic": "筋収縮の Ca²⁺",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "筋繊維が興奮すると、Ca²⁺ を放出して収縮を引き起こす、筋原繊維を包む膜構造を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "筋小胞体",
+    "grading": "語{筋小胞体}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "興奮が T 管を通って筋繊維の内部に伝わると、筋小胞体から Ca²⁺ が放出される。Ca²⁺ が回収されると弛緩する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "muscle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "筋収縮"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "muscle"
+ }
+}

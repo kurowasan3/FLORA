@@ -1,0 +1,64 @@
+{
+ "id": "MET-PHS-009",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "化学合成",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "亜硝酸菌や硝酸菌のように、無機物を酸化して得たエネルギーで炭酸同化を行うはたらきを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "化学合成",
+    "grading": "語{化学合成}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "亜硝酸菌は NH₄⁺ を NO₂⁻ に、硝酸菌は NO₂⁻ を NO₃⁻ に酸化してエネルギーを得る。硫黄細菌・鉄細菌なども化学合成細菌。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis",
+  "ecosystem"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学合成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

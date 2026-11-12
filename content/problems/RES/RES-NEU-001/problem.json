@@ -1,0 +1,109 @@
+{
+ "id": "RES-NEU-001",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "ニューロンの構造",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はニューロンの模式図である。ア〜ウの名称を答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア"
+     },
+     {
+      "id": "2",
+      "tex": "イ"
+     },
+     {
+      "id": "3",
+      "tex": "ウ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "ニューロン（有髄神経繊維）の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "樹状突起",
+    "grading": "語{樹状突起}"
+   },
+   {
+    "id": "2",
+    "tex": "髄鞘",
+    "grading": "語{髄鞘}"
+   },
+   {
+    "id": "3",
+    "tex": "ランビエ絞輪",
+    "grading": "語{ランビエ絞輪|ランビエの絞輪}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "髄鞘は電気を通しにくく、興奮はランビエ絞輪からランビエ絞輪へととびとびに伝わる（跳躍伝導）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ニューロン",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "neuron"
+ }
+}

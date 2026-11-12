@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<path d="M200 22C300 22 330 120 320 190C312 250 260 272 214 278L214 292H186L186 278C140 272 88 250 80 190C70 120 100 22 200 22Z" class="finteg"/>
+<path d="M200 44C272 44 296 120 290 186C284 236 248 258 208 262L192 262C152 258 116 236 110 186C104 120 128 44 200 44Z" class="fnuc"/>
+<ellipse cx="200" cy="150" rx="62" ry="96" class="fsac"/>
+<circle cx="182" cy="70" r="11" class="fanti"/><circle cx="204" cy="64" r="11" class="fanti"/><circle cx="220" cy="78" r="11" class="fanti"/>
+<circle cx="190" cy="148" r="6" class="fpn"/><circle cx="210" cy="152" r="6" class="fpn"/>
+<ellipse cx="200" cy="214" rx="16" ry="20" class="fegg"/><circle cx="200" cy="220" r="5" class="fn"/>
+<ellipse cx="178" cy="226" rx="11" ry="17" class="fsyn"/><ellipse cx="222" cy="226" rx="11" ry="17" class="fsyn"/>
+<path d="M200 300C200 290 198 284 200 274C202 262 196 254 206 244" class="ptube"/>
+</svg>

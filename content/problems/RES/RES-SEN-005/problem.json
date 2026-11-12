@@ -1,0 +1,100 @@
+{
+ "id": "RES-SEN-005",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "耳の構造",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はヒトの耳の構造である。音を受容する聴細胞がある部分と、からだの回転を受容する部分を、ア〜ウからそれぞれ選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "音を受容する"
+     },
+     {
+      "id": "2",
+      "tex": "回転を受容する"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "ヒトの耳の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ウ（うずまき管）",
+    "grading": "選ぶ{ア|イ|ウ}=3"
+   },
+   {
+    "id": "2",
+    "tex": "イ（半規管）",
+    "grading": "選ぶ{ア|イ|ウ}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アは鼓膜、イは半規管、ウはうずまき管。音波 → 鼓膜 → 耳小骨 → うずまき管のリンパ液 → 基底膜の振動 → コルチ器の聴細胞。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "耳",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "ear"
+ }
+}

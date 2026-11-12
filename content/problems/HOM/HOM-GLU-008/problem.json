@@ -1,0 +1,95 @@
+{
+ "id": "HOM-GLU-008",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "交感神経の刺激",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "交感神経を強く刺激した。次の量はどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アドレナリンの分泌量"
+     },
+     {
+      "id": "2",
+      "tex": "肝臓のグリコーゲンの分解"
+     },
+     {
+      "id": "3",
+      "tex": "血糖濃度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "アドレナリン：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "グリコーゲン分解：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "3",
+    "tex": "増える",
+    "grading": "血糖濃度：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "交感神経は副腎髄質を刺激してアドレナリンを分泌させ、すい臓 A 細胞のグルカゴン分泌も促す。どちらも肝臓のグリコーゲン分解を促して血糖濃度を上げる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "血糖",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "glucose"
+ }
+}

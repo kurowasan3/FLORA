@@ -1,0 +1,542 @@
+// 「入力用の答え」の書式と採点
+//
+// 書式（問題管理表の「入力用の答え」列）：
+//   1行に1小問。行頭に (1) などの番号。小問の中の複数の答えは「 ; 」で区切る。
+//   答えの前に「ラベル：」（全角コロン）を付けると、入力欄の名前になる。数式は $...$ で書ける。
+//     (1) 14/3
+//     (2) 最大値：7/4 ; 最小値：-3-2sqrt(3)
+//     (3) {1, 35, 251, 505}            … 順不同の組（すべて答える）
+//     (4) (30/11, 48/11)                … 順序のある組（座標など）
+//     (5) 9:4                           … 比
+//     (6) a<-3 または 3<a               … 範囲（不等式。「かつ」「なし」「すべての実数」も可）
+//     (7) 場合分け{ m<=1/2 → 6-2m | m>=1/2 → (14m+8)/3 }   … 区切りの | の前後は空白
+//     (8) 証明                          … 証明・図示・記述は自己採点（記述：本文 と書くと答え合わせで表示）
+//   ALCHEMIA（化学）で足し、FLORA でも使うもの：
+//     (9)  語{アンモニア|NH3}            … 語句・化学式（| で区切ると別の正解。全角半角・ひらがなカタカナ・空白・^{} の違いは無視）
+//     (10) 選ぶ{塩酸|硫酸|硝酸}=2        … 1つ選ぶ（= の後は何番目か）
+//     (11) すべて選ぶ{A|B|C|D}=1,3       … 当てはまるものをすべて選ぶ（選びすぎも不正解）
+//     (12) 並べる{HF|HCl|HBr}=3>2>1      … 並べかえ（= の後に、正しい順の番号を > でつなぐ）
+//     (13) 約{2.24|2}                   … 数値（| の後は有効数字の桁数。省略すると2桁。1.2e-3・1.2×10^-3 も読める）
+//   数の後ろの単位（18個、120° など）は表示用で、採点では無視する。物理の単位は 4.9 [m/s] のように [ ] で書く。
+
+import { parse, compile, freeVars, toTeX, toPlain } from './parser.js';
+
+export const FILE_VERSION = '0.1.0';
+
+const SELF_WORDS = /^(証明|図示|記述|略|解答参照)/;
+const UNIT_RE = /(°|個|通り|桁|本|人|回|枚|組|点|色|日|番目|倍|秒|分|円|度|段|列|行|面|辺|頂点|種類)$/;
+const INT_VARS = new Set(['n', 'N', 'k']);
+
+// ---------------------------------------------------------------- 書式の読み取り
+function splitTop(s, seps) {
+  // 括弧の外にある区切り（文字列の配列）で分割
+  const out = []; let depth = 0, last = 0, inMath = false;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (c === '$') inMath = !inMath;
+    if ('([{'.includes(c)) depth++;
+    else if (')]}'.includes(c)) depth--;
+    else if (depth === 0 && !inMath) {
+      const sep = seps.find(x => s.startsWith(x, i));
+      if (sep) { out.push(s.slice(last, i)); i += sep.length - 1; last = i + 1; }
+    }
+  }
+  out.push(s.slice(last));
+  return out.map(x => x.trim()).filter(x => x !== '');
+}
+
+export function parseSpec(text) {
+  if (!text || !String(text).trim()) return null;
+  const lines = String(text).replace(/\r/g, '').split(/\n|｜/).map(l => l.trim()).filter(Boolean);
+  const parts = [];
+  for (const line of lines) {
+    const m = line.match(/^\((\d+)\)\s*/);
+    const n = m ? m[1] : '';
+    const body = m ? line.slice(m[0].length) : line;
+    const fields = splitTop(body, [' ; ', '；', ';']).map(parseField);
+    parts.push({ n, fields });
+  }
+  return { parts };
+}
+
+function parseField(src) {
+  let label = null, body = src.trim();
+  const lm = body.match(/^([^：]{1,80})：\s*/);
+  if (lm && !/^場合分け/.test(body)) { label = lm[1].trim(); body = body.slice(lm[0].length).trim(); }
+  const f = { label, src: body };
+  if (SELF_WORDS.test(body)) {
+    const sm = body.match(/^(証明|図示|記述|略|解答参照)\s*[:：]?\s*(.*)$/);
+    return { ...f, kind: 'self', sub: sm[1], text: sm[2] || '' };
+  }
+  const chem = parseChemField(f, body);
+  if (chem) return chem;
+  const cm = body.match(/^場合分け\s*\{([\s\S]*)\}$/);
+  if (cm) {
+    const cases = splitTop(cm[1], [' | ']).map(c => {
+      const k = c.search(/→|=>/);
+      if (k < 0) throw new Error(`場合分けの「→」がありません：${c}`);
+      const cond = c.slice(0, k).trim(), val = c.slice(k).replace(/^(→|=>)/, '').trim();
+      return { cond: parseCond(cond), condSrc: cond, val: parseValue(val), valSrc: val };
+    });
+    return { ...f, kind: 'cases', cases };
+  }
+  if (/^\{[\s\S]*\}$/.test(body)) {
+    const items = splitTop(body.slice(1, -1), [',']).map(parseValue);
+    return { ...f, kind: 'set', items };
+  }
+  if (/^\d+(\.\d+)?(:\d+(\.\d+)?)+$/.test(body.replace(/\s/g, ''))) {
+    return { ...f, kind: 'ratio', items: body.replace(/\s/g, '').split(':').map(Number) };
+  }
+  if (isCondition(body)) return { ...f, kind: 'range', cond: parseCond(body) };
+  const v = parseValue(body);
+  if (v.ast.t === 'tuple') return { ...f, kind: 'tuple', items: v.ast.items.map(a => ({ ast: a, fn: compile(a), unit: '' })) };
+  return { ...f, kind: 'expr', value: v };
+}
+
+// ---------------------------------------------------------------- 語・選ぶ・すべて選ぶ・並べる・約 の書式
+function parseChemField(f, body) {
+  const m = body.match(/^(語|選ぶ|すべて選ぶ|並べる|約)\s*\{([\s\S]*)\}\s*(?:=\s*([^\[\]]+?))?\s*(?:\[([^\[\]]+)\])?$/);
+  if (!m) return null;
+  const [, kw, inner, ans, unitSrc] = m;
+  const opts = splitTop(inner, ['|']);
+  if (kw === '語') {
+    if (!opts.length) throw new Error(`語{ } に正解がありません：${body}`);
+    return { ...f, kind: 'word', accept: opts, norm: opts.map(normWord) };
+  }
+  if (kw === '約') {
+    const v = numOf(opts[0]);
+    if (!Number.isFinite(v)) throw new Error(`約{ } の値を読めません：${body}`);
+    const sig = opts[1] ? parseInt(opts[1], 10) : 2;
+    return { ...f, kind: 'approx', value: v, sig, unit: (unitSrc || '').trim(), src: opts[0] };
+  }
+  if (!ans) throw new Error(`${kw}{ } の後に「=正解の番号」がありません：${body}`);
+  const nums = ans.split(kw === '並べる' ? />|＞/ : /[,，、]/).map(x => parseInt(x.trim(), 10));
+  if (nums.some(n => !(n >= 1 && n <= opts.length))) throw new Error(`正解の番号が選択肢の数（${opts.length}）の外です：${body}`);
+  if (kw === '選ぶ') {
+    if (nums.length !== 1) throw new Error(`選ぶ{ } の正解は1つです（すべて選ぶ{ } を使う）：${body}`);
+    return { ...f, kind: 'pick', options: opts, answer: [nums[0] - 1], multi: false };
+  }
+  if (kw === 'すべて選ぶ') return { ...f, kind: 'pick', options: opts, answer: [...new Set(nums.map(n => n - 1))].sort((a, b) => a - b), multi: true };
+  if (nums.length !== opts.length || new Set(nums).size !== nums.length) throw new Error(`並べる{ } の正解は、すべての番号を1回ずつ並べます：${body}`);
+  return { ...f, kind: 'order', options: opts, answer: nums.map(n => n - 1) };
+}
+
+// 語句・化学式の比べ方：表記の違い（全角半角・かなの種類・空白・^ { } _・中黒）を消す
+export function normWord(s) {
+  return String(s ?? '').normalize('NFKC')
+    .replace(/[\u3041-\u3096]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60))
+    .replace(/[\u2010-\u2015\u2212\uff0d]/g, '-')
+    .replace(/\$|\\ce|\\mathrm|\\text/g, '')
+    .replace(/[\s^{}_・･]/g, '')
+    .replace(/[。．.]+$/, '')
+    .replace(/⇄|⇌|<=>/g, '⇄').replace(/→|->/g, '→');
+}
+// 数値（1.2e-3、1.2×10^-3、1.2*10^(-3)、6.02x10^23）
+export function numOf(src) {
+  let t = String(src ?? '').normalize('NFKC').trim().replace(/[\s,]/g, '').replace(/[−–]/g, '-');
+  t = t.replace(/(\d)[eE]([+-]?\d+)$/, '$1*10^($2)').replace(/[×xX]10\^?\(?([+-]?\d+)\)?$/, '*10^($1)').replace(/×/g, '*');
+  t = t.replace(/\*?10\^([+-]?\d+)$/, (m0, k) => `*10^(${k})`).replace(/^\*/, '');
+  t = stripUnit(t).s;
+  try { return compile(parse(t))({}); } catch { return NaN; }
+}
+function sigUnit(v, sig) {
+  if (v === 0) return 10 ** -sig;
+  return 10 ** (Math.floor(Math.log10(Math.abs(v))) - sig + 1);
+}
+export function roundSig(v, sig) {
+  const u = sigUnit(v, sig);
+  return Math.round(v / u) * u;
+}
+function sciTeX(v, sig) {
+  if (v === 0) return '0';
+  const e = Math.floor(Math.log10(Math.abs(roundSig(v, sig))));
+  const m = roundSig(v, sig) / 10 ** e;
+  const ms = m.toFixed(Math.max(0, sig - 1));
+  if (e >= -2 && e <= 3) return roundSig(v, sig).toFixed(Math.max(0, sig - 1 - e));
+  return `${ms}\times10^{${e}}`;
+}
+function checkChem(field, input) {
+  if (field.kind === 'word') {
+    const u = normWord(input.text);
+    if (!u) return { ok: false, error: '答えが空です', syntax: true };
+    return { ok: field.norm.includes(u) };
+  }
+  if (field.kind === 'approx') {
+    const v = numOf(input.text);
+    if (!String(input.text || '').trim()) return { ok: false, error: '答えが空です', syntax: true };
+    if (!Number.isFinite(v)) return { ok: false, error: '数値として読めません（例：2.2、1.5e-3、1.5×10^-3）', syntax: true };
+    const tol = sigUnit(field.value, field.sig) * 0.55;
+    return { ok: Math.abs(v - field.value) <= tol + 1e-12 * Math.abs(field.value) };
+  }
+  if (field.kind === 'pick') {
+    const sel = [...(input.sel || [])].sort((a, b) => a - b);
+    if (!sel.length) return { ok: false, error: '選んでください', syntax: true };
+    return { ok: sel.length === field.answer.length && sel.every((x, i) => x === field.answer[i]) };
+  }
+  if (field.kind === 'order') {
+    const seq = input.seq || [];
+    if (seq.length !== field.options.length) return { ok: false, error: 'すべて並べてください', syntax: true };
+    return { ok: seq.every((x, i) => x === field.answer[i]) };
+  }
+  return null;
+}
+export const CHEM_KINDS = new Set(['word', 'approx', 'pick', 'order']);
+
+function stripUnit(s) {
+  // 物理の単位は [ ] で書く：4.9 [m/s]、2 [A]、6 [Ω]（表示用。単位の次元による判定は今後）
+  const b = s.match(/^(.*?)\s*\[([^\[\]]+)\]$/);
+  if (b && b[1].trim()) return { s: b[1].trim(), unit: b[2].trim() };
+  const m = s.match(UNIT_RE);
+  if (m && /[\d)πe]\s*(°|[^\x00-\x7F]+)$/.test(s)) return { s: s.slice(0, -m[0].length).trim(), unit: m[0] };
+  return { s, unit: '' };
+}
+
+function parseValue(src) {
+  const { s, unit } = stripUnit(src.trim());
+  const ast = parse(s);
+  return { ast, fn: compile(ast), unit, src: s };
+}
+
+// ---------------------------------------------------------------- 条件（範囲）
+const OR = ['または', ' or ', '∪', ',', '，', '、'];
+const AND = ['かつ', ' and ', '&', '∩'];
+function isCondition(s) {
+  return /<|>|≦|≧|≤|≥|≠|!=|^なし$|^すべての実数$|^全ての実数$|^任意/.test(s);
+}
+function chain(src) {
+  // a < b <= c を [{l, op, r}] に
+  const s = src.replace(/≦|≤/g, '<=').replace(/≧|≥/g, '>=').replace(/!=/g, '≠');
+  const parts = [], ops = [];
+  let depth = 0, last = 0;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if ('([{'.includes(c)) depth++;
+    else if (')]}'.includes(c)) depth--;
+    else if (depth === 0 && '<>=≠'.includes(c)) {
+      let op = c;
+      if ((c === '<' || c === '>') && s[i + 1] === '=') op += '=';
+      parts.push(s.slice(last, i)); ops.push(op); i += op.length - 1; last = i + 1;
+    }
+  }
+  parts.push(s.slice(last));
+  if (!ops.length) throw new Error(`不等号がありません：${src}`);
+  const fns = parts.map(p => { const a = parse(p.trim()); return { ast: a, fn: compile(a) }; });
+  return ops.map((op, k) => ({ l: fns[k], op, r: fns[k + 1] }));
+}
+export function parseCond(src) {
+  const s = src.trim();
+  if (/^なし$/.test(s)) return { kind: 'none', vars: new Set(), atoms: [], test: () => false };
+  if (/^(すべての実数|全ての実数|任意)/.test(s)) return { kind: 'all', vars: new Set(), atoms: [], test: () => true };
+  const disj = splitTop(s, OR).map(d => splitTop(d, AND).map(chain));
+  const atoms = disj.flat(2);
+  const vars = new Set();
+  for (const a of atoms) { freeVars(a.l.ast, vars); freeVars(a.r.ast, vars); }
+  return { kind: 'cond', vars, atoms, disj, test: (sc) => disj.some(conj => conj.every(ch => ch.every(a => cmp(a.l.fn(sc), a.r.fn(sc), a.op)))) };
+}
+function cmp(l, r, op) {
+  if (!Number.isFinite(l) || !Number.isFinite(r)) return false;
+  const d = l - r, eq = Math.abs(d) <= 1e-9 * (1 + Math.abs(l) + Math.abs(r));
+  switch (op) {
+    case '<': return d < 0 && !eq;
+    case '<=': return d < 0 || eq;
+    case '>': return d > 0 && !eq;
+    case '>=': return d > 0 || eq;
+    case '=': return eq;
+    case '≠': return !eq;
+  }
+  return false;
+}
+
+// ---------------------------------------------------------------- 採点
+function rng(seed) { let x = seed >>> 0; return () => { x = (x * 1664525 + 1013904223) >>> 0; return x / 4294967296; }; }
+const close = (a, b) => Math.abs(a - b) <= 1e-7 * Math.max(1, Math.abs(a), Math.abs(b));
+
+// 組（座標）も含めた比較
+function sameAny(u, e) {
+  if (e.ast.t === 'tuple') {
+    if (u.ast.t !== 'tuple' || u.ast.items.length !== e.ast.items.length) return { ok: false };
+    for (let i = 0; i < e.ast.items.length; i++) {
+      const r = sameValue({ ast: u.ast.items[i], fn: compile(u.ast.items[i]) }, { ast: e.ast.items[i], fn: compile(e.ast.items[i]) });
+      if (!r.ok) return r;
+    }
+    return { ok: true };
+  }
+  if (u.ast.t === 'tuple') return { ok: false };
+  return sameValue(u, e);
+}
+
+// 式どうしの比較（自由変数に乱数を代入）
+function sameValue(u, e) {
+  // （Lemma では C を積分定数として扱ったが、物理では電気容量などの普通の文字なので扱わない）
+  const vars = [...new Set([...freeVars(e.ast), ...freeVars(u.ast)])];
+  const extra = [...freeVars(u.ast)].filter(v => !freeVars(e.ast).has(v));
+  if (extra.length) return { ok: false, error: `この答えでは使わない文字「${extra.join('，')}」が入っています` };
+  if (!vars.length) {
+    const a = e.fn({}), b = u.fn({});
+    return { ok: Number.isFinite(a) && Number.isFinite(b) && close(a, b) };
+  }
+  // 物理量はふつう正なので、まず正の値で比べる（(m/M)√(2Mgh/(M+m)) と m√(2gh/(M(M+m))) は正の範囲で等しい）
+  for (const mode of ['pos', 'real', 'int']) {
+    const r = rng(7 + mode.length);
+    let valid = 0, bad = false;
+    for (let k = 0; k < 60 && valid < 10; k++) {
+      const s = {};
+      for (const v of vars) {
+        s[v] = mode === 'int' || INT_VARS.has(v) ? 1 + Math.floor(r() * 12)
+          : mode === 'pos' ? 0.1 + r() * 4 : -3 + r() * 6;
+      }
+      const a = e.fn(s), b = u.fn(s);
+      if (!Number.isFinite(a)) continue;
+      valid++;
+      if (!Number.isFinite(b) || !close(a, b)) { bad = true; break; }
+    }
+    if (bad) return { ok: false };
+    if (valid >= 4) return { ok: true };
+  }
+  return { ok: false, error: '値を確かめられませんでした' };
+}
+
+function cleanUser(text, label) {
+  let t = String(text || '').trim().replace(/[，、]/g, ',').replace(/[　]/g, ' ').replace(/°/g, '');
+  // 「a = 3」「y=…」の左辺を外す（ラベルと同じ、または1文字の変数のとき）
+  const m = t.match(/^([A-Za-zθα-ω][A-Za-z0-9_]*|\([^)]*\))\s*=(?!=)\s*/);
+  if (m && !/[<>]/.test(t)) t = t.slice(m[0].length);
+  return stripUnit(t).s;
+}
+
+function parseUserValue(text, label) {
+  const t = cleanUser(text, label);
+  if (!t) throw new Error('答えが空です');
+  const ast = parse(t);
+  return { ast, fn: compile(ast) };
+}
+
+function expandPM(s) {
+  if (!s.includes('±')) return [s];
+  return [s.replace('±', '+'), s.replace('±', '-')];
+}
+
+// 区分的な値（場合分け）どうしの比較：条件の変数に値を入れて、同じ点で同じ値かを調べる
+function boundaryRoots(conds) {
+  const roots = [];
+  for (const c of conds) {
+    if (!c || c.kind !== 'cond' || c.vars.size !== 1) continue;
+    const v = [...c.vars][0];
+    for (const a of c.atoms) {
+      const f = (x) => { const s = { [v]: x }; return a.l.fn(s) - a.r.fn(s); };
+      let px = -50, pf = f(px);
+      for (let x = -50 + 0.05; x <= 50; x += 0.05) {
+        const fx = f(x);
+        if (Number.isFinite(pf) && Number.isFinite(fx) && (pf === 0 || pf * fx < 0)) {
+          let lo = px, hi = x;
+          for (let k = 0; k < 60; k++) { const mid = (lo + hi) / 2; if (f(lo) * f(mid) <= 0) hi = mid; else lo = mid; }
+          roots.push((lo + hi) / 2);
+        }
+        px = x; pf = fx;
+      }
+    }
+  }
+  return roots;
+}
+
+function samplePoints(vars, conds, { avoidBoundary }) {
+  const r = rng(12345);
+  const pts = [];
+  const vs = [...vars];
+  const roots = vs.length === 1 ? boundaryRoots(conds) : [];
+  for (let k = 0; k < 400; k++) {
+    const s = {};
+    for (const v of vs) s[v] = INT_VARS.has(v) ? 1 + Math.floor(r() * 30) : (k < 300 ? -12 + r() * 24 : -60 + r() * 120);
+    pts.push(s);
+  }
+  if (vs.length === 1) {
+    const v = vs[0];
+    for (const b of roots) {
+      if (avoidBoundary) { pts.push({ [v]: b + 1e-3 }, { [v]: b - 1e-3 }); }
+      else pts.push({ [v]: b }, { [v]: b + 1e-6 }, { [v]: b - 1e-6 }, { [v]: b + 0.3 }, { [v]: b - 0.3 });
+    }
+    if (INT_VARS.has(v)) for (let n = 0; n <= 40; n++) pts.push({ [v]: n });
+  }
+  if (avoidBoundary && roots.length) {
+    const v = vs[0];
+    return pts.filter(p => roots.every(b => Math.abs(p[v] - b) > 1e-4));
+  }
+  return pts;
+}
+
+function checkRange(userText, cond) {
+  let u;
+  try { u = parseCond(String(userText).trim().replace(/[，、]/g, ',').replace(/°/g, '')); }
+  catch (e) { return { ok: false, error: e.message, syntax: true }; }
+  const extra = [...u.vars].filter(v => !cond.vars.has(v));
+  if (extra.length && cond.vars.size) return { ok: false, error: `この答えでは使わない文字「${extra.join('，')}」が入っています` };
+  const vars = new Set([...cond.vars, ...u.vars]);
+  if (!vars.size) return { ok: u.kind === cond.kind };
+  const pts = samplePoints(vars, [cond, u], { avoidBoundary: false });
+  for (const p of pts) if (cond.test(p) !== u.test(p)) return { ok: false };
+  return { ok: true };
+}
+
+function piecewise(cases) {
+  return (s) => { for (const c of cases) if (c.cond.test(s)) return c.val.fn(s); return undefined; };
+}
+function checkCases(user, expected) {
+  // user / expected: [{cond, val}]（場合分けしていない答えは cond=すべて の1つ）
+  const conds = [...expected.map(c => c.cond), ...user.map(c => c.cond)];
+  const vars = new Set();
+  for (const c of conds) for (const v of c.vars) vars.add(v);
+  for (const c of [...expected, ...user]) for (const v of freeVars(c.val.ast)) vars.add(v);
+  const fe = piecewise(expected), fu = piecewise(user);
+  const pts = samplePoints(vars, conds, { avoidBoundary: true });
+  let compared = 0;
+  for (const p of pts) {
+    const a = fe(p);
+    if (a === undefined || !Number.isFinite(a)) continue;
+    const b = fu(p);
+    if (b === undefined) return { ok: false, error: '場合分けの条件で、すべての場合をつくせていません' };
+    compared++;
+    if (!Number.isFinite(b) || !close(a, b)) return { ok: false };
+  }
+  return compared >= 5 ? { ok: true } : { ok: false, error: '値を確かめられませんでした' };
+}
+
+const ALL = { kind: 'all', vars: new Set(), atoms: [], test: () => true };
+
+// input: { mode: 'plain', text } | { mode: 'cases', rows: [{ cond, val }] }
+export function checkField(field, input) {
+  try {
+    if (field.kind === 'self') return { ok: null };
+    if (CHEM_KINDS.has(field.kind)) return checkChem(field, input);
+    if (input.mode === 'cases') {
+      const rows = input.rows.filter(r => r.cond.trim() || r.val.trim());
+      if (!rows.length) return { ok: false, error: '答えが空です', syntax: true };
+      const user = rows.map(r => ({ cond: parseCond(String(r.cond).replace(/°/g, '')), val: parseUserValue(r.val, field.label) }));
+      if (field.kind === 'cases') return checkCases(user, field.cases);
+      if (field.kind === 'expr') return checkCases(user, [{ cond: ALL, val: field.value }]);
+      return { ok: false, error: 'この答えは場合分けせずに書きます' };
+    }
+    const text = input.text || '';
+    if (!text.trim()) return { ok: false, error: '答えが空です', syntax: true };
+    switch (field.kind) {
+      case 'expr': return sameValue(parseUserValue(text, field.label), field.value);
+      case 'cases': return checkCases([{ cond: ALL, val: parseUserValue(text, field.label) }], field.cases);
+      case 'range': return checkRange(cleanRange(text), field.cond);
+      case 'set': {
+        const items = splitTop(cleanUser(text, field.label).replace(/^\{|\}$/g, ''), [',']).flatMap(expandPM)
+          .map(t => parseUserValue(t, field.label));
+        if (items.length !== field.items.length) return { ok: false, error: items.length < field.items.length ? 'まだ足りない値があります' : null };
+        const used = new Set();
+        for (const e of field.items) {
+          const k = items.findIndex((u, i) => !used.has(i) && sameAny(u, e).ok);
+          if (k < 0) return { ok: false };
+          used.add(k);
+        }
+        return { ok: true };
+      }
+      case 'tuple': {
+        const v = parseUserValue(text, field.label);
+        const items = v.ast.t === 'tuple' ? v.ast.items.map(a => ({ ast: a, fn: compile(a) })) : [v];
+        if (items.length !== field.items.length) return { ok: false, error: `${field.items.length}つの値を (a, b) の形で答えます` };
+        return { ok: field.items.every((e, i) => sameValue(items[i], e).ok) };
+      }
+      case 'ratio': {
+        const u = cleanUser(text).replace(/\s/g, '').split(':').map(t => compile(parse(t))({}));
+        if (u.length !== field.items.length || u.some(x => !Number.isFinite(x))) return { ok: false, error: `${field.items.length}つの数を a:b の形で答えます` };
+        const e = field.items;
+        return { ok: u.every((x, i) => close(x * e[0], u[0] * e[i])) };
+      }
+    }
+  } catch (e) {
+    return { ok: false, error: e.message, syntax: true };
+  }
+  return { ok: false };
+}
+function cleanRange(t) {
+  return String(t).trim().replace(/^[A-Za-zα-ω]\s*は\s*/, '');
+}
+
+// ---------------------------------------------------------------- 表示
+export function fieldHint(f) {
+  switch (f.kind) {
+    case 'set': return `${f.items.length}つの値をカンマで区切って（順不同）`;
+    case 'tuple': return `(${f.items.map((_, i) => 'abcde'[i]).join(', ')}) の形で`;
+    case 'ratio': return `${f.items.map((_, i) => 'abcde'[i]).join(':')} の形で`;
+    case 'range': return '例：a<-3 または 3<a、-1<=x<2、なし';
+    default: return '';
+  }
+}
+export function fieldUnit(f) {
+  return f.kind === 'expr' ? f.value.unit : f.kind === 'approx' ? f.unit : f.kind === 'set' ? (f.items[0] && f.items[0].unit) || '' : '';
+}
+// 正解の表示（HTML。数式は $...$ のまま。KaTeX があとで描く）。数式でない種類（語・選ぶ・並べる）はここで
+export function fieldAnswerHTML(f) {
+  const e = (x) => String(x).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const chemOrText = (x) => (/\$/.test(x) ? x : /^[A-Z\[(][A-Za-z0-9()\[\]+\-^·.=#]*$/.test(x) ? `$\\ce{${ceFix(x)}}$` : e(x));
+  switch (f.kind) {
+    case 'word': return chemOrText(f.accept[0]) + (f.accept.length > 1 ? `<span class="muted small">（${f.accept.slice(1).map(chemOrText).join('、')} も可）</span>` : '');
+    case 'pick': return f.answer.map(i => f.options[i]).join('，');
+    case 'order': return f.answer.map(i => f.options[i]).join(' ＞ ');
+    case 'approx': return `$${sciTeX(f.value, f.sig)}${f.unit ? `\\ \\mathrm{${f.unit}}` : ''}$`;
+  }
+  return null;
+}
+// 入力した化学式を \ce に渡せる形に（末尾の 2+ などを電荷として ^ を付ける）
+export function ceFix(x) {
+  return String(x).normalize('NFKC').replace(/\s+/g, '').replace(/([A-Za-z)\]])(\d*[+-])$/, (m0, a, q) => (/\^/.test(x) ? m0 : `${a}^{${q}}`));
+}
+export function exprTeX(src) {
+  try { return toTeX(parse(src)); } catch { return null; }
+}
+// 正解の TeX（判定後に表示）
+export function fieldTeX(f) {
+  const t = (s) => exprTeX(s) ?? s;
+  switch (f.kind) {
+    case 'expr': return t(f.value.src) + (f.value.unit ? `\\text{${f.value.unit}}` : '');
+    case 'set': return f.items.map(i => t(i.src)).join(',\\ ');
+    case 'tuple': return `\\left(${f.items.map(i => toTeX(i.ast)).join(',\\ ')}\\right)`;
+    case 'ratio': return f.items.join(':');
+    case 'range': return condTeX(f.src);
+    case 'cases': return `\\begin{cases}${f.cases.map(c => `${t(c.valSrc)} & (${condTeX(c.condSrc)})`).join('\\\\')}\\end{cases}`;
+  }
+  return '';
+}
+export function condTeX(src) {
+  if (/^(なし|すべての実数|全ての実数)$/.test(src.trim())) return `\\text{${src.trim()}}`;
+  const ors = splitTop(src, OR).map(d => splitTop(d, AND).map(c => {
+    const s = c.replace(/≦|≤/g, '<=').replace(/≧|≥/g, '>=').replace(/!=/g, '≠');
+    return s.split(/(<=|>=|<|>|≠|=)/).map(p => ({ '<=': '\\leqq ', '>=': '\\geqq ', '<': '<', '>': '>', '≠': '\\neq ', '=': '=' }[p] ?? (exprTeX(p.trim()) ?? p))).join('');
+  }).join('\\text{ かつ }'));
+  return ors.join('\\text{ または }');
+}
+
+// ---------------------------------------------------------------- 書式に書き戻す（読みやすい形に整える）
+const OPS_TEXT = { '<': '<', '<=': '<=', '>': '>', '>=': '>=', '=': '=', '≠': '≠' };
+function chainText(ch) {
+  return ch.map((a, k) => (k === 0 ? toPlain(a.l.ast) : '') + OPS_TEXT[a.op] + toPlain(a.r.ast)).join('');
+}
+export function condToText(c) {
+  if (c.kind === 'none') return 'なし';
+  if (c.kind === 'all') return 'すべての実数';
+  return c.disj.map(conj => conj.map(chainText).join(' かつ ')).join(' または ');
+}
+function valText(v) { return toPlain(v.ast) + (v.unit || ''); }
+export function fieldToText(f) {
+  const lab = f.label ? `${f.label}：` : '';
+  switch (f.kind) {
+    case 'word': return lab + `語{${f.accept.join('|')}}`;
+    case 'approx': return lab + `約{${f.src}|${f.sig}}` + (f.unit ? ` [${f.unit}]` : '');
+    case 'pick': return lab + `${f.multi ? 'すべて選ぶ' : '選ぶ'}{${f.options.join('|')}}=${f.answer.map(i => i + 1).join(',')}`;
+    case 'order': return lab + `並べる{${f.options.join('|')}}=${f.answer.map(i => i + 1).join('>')}`;
+    case 'self': return lab + f.sub + (f.text ? `：${f.text}` : '');
+    case 'expr': return lab + valText(f.value);
+    case 'set': return lab + `{${f.items.map(valText).join(', ')}}`;
+    case 'tuple': return lab + `(${f.items.map(i => toPlain(i.ast)).join(', ')})`;
+    case 'ratio': return lab + f.items.join(':');
+    case 'range': return lab + condToText(f.cond);
+    case 'cases': return lab + `場合分け{ ${f.cases.map(c => `${condToText(c.cond)} → ${valText(c.val)}`).join(' | ')} }`;
+  }
+  return lab + f.src;
+}
+export function specToText(spec) {
+  return spec.parts.map(p => (p.n ? `(${p.n}) ` : '') + p.fields.map(fieldToText).join(' ; ')).join('\n');
+}

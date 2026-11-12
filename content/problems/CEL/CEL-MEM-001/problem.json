@@ -1,0 +1,67 @@
+{
+ "id": "CEL-MEM-001",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "生体膜の構造",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生体膜で、リン脂質が親水性の部分を外側に、疎水性の部分を内側に向けて2層に並んだ構造を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "リン脂質二重層",
+    "grading": "語{リン脂質二重層|脂質二重層}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "生体膜はリン脂質二重層にタンパク質がモザイク状に分布し、それらが流動的に動いている（流動モザイクモデル）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生体膜"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "membrane"
+ }
+}

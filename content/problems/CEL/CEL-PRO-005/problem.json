@@ -1,0 +1,63 @@
+{
+ "id": "CEL-PRO-005",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-03",
+ "topic": "タンパク質のはたらき",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タンパク質のはたらきとその例の組合せとして誤っているものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "貯蔵 — グリコーゲン",
+    "grading": "選ぶ{酵素 — アミラーゼ|運搬 — ヘモグロビン|防御 — 抗体（免疫グロブリン）|構造 — コラーゲン|貯蔵 — グリコーゲン|情報伝達 — インスリン}=5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "グリコーゲンは多糖（炭水化物）であって、タンパク質ではない。インスリンはペプチドホルモン（タンパク質）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "タンパク質のはたらき"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

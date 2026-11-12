@@ -1,0 +1,87 @@
+{
+ "id": "PLA-PHM-005",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "種子の発芽とジベレリン",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "オオムギの種子が吸水すると発芽が始まる。種子から胚を取り除いて胚乳だけにしたものに、次の処理をした。胚乳のデンプンの分解はどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "そのまま吸水させる"
+     },
+     {
+      "id": "2",
+      "tex": "ジベレリンを含む水を与える"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "変わらない（分解されない）",
+    "grading": "デンプンの分解：選ぶ{増える|減る|変わらない}=3"
+   },
+   {
+    "id": "2",
+    "tex": "増える（分解される）",
+    "grading": "デンプンの分解：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "胚でつくられたジベレリンが糊粉層にはたらき、アミラーゼの合成を促してデンプンを分解させる。胚がなくても、ジベレリンを与えればアミラーゼがつくられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ジベレリン",
+  "因果",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "germination"
+ }
+}

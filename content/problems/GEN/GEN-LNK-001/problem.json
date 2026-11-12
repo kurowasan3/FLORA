@@ -1,0 +1,65 @@
+{
+ "id": "GEN-LNK-001",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-07",
+ "topic": "連鎖",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じ染色体にある遺伝子が、配偶子をつくるときに一緒に行動することを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "連鎖",
+    "grading": "語{連鎖}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "連鎖している遺伝子どうしは独立の法則にしたがわない。乗換えによって組換えが起こると、新しい組合せの配偶子ができる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "linkage"
+ ],
+ "laws": [
+  "recombination-value"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "連鎖"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

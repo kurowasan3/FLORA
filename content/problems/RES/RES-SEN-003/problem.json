@@ -1,0 +1,63 @@
+{
+ "id": "RES-SEN-003",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "錐体細胞と桿体細胞",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "桿体細胞について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "うす暗い所ではたらき、色の区別にはかかわらない",
+    "grading": "選ぶ{黄斑に最も多く分布する|うす暗い所ではたらき、色の区別にはかかわらない|青・緑・赤の 3 種類がある|盲斑に多く分布する}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "桿体細胞は感度が高く、ロドプシンを含む。黄斑の周辺に多い。色を区別するのは 3 種類の錐体細胞。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "視細胞"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

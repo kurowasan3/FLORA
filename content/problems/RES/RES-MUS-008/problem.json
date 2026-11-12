@@ -1,0 +1,63 @@
+{
+ "id": "RES-MUS-008",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-03",
+ "topic": "強縮",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "筋に与える刺激の頻度を上げていくと、単収縮が重なって大きく持続的な収縮になる。これを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "強縮（完全強縮）",
+    "grading": "選ぶ{単収縮|強縮|硬直|弛緩}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 回の刺激では単収縮。刺激の間隔が短いと前の収縮が終わる前に次の収縮が起こり、加算されて強縮になる。私たちのふだんの筋収縮は強縮。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "muscle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "強縮"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

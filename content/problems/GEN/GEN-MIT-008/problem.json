@@ -1,0 +1,67 @@
+{
+ "id": "GEN-MIT-008",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-02",
+ "topic": "染色体と DNA",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヒトの体細胞（2n = 46）について、G₂ 期の細胞 1 個に含まれる染色分体の数はいくつか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "92",
+    "grading": "選ぶ{23|46|92|184}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "S 期に複製されて、46 本の染色体がそれぞれ 2 本の染色分体からなる状態になる。46 × 2 = 92。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-cycle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "染色体"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "mitosis"
+ }
+}

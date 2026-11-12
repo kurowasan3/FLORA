@@ -1,0 +1,71 @@
+{
+ "id": "MET-PHS-002",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "光合成で発生する酸素",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光合成で発生する O₂ は、どの物質に由来するか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "水（H₂O）",
+    "grading": "選ぶ{二酸化炭素|水|グルコース|クロロフィル}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "¹⁸O でしるしをつけた水を与えると ¹⁸O₂ が発生する（ルーベン）。O₂ は光化学系 II での水の分解に由来する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [
+  "photosynthesis-eq"
+ ],
+ "misconceptions": [
+  "MC-O2-CO2"
+ ],
+ "tags": [
+  "光合成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "photo"
+ }
+}

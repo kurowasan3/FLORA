@@ -1,0 +1,63 @@
+{
+ "id": "MET-ATP-002",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-01",
+ "topic": "同化と異化",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のうち、異化にあたるものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "呼吸",
+    "grading": "選ぶ{光合成|呼吸|タンパク質の合成|DNA の複製}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "異化は複雑な物質を分解してエネルギーを取り出す反応（呼吸・発酵）。同化は簡単な物質から複雑な物質を合成する反応で、エネルギーを必要とする。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atp"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "代謝"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

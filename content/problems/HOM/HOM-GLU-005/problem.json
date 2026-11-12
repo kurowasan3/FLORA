@@ -1,0 +1,95 @@
+{
+ "id": "HOM-GLU-005",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "体温の調節",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "寒い所に出た。次の量・はたらきはどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "皮膚の血管の収縮"
+     },
+     {
+      "id": "2",
+      "tex": "チロキシンの分泌量"
+     },
+     {
+      "id": "3",
+      "tex": "皮膚からの熱の放散"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える（収縮する）",
+    "grading": "血管の収縮：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "チロキシン：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "3",
+    "tex": "減る",
+    "grading": "熱の放散：選ぶ{増える|減る|変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "体温の低下を視床下部が感知し、交感神経で皮膚の血管が収縮して放熱を減らす。チロキシン・アドレナリンなどで代謝を促し、骨格筋のふるえでも発熱を増やす。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "体温",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "temperature"
+ }
+}

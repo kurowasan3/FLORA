@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<path d="M330 162L392 176L392 196L326 182Z" class="fnerve"/>
+<circle cx="220" cy="150" r="112" class="fscl"/>
+<circle cx="220" cy="150" r="104" class="fcho"/>
+<circle cx="220" cy="150" r="98" class="fret"/>
+<circle cx="220" cy="150" r="92" class="fvit"/>
+<path d="M126 92Q84 150 126 208" class="fcor"/>
+<path d="M120 104L134 136M120 196L134 164" class="iris"/>
+<ellipse cx="146" cy="150" rx="13" ry="34" class="flens"/>
+<path d="M126 104L150 112M126 196L150 188" class="thin"/>
+<path d="M126 100Q136 100 140 112L132 114Z M126 200Q136 200 140 188L132 186Z" class="fcil"/>
+<path d="M150 116L132 108M150 184L132 192" class="zon"/>
+<circle cx="318" cy="150" r="5" class="fmac"/>
+<path d="M312 168Q318 176 326 180" class="thin"/>
+</svg>

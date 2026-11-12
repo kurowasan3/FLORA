@@ -1,0 +1,65 @@
+{
+ "id": "CEL-CST-008",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "タンパク質の分泌経路",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "膵臓の細胞に放射性のアミノ酸を短時間与え、その後は放射性でないアミノ酸を与えて、放射性物質の分布を時間を追って調べた。放射性物質が見られる場所はどの順に変わると考えられるか。細胞小器官の名前を順に並べ、そのように移動する理由を簡潔に説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "粗面小胞体（のリボソーム）→ ゴルジ体 → 分泌顆粒（分泌小胞）→ 細胞外",
+    "grading": "並べる{ゴルジ体|細胞外|粗面小胞体|分泌小胞}=3>1>4>2 ; 記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "放射性のアミノ酸は、粗面小胞体に付着したリボソームでタンパク質に取り込まれる。合成されたタンパク質は小胞体の内部を通って輸送小胞でゴルジ体へ運ばれ、修飾・濃縮されて分泌小胞（分泌顆粒）に包まれ、エキソサイトーシスで細胞外に放出される（パラーデの実験）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure",
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分泌",
+  "パルスチェイス"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

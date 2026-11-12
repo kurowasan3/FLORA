@@ -1,0 +1,68 @@
+{
+ "id": "RES-MUS-006",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-03",
+ "topic": "張力とサルコメアの長さ",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "筋繊維を引き伸ばしてサルコメアの長さを変え、そこで刺激したときの張力を測ると、サルコメアの長さが 2.0〜2.2 µm のとき最大で、それより長くすると張力は小さくなり、3.6 µm 以上では 0 になった。3.6 µm 以上で張力が 0 になる理由を、滑り説にもとづいて説明せよ（ミオシンフィラメント 1.6 µm、アクチンフィラメント片側 1.0 µm とする）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "サルコメアが 3.6 µm（= 1.6 + 2 × 1.0）以上になると、アクチンフィラメントとミオシンフィラメントの重なりがなくなり、ミオシン頭部がアクチンに結合できないので、張力が生じない。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "張力はアクチンとミオシンの重なりの大きさ（結合できるミオシン頭部の数）に比例する。短すぎると、アクチンどうしが重なったりミオシンが Z 膜にぶつかったりして張力が下がる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "muscle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "滑り説",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "muscle"
+ }
+}

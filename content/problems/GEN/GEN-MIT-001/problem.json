@@ -1,0 +1,67 @@
+{
+ "id": "GEN-MIT-001",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-02",
+ "topic": "体細胞分裂の順序",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "体細胞分裂の分裂期を、起こる順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "前期 → 中期 → 後期 → 終期",
+    "grading": "並べる{後期|前期|終期|中期}=2>4>1>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "前期：染色体が凝縮・核膜が消える。中期：赤道面に並ぶ。後期：染色分体が両極へ。終期：核膜が現れ細胞質分裂。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-cycle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "体細胞分裂"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "mitosis"
+ }
+}

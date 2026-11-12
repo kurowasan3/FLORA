@@ -1,0 +1,67 @@
+{
+ "id": "GEN-REG-007",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-04",
+ "topic": "リプレッサー",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "オペレーターに結合して RNA ポリメラーゼによる転写を妨げる調節タンパク質を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "リプレッサー（抑制因子）",
+    "grading": "語{リプレッサー|抑制因子}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "リプレッサーは調節遺伝子からつくられる。ラクトースオペロンでは、ラクトースの代謝産物が結合するとオペレーターから離れる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-regulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オペロン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "lacoperon"
+ }
+}

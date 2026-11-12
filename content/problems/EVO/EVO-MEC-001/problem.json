@@ -1,0 +1,67 @@
+{
+ "id": "EVO-MEC-001",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "遺伝的浮動",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "偶然によって、集団の中の遺伝子頻度が世代とともに変化することを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "遺伝的浮動",
+    "grading": "語{遺伝的浮動}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "集団が小さいほど遺伝的浮動の影響は大きい。集団が急に小さくなったときの大きな変化をびん首効果という。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝的浮動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "popgen"
+ }
+}

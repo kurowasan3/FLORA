@@ -1,0 +1,65 @@
+{
+ "id": "GEN-LNK-003",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-07",
+ "topic": "組換え価と配偶子の比",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "A と B、a と b が連鎖しており、組換え価が 20％である AaBb の個体がつくる配偶子 AB:Ab:aB:ab の比を答えよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "4 : 1 : 1 : 4",
+    "grading": "4:1:1:4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "組換えで生じる Ab と aB は合わせて 20％（各 10％）、AB と ab は各 40％。40:10:10:40 = 4:1:1:4。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "linkage"
+ ],
+ "laws": [
+  "recombination-value"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "組換え価"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "HOM-GLU-003",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "糖尿病",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2 型糖尿病の原因として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "インスリンの分泌量の低下や、標的細胞がインスリンに反応しにくくなること",
+    "grading": "選ぶ{自己免疫によってすい臓 B 細胞が破壊されること|インスリンの分泌量の低下や、標的細胞がインスリンに反応しにくくなること|グルカゴンが分泌されなくなること|腎臓がグルコースを再吸収しなくなること}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 型は自己免疫などで B 細胞が破壊されて起こる。日本の糖尿病の大部分は 2 型で、生活習慣が関係する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "糖尿病"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

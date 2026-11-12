@@ -1,0 +1,67 @@
+{
+ "id": "CEL-MEM-007",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "膜タンパク質のはたらき",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "膜タンパク質のはたらきとして誤っているものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "リン脂質を合成して膜を厚くする",
+    "grading": "選ぶ{特定のイオンを通すチャネルとなる|ホルモンなどを受け取る受容体となる|隣の細胞と結合する（細胞接着）|ATP を使って物質を輸送する|リン脂質を分解して膜に穴をあけ、物質を通す}=5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "チャネル・輸送体（担体）・ポンプ・受容体・細胞接着（カドヘリンなど）は膜タンパク質のはたらき。膜に穴をあけて物質を通すことはしない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "膜タンパク質"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "membrane"
+ }
+}

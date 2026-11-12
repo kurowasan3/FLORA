@@ -1,0 +1,63 @@
+{
+ "id": "HOM-GLU-007",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "血糖濃度の正常値",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "健康なヒトの空腹時の血糖濃度は、血液 100 mL あたりおよそ何 mg か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 100 mg（0.1％）",
+    "grading": "約{100|1} [mg]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "空腹時はおよそ 70〜110 mg/100 mL（約 0.1％）に保たれる。食後は一時的に上がるが、インスリンで 2 時間ほどでもとに戻る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "血糖"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

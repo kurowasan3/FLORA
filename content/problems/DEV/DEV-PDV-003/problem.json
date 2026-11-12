@@ -1,0 +1,64 @@
+{
+ "id": "DEV-PDV-003",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-04",
+ "topic": "胚乳の核相",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある被子植物の体細胞の染色体数が 2n = 24 のとき、胚乳の細胞の染色体数はいくつか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "36",
+    "grading": "36"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "胚乳は中央細胞（n + n）と精細胞（n）の受精でできるので 3n = 36。胚は 2n = 24。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重複受精",
+  "核相"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

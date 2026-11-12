@@ -1,0 +1,67 @@
+{
+ "id": "MET-PHS-001",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "光合成の場",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光合成で、CO₂ を固定して有機物をつくるカルビン回路の反応は、葉緑体のどこで行われるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ストロマ",
+    "grading": "語{ストロマ}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "チラコイド膜では光エネルギーを使って水の分解・NADPH・ATP の生成が、ストロマではカルビン回路が行われる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光合成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "chloroplast"
+ }
+}

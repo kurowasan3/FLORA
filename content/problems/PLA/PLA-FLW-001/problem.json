@@ -1,0 +1,67 @@
+{
+ "id": "PLA-FLW-001",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "短日植物",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "連続した暗期が一定の長さ以上になると花芽を形成する植物を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "短日植物",
+    "grading": "語{短日植物}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アサガオ・キク・オナモミなど。長日植物（アブラナ・ホウレンソウ）は暗期が一定以下で花芽をつくる。その境の暗期の長さが限界暗期。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光周性"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "photoperiod"
+ }
+}

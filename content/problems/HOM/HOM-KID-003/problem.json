@@ -1,0 +1,88 @@
+{
+ "id": "HOM-KID-003",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-02",
+ "topic": "原尿量と再吸収率",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "イヌリンを静脈に注射して調べると、血しょう中の濃度が 0.1 mg/mL、尿中の濃度が 12 mg/mL、1 分間の尿量が 1 mL であった。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1 分間につくられる原尿の量は何 mL か"
+     },
+     {
+      "id": "2",
+      "tex": "水の再吸収率は約何％か"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "120 mL",
+    "grading": "約{120|2} [mL]"
+   },
+   {
+    "id": "2",
+    "tex": "約 99％",
+    "grading": "約{99.2|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イヌリンは再吸収も分泌もされないので、濃縮率 = 12 ÷ 0.1 = 120 倍。原尿量 = 尿量 × 濃縮率 = 120 mL。水の再吸収率 = (120 − 1) ÷ 120 × 100 ≒ 99％。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kidney-liver"
+ ],
+ "laws": [
+  "reabsorption"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "イヌリン",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "reabsorption"
+ }
+}

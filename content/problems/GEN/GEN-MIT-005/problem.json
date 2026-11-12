@@ -1,0 +1,63 @@
+{
+ "id": "GEN-MIT-005",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-02",
+ "topic": "植物と動物の細胞質分裂",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "植物細胞の細胞質分裂のしかたとして正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "赤道面に細胞板ができて仕切られる",
+    "grading": "選ぶ{細胞膜が外側からくびれて分かれる|赤道面に細胞板ができて仕切られる|核膜がそのまま 2 つに分かれる|細胞壁が溶けてから分かれる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "動物細胞はアクチンフィラメントの収縮環で外からくびれる。植物細胞は細胞壁があるので内側から細胞板をつくって仕切る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-cycle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "細胞質分裂"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "GEN-DNA-004",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-01",
+ "topic": "相補的な塩基配列",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA の一方の鎖の塩基配列が 5′-ATGCCA-3′ であるとき、相補的な鎖の塩基配列を 5′ 側から書け。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "5′-TGGCAT-3′",
+    "grading": "語{TGGCAT|5′-TGGCAT-3′|5'-TGGCAT-3'}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "相補鎖は 3′-TACGGT-5′。これを 5′ 側から読むと 5′-TGGCAT-3′。2 本の鎖は逆向き（逆平行）である。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "dna-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相補性"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "DEV-PDV-004",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-04",
+ "topic": "ABC モデル",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ABC モデルで、A クラスの遺伝子がはたらかなくなった突然変異体では、A がはたらいていた領域で C がはたらくようになる。外側から順に、どのような花になるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "めしべ・おしべ・おしべ・めしべ",
+    "grading": "選ぶ{がく片・花弁・花弁・がく片|めしべ・おしべ・おしべ・めしべ|がく片・がく片・めしべ・めしべ|花弁・花弁・おしべ・おしべ}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "正常：領域 1 は A → がく片、2 は A+B → 花弁、3 は B+C → おしべ、4 は C → めしべ。A がないと 1・2 で C がはたらき、1 は C → めしべ、2 は B+C → おしべとなる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ABCモデル"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "flower"
+ }
+}

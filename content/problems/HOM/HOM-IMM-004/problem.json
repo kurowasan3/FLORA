@@ -1,0 +1,95 @@
+{
+ "id": "HOM-IMM-004",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-05",
+ "topic": "HIV",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "HIV に感染してエイズを発症すると、次のはたらきはどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ヘルパー T 細胞の数"
+     },
+     {
+      "id": "2",
+      "tex": "抗体の産生"
+     },
+     {
+      "id": "3",
+      "tex": "日和見感染の起こりやすさ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "減る",
+    "grading": "ヘルパーT細胞：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "2",
+    "tex": "減る",
+    "grading": "抗体の産生：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "3",
+    "tex": "増える",
+    "grading": "日和見感染：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "HIV はヘルパー T 細胞に感染して破壊する。ヘルパー T 細胞は B 細胞・キラー T 細胞の両方を活性化するので、体液性免疫・細胞性免疫ともにはたらかなくなる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "HIV",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "hiv"
+ }
+}

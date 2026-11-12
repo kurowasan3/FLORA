@@ -1,0 +1,67 @@
+{
+ "id": "EVO-HIS-002",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-01",
+ "topic": "生物の出現の順",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の生物（群）を、地球上に出現した順（古い順）に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "原核生物 → 真核生物 → 多細胞生物 → 陸上植物 → 被子植物",
+    "grading": "並べる{陸上植物|真核生物|被子植物|原核生物|多細胞生物}=4>2>5>1>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原核生物（約 40 億年前）→ 真核生物（約 21 億年前）→ 多細胞生物（約 10 億年前）→ 陸上植物（約 4.7 億年前）→ 被子植物（約 1.3 億年前、中生代白亜紀）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "history-of-life"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生命の歴史"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "eras"
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": "GEN-MIT-006",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-02",
+ "topic": "体細胞分裂の観察",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タマネギの根端を用いて体細胞分裂を観察する。次の操作の目的として正しい組合せを選べ。 (a) 酢酸アルコールに浸す　(b) 60 ℃ の希塩酸に浸す　(c) 酢酸オルセインで染める　(d) カバーガラスの上から押しつぶす"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "(a) 固定 (b) 解離 (c) 染色 (d) 細胞を一層に広げる",
+    "grading": "選ぶ{(a) 解離 (b) 固定 (c) 染色 (d) 細胞を一層に広げる|(a) 固定 (b) 解離 (c) 染色 (d) 細胞を一層に広げる|(a) 染色 (b) 固定 (c) 解離 (d) 細胞を壊す|(a) 固定 (b) 染色 (c) 解離 (d) 細胞を一層に広げる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "固定：細胞の生命活動を止めて形を保つ。解離：細胞壁どうしの接着をゆるめてばらばらにしやすくする。染色：染色体（核）を赤く染める。押しつぶし：細胞を重ならないように広げる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-cycle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "観察",
+  "実験"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

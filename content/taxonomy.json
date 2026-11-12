@@ -1,0 +1,268 @@
+{
+ "schema": "flora.taxonomy/1",
+ "fields": [
+  {
+   "key": "CEL",
+   "name": "細胞と分子",
+   "order": 1
+  },
+  {
+   "key": "MET",
+   "name": "代謝",
+   "order": 2
+  },
+  {
+   "key": "GEN",
+   "name": "遺伝情報",
+   "order": 3
+  },
+  {
+   "key": "DEV",
+   "name": "発生",
+   "order": 4
+  },
+  {
+   "key": "HOM",
+   "name": "体内環境",
+   "order": 5
+  },
+  {
+   "key": "RES",
+   "name": "動物の反応と行動",
+   "order": 6
+  },
+  {
+   "key": "PLA",
+   "name": "植物の環境応答",
+   "order": 7
+  },
+  {
+   "key": "ECO",
+   "name": "生態と環境",
+   "order": 8
+  },
+  {
+   "key": "EVO",
+   "name": "進化と系統",
+   "order": 9
+  }
+ ],
+ "units": [
+  {
+   "key": "CEL-01",
+   "field": "CEL",
+   "name": "生物の共通性と細胞の構造",
+   "order": 101
+  },
+  {
+   "key": "CEL-02",
+   "field": "CEL",
+   "name": "生体膜と物質輸送",
+   "order": 102
+  },
+  {
+   "key": "CEL-03",
+   "field": "CEL",
+   "name": "タンパク質の構造と働き",
+   "order": 103
+  },
+  {
+   "key": "CEL-04",
+   "field": "CEL",
+   "name": "酵素",
+   "order": 104
+  },
+  {
+   "key": "MET-01",
+   "field": "MET",
+   "name": "代謝とATP",
+   "order": 201
+  },
+  {
+   "key": "MET-02",
+   "field": "MET",
+   "name": "呼吸と発酵",
+   "order": 202
+  },
+  {
+   "key": "MET-03",
+   "field": "MET",
+   "name": "光合成",
+   "order": 203
+  },
+  {
+   "key": "GEN-01",
+   "field": "GEN",
+   "name": "DNAの構造と複製",
+   "order": 301
+  },
+  {
+   "key": "GEN-02",
+   "field": "GEN",
+   "name": "細胞周期と体細胞分裂",
+   "order": 302
+  },
+  {
+   "key": "GEN-03",
+   "field": "GEN",
+   "name": "転写と翻訳",
+   "order": 303
+  },
+  {
+   "key": "GEN-04",
+   "field": "GEN",
+   "name": "遺伝子発現の調節",
+   "order": 304
+  },
+  {
+   "key": "GEN-05",
+   "field": "GEN",
+   "name": "バイオテクノロジー",
+   "order": 305
+  },
+  {
+   "key": "GEN-06",
+   "field": "GEN",
+   "name": "減数分裂と遺伝の法則",
+   "order": 306
+  },
+  {
+   "key": "GEN-07",
+   "field": "GEN",
+   "name": "連鎖と組換え",
+   "order": 307
+  },
+  {
+   "key": "DEV-01",
+   "field": "DEV",
+   "name": "配偶子形成と受精",
+   "order": 401
+  },
+  {
+   "key": "DEV-02",
+   "field": "DEV",
+   "name": "動物の発生",
+   "order": 402
+  },
+  {
+   "key": "DEV-03",
+   "field": "DEV",
+   "name": "発生のしくみ（誘導・位置情報）",
+   "order": 403
+  },
+  {
+   "key": "DEV-04",
+   "field": "DEV",
+   "name": "植物の発生",
+   "order": 404
+  },
+  {
+   "key": "HOM-01",
+   "field": "HOM",
+   "name": "体液と循環",
+   "order": 501
+  },
+  {
+   "key": "HOM-02",
+   "field": "HOM",
+   "name": "腎臓と肝臓",
+   "order": 502
+  },
+  {
+   "key": "HOM-03",
+   "field": "HOM",
+   "name": "自律神経とホルモン",
+   "order": 503
+  },
+  {
+   "key": "HOM-04",
+   "field": "HOM",
+   "name": "血糖・体温の調節",
+   "order": 504
+  },
+  {
+   "key": "HOM-05",
+   "field": "HOM",
+   "name": "免疫",
+   "order": 505
+  },
+  {
+   "key": "RES-01",
+   "field": "RES",
+   "name": "受容器と感覚",
+   "order": 601
+  },
+  {
+   "key": "RES-02",
+   "field": "RES",
+   "name": "ニューロンと神経系",
+   "order": 602
+  },
+  {
+   "key": "RES-03",
+   "field": "RES",
+   "name": "筋収縮",
+   "order": 603
+  },
+  {
+   "key": "RES-04",
+   "field": "RES",
+   "name": "動物の行動",
+   "order": 604
+  },
+  {
+   "key": "PLA-01",
+   "field": "PLA",
+   "name": "植物ホルモンと成長",
+   "order": 701
+  },
+  {
+   "key": "PLA-02",
+   "field": "PLA",
+   "name": "光と花芽形成",
+   "order": 702
+  },
+  {
+   "key": "ECO-01",
+   "field": "ECO",
+   "name": "植生と遷移・バイオーム",
+   "order": 801
+  },
+  {
+   "key": "ECO-02",
+   "field": "ECO",
+   "name": "個体群と生物群集",
+   "order": 802
+  },
+  {
+   "key": "ECO-03",
+   "field": "ECO",
+   "name": "生態系と物質循環",
+   "order": 803
+  },
+  {
+   "key": "ECO-04",
+   "field": "ECO",
+   "name": "生物多様性と生態系の保全",
+   "order": 804
+  },
+  {
+   "key": "EVO-01",
+   "field": "EVO",
+   "name": "生命の起源と生物の変遷",
+   "order": 901
+  },
+  {
+   "key": "EVO-02",
+   "field": "EVO",
+   "name": "進化のしくみ",
+   "order": 902
+  },
+  {
+   "key": "EVO-03",
+   "field": "EVO",
+   "name": "系統と分類",
+   "order": 903
+  }
+ ]
+}

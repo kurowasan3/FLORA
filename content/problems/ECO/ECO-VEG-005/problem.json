@@ -1,0 +1,63 @@
+{
+ "id": "ECO-VEG-005",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "照葉樹林",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本の九州から関東地方の低地に広がる、シイ・カシ・タブノキなどの常緑広葉樹が優占するバイオームを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "照葉樹林",
+    "grading": "語{照葉樹林}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "年平均気温と年降水量でバイオームが決まる。日本は降水量が多いので森林が成立し、気温の違いで亜熱帯多雨林・照葉樹林・夏緑樹林・針葉樹林に分かれる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "バイオーム"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

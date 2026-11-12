@@ -1,0 +1,67 @@
+{
+ "id": "EVO-HIS-003",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-01",
+ "topic": "地質時代と生物",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "古生代の出来事として正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "両生類が出現した",
+    "grading": "選ぶ{恐竜が繁栄した|両生類が出現した|被子植物が出現した|人類が出現した}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "両生類はデボン紀（古生代）に出現。恐竜の繁栄と被子植物の出現は中生代、人類の出現は新生代。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "history-of-life"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地質時代"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "eras"
+ }
+}

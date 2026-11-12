@@ -1,0 +1,109 @@
+{
+ "id": "GEN-DNA-003",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-01",
+ "topic": "DNA の構造",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は DNA の一部を模式的に示したものである。ア〜ウの名称を答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア"
+     },
+     {
+      "id": "2",
+      "tex": "イ"
+     },
+     {
+      "id": "3",
+      "tex": "ウ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "DNA の構造の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "リン酸",
+    "grading": "語{リン酸}"
+   },
+   {
+    "id": "2",
+    "tex": "デオキシリボース",
+    "grading": "語{デオキシリボース|糖}"
+   },
+   {
+    "id": "3",
+    "tex": "水素結合",
+    "grading": "語{水素結合}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "リン酸と糖（デオキシリボース）が交互につながって鎖の骨格をつくり、糖に結合した塩基どうしが水素結合で対をつくる。A–T は 2 本、G–C は 3 本の水素結合。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "dna-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "DNA",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "dna"
+ }
+}

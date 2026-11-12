@@ -1,0 +1,67 @@
+{
+ "id": "EVO-PHY-002",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "二名法",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "種の学名を、属名と種小名の 2 語で表す方法を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "二名法",
+    "grading": "語{二名法}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "リンネが確立した。ヒトの学名は Homo sapiens（ホモ・サピエンス）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "学名"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "ranks"
+ }
+}

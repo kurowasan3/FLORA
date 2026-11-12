@@ -1,0 +1,63 @@
+{
+ "id": "GEN-BIO-007",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-05",
+ "topic": "GFP",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "オワンクラゲから発見され、目的のタンパク質と融合させて細胞内での位置を光で調べるのに使われるタンパク質は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "GFP（緑色蛍光タンパク質）",
+    "grading": "語{GFP|緑色蛍光タンパク質}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "下村脩が発見した。目的の遺伝子の後ろに GFP の遺伝子をつないで発現させると、緑色の光で位置がわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biotech"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "GFP"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

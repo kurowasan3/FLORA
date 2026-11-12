@@ -1,0 +1,67 @@
+{
+ "id": "CEL-MEM-002",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "能動輸送",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ATP のエネルギーを使って、Na⁺ を細胞外へ、K⁺ を細胞内へ、濃度勾配に逆らって運ぶ膜タンパク質を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ナトリウムポンプ",
+    "grading": "語{ナトリウムポンプ|Na⁺-K⁺-ATPアーゼ|ナトリウム-カリウムATPアーゼ}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "濃度勾配に逆らう輸送は能動輸送で、エネルギーが必要。ナトリウムポンプは ATP 1 分子の分解で Na⁺ 3 個を外へ、K⁺ 2 個を内へ運ぶ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "能動輸送"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "action"
+ }
+}

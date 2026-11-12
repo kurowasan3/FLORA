@@ -1,0 +1,95 @@
+{
+ "id": "GEN-MIT-007",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-02",
+ "topic": "細胞周期の解析",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある培養細胞の集団で、細胞 1 個あたりの DNA 量を測ると、相対値 2 の細胞が 60％、2 と 4 の間の細胞が 25％、4 の細胞が 15％であった。この細胞の細胞周期は 24 時間で、M 期は 1 時間である。G₁ 期・S 期・G₂ 期の長さはそれぞれ何時間か。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "G₁ 期"
+     },
+     {
+      "id": "2",
+      "tex": "S 期"
+     },
+     {
+      "id": "3",
+      "tex": "G₂ 期"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "14.4 時間",
+    "grading": "約{14.4|3} [時間]"
+   },
+   {
+    "id": "2",
+    "tex": "6 時間",
+    "grading": "約{6|2} [時間]"
+   },
+   {
+    "id": "3",
+    "tex": "2.6 時間",
+    "grading": "約{2.6|2} [時間]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "DNA 量 2 は G₁ 期（60％ → $24\\times0.6=14.4$ 時間）、2〜4 は S 期（25％ → 6 時間）、4 は G₂ 期と M 期（15％ → 3.6 時間）。M 期が 1 時間なので G₂ 期は 2.6 時間。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-cycle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "細胞周期",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "mitosis"
+ }
+}

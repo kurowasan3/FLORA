@@ -1,0 +1,63 @@
+{
+ "id": "DEV-IND-001",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-03",
+ "topic": "形成体",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "シュペーマンの実験で、原口背唇部のように、接する部分にはたらきかけて分化の方向を決める胚の領域を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "形成体（オーガナイザー）",
+    "grading": "語{形成体|オーガナイザー}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原口背唇部を別の胚の腹側に移植すると、そこに二次胚（神経管などをもつ）ができた。このように分化の方向を決めることを誘導という。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘導"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

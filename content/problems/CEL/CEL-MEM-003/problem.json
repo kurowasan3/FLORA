@@ -1,0 +1,64 @@
+{
+ "id": "CEL-MEM-003",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "受動輸送と能動輸送",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のうち、能動輸送であるものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ナトリウムポンプによる Na⁺ の排出",
+    "grading": "選ぶ{アクアポリンを通る水の移動|K⁺ チャネルを通る K⁺ の流出|ナトリウムポンプによる Na⁺ の排出|肺胞での O₂ の拡散|活動電位の発生時の Na⁺ の流入}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "チャネル（アクアポリン・K⁺ チャネル・Na⁺ チャネル）を通る移動や拡散は、濃度勾配にしたがう受動輸送。ATP を使って勾配に逆らうポンプが能動輸送。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "能動輸送",
+  "受動輸送"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

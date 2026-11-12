@@ -1,0 +1,68 @@
+{
+ "id": "RES-MUS-005",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-03",
+ "topic": "サルコメアの長さ",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "あるカエルの筋で、ミオシンフィラメントの長さは 1.6 µm、Z 膜から伸びるアクチンフィラメントの長さは片側 1.0 µm である。サルコメアの長さが 2.4 µm のとき、H 帯の長さは何 µm か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "0.4 µm",
+    "grading": "約{0.4|1} [µm]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "H 帯 = サルコメア − 2 × アクチン = 2.4 − 2.0 = 0.4 µm（ミオシンの長さ 1.6 µm 以下なので矛盾しない）。サルコメアが 2.0 µm まで縮むと H 帯は 0 になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "muscle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "サルコメア",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "muscle"
+ }
+}

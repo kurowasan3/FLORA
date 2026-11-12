@@ -1,0 +1,10 @@
+<svg class="dg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<path d="M60 150C40 80 110 30 200 30C300 30 360 90 340 160C330 196 300 206 270 200C250 196 236 176 214 176C190 176 170 196 140 196C100 196 70 184 60 150Z" class="fcer"/>
+<path d="M90 120Q120 90 150 110Q180 80 210 106Q240 80 270 108Q300 96 316 130" class="gyr"/>
+<path d="M196 176C186 186 186 202 200 206C214 210 228 198 226 182Z" class="fdien"/>
+<path d="M206 206L236 214L232 232L206 228Z" class="fmid"/>
+<path d="M216 232L238 234L240 270L222 270Z" class="fmed"/>
+<path d="M222 270L240 270L240 298L222 298Z" class="fspin"/>
+<path d="M252 214C262 200 310 200 318 224C324 250 286 262 262 250C248 242 246 226 252 214Z" class="fcbl"/>
+<path d="M188 198L180 214" class="thin"/><ellipse cx="178" cy="220" rx="8" ry="6" class="fpit"/>
+<g class="pin"><circle cx="208" cy="190" r="11"/><text x="208" y="194">ア</text></g><g class="pin"><circle cx="288" cy="230" r="11"/><text x="288" y="234">イ</text></g><g class="pin"><circle cx="229" cy="252" r="11"/><text x="229" y="256">ウ</text></g></svg>

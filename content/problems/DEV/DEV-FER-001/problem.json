@@ -1,0 +1,63 @@
+{
+ "id": "DEV-FER-001",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-01",
+ "topic": "極体",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "卵形成の減数分裂で、細胞質が不均等に分かれて生じる小さな細胞を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "極体",
+    "grading": "語{極体}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "一次卵母細胞 → 二次卵母細胞＋第一極体 → 卵＋第二極体。1 個の一次卵母細胞から卵は 1 個だけできる（精子は一次精母細胞 1 個から 4 個）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fertilization"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "卵形成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

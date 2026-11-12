@@ -1,0 +1,70 @@
+{
+ "id": "EVO-MEC-007",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "自然選択と遺伝子頻度",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある集団で、遺伝子 A の頻度が 0.5（ハーディ・ワインベルグ平衡）であった。aa の個体だけが繁殖前にすべて死ぬとすると、次の世代の a の頻度はいくらになるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "1/3（約 0.33）",
+    "grading": "約{0.333|2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "繁殖する個体は AA（0.25）と Aa（0.5）。その中の a の頻度は $\\dfrac{0.5\\times\\frac12}{0.25+0.5}=\\dfrac{0.25}{0.75}=\\dfrac13$。潜性の致死遺伝子でも、ヘテロ接合体に残るので急にはなくならない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [
+  "hardy-weinberg"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "自然選択",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "popgen"
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "EVO-MEC-006",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "種分化",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "異所的種分化の過程として正しい順に並んでいるものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "地理的隔離 → それぞれの集団で突然変異・自然選択・遺伝的浮動が起こる → 生殖的隔離",
+    "grading": "選ぶ{生殖的隔離 → 地理的隔離 → 遺伝子頻度の変化|地理的隔離 → 遺伝子頻度の変化 → 生殖的隔離|遺伝子頻度の変化 → 生殖的隔離 → 地理的隔離|地理的隔離 → 生殖的隔離 → 遺伝子頻度の変化}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地理的に隔離された集団がそれぞれ別の進化をたどり、再び出会っても交配できなくなる（生殖的隔離）と別種になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "種分化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

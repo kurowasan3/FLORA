@@ -1,0 +1,63 @@
+{
+ "id": "HOM-HOR-008",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "神経分泌",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "バソプレシンが分泌されるしくみとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "視床下部の神経分泌細胞でつくられ、軸索を通って脳下垂体後葉に運ばれて血液中に分泌される",
+    "grading": "選ぶ{脳下垂体後葉の内分泌細胞でつくられて分泌される|視床下部の神経分泌細胞でつくられ、軸索を通って脳下垂体後葉に運ばれて血液中に分泌される|腎臓でつくられて集合管にはたらく|放出ホルモンの刺激で脳下垂体前葉から分泌される}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "脳下垂体前葉のホルモンは、視床下部の放出ホルモン（血管で前葉へ）の刺激で前葉の細胞から分泌される。後葉は神経分泌細胞の軸索の末端。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "神経分泌"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

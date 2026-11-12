@@ -1,0 +1,118 @@
+{
+ "id": "DEV-PDV-002",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-04",
+ "topic": "胚のう",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は被子植物の胚珠の断面である。ア〜エの名称を答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア"
+     },
+     {
+      "id": "2",
+      "tex": "イ"
+     },
+     {
+      "id": "3",
+      "tex": "ウ"
+     },
+     {
+      "id": "4",
+      "tex": "エ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "被子植物の胚珠と胚のうの図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す、エは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "卵細胞",
+    "grading": "語{卵細胞}"
+   },
+   {
+    "id": "2",
+    "tex": "助細胞",
+    "grading": "語{助細胞}"
+   },
+   {
+    "id": "3",
+    "tex": "極核（中央細胞）",
+    "grading": "語{極核|中央細胞}"
+   },
+   {
+    "id": "4",
+    "tex": "反足細胞",
+    "grading": "語{反足細胞}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "胚のうは 7 細胞（卵細胞 1・助細胞 2・中央細胞 1・反足細胞 3）、8 核（中央細胞に極核 2 個）。助細胞は花粉管を誘引する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "胚のう",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "embryo-sac"
+ }
+}

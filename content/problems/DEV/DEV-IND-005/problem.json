@@ -1,0 +1,63 @@
+{
+ "id": "DEV-IND-005",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-03",
+ "topic": "ショウジョウバエの前後軸の決定",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ショウジョウバエのからだの前後軸と体節が決まる過程を順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "母性効果遺伝子（ビコイドなど）→ 分節遺伝子（ギャップ → ペアルール → セグメントポラリティ）→ ホメオティック遺伝子",
+    "grading": "並べる{ホメオティック遺伝子が各体節の形態を決める|ビコイドなどの母性因子の濃度勾配ができる|分節遺伝子が体節の区画をつくる}=2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "卵の前方に局在するビコイド mRNA から翻訳されたタンパク質の濃度勾配が位置情報となり、分節遺伝子が順にはたらいて体節がつくられ、ホメオティック遺伝子が各体節の性質を決める。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "位置情報"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

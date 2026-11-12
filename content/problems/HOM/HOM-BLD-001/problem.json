@@ -1,0 +1,63 @@
+{
+ "id": "HOM-BLD-001",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-01",
+ "topic": "ヘモグロビン",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "赤血球に含まれ、酸素と結合して酸素を運ぶタンパク質を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ヘモグロビン",
+    "grading": "語{ヘモグロビン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ヘモグロビンは酸素濃度が高い肺で酸素と結合し、酸素濃度が低い組織で酸素を離す。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "body-fluid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "血液"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

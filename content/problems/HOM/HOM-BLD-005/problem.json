@@ -1,0 +1,64 @@
+{
+ "id": "HOM-BLD-005",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-01",
+ "topic": "酸素解離曲線",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "肺胞（O₂ 濃度 100、CO₂ 濃度 40）ではヘモグロビンの 96％が、組織（O₂ 濃度 30、CO₂ 濃度 60）では 30％が酸素ヘモグロビンであった。肺胞で酸素と結合していたヘモグロビンのうち、組織で酸素を離したものは何％か（小数第 1 位を四捨五入）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "69％",
+    "grading": "約{68.75|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\dfrac{96-30}{96}\\times100\\fallingdotseq69$％。CO₂ 濃度が高い組織では酸素解離曲線が右にずれ、酸素を離しやすくなる（ボーア効果）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "body-fluid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸素解離曲線",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "RES-SEN-007",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "盲斑の位置",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "右眼で、黄斑から盲斑までの距離が網膜上で 4.5 mm、眼のレンズの中心から網膜までが 17 mm であった。視野の中で、盲斑は注視点からおよそ何度離れた方向にあるか（tan θ ≒ θ（ラジアン）、1 ラジアン ≒ 57° として計算せよ）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 15°",
+    "grading": "約{15|2} [°]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\theta\\fallingdotseq\\dfrac{4.5}{17}\\fallingdotseq0.265$ ラジアン $\\fallingdotseq15°$。盲斑は黄斑より鼻側にあるので、視野では注視点の耳側（右眼なら右側）約 15° にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "盲斑",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "eye"
+ }
+}

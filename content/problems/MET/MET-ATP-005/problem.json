@@ -1,0 +1,64 @@
+{
+ "id": "MET-ATP-005",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-01",
+ "topic": "ATP の再生",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヒトは 1 日に体重と同じくらいの量（約 60 kg）の ATP を分解して使っているといわれるが、体内にある ATP は約 0.1 kg しかない。ATP 1 分子は 1 日に平均何回 ADP から再生されていることになるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 600 回",
+    "grading": "約{600|1} [回]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$60\\div0.1=600$ 回。ATP は貯蔵物質ではなく、呼吸などで絶えず再生されて使われる「エネルギーの通貨」である。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atp"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "ATP"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

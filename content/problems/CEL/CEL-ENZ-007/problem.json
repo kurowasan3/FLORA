@@ -1,0 +1,64 @@
+{
+ "id": "CEL-ENZ-007",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "フィードバック調節",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一連の反応の最終産物が、反応系の初期の段階の酵素のはたらきを抑えることで、生産量を調節するしくみを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "フィードバック調節",
+    "grading": "語{フィードバック調節|フィードバック阻害|負のフィードバック}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "最終産物が、アロステリック酵素の活性部位以外の部位に結合して活性を抑えることが多い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フィードバック",
+  "アロステリック酵素"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

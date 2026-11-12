@@ -1,0 +1,64 @@
+{
+ "id": "GEN-LNK-004",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-07",
+ "topic": "三点交雑",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じ染色体上の 3 つの遺伝子 A・B・C の間の組換え価が、A–B 間 8％、B–C 間 5％、A–C 間 13％であった。遺伝子の並び順として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "A – B – C（B が中央）",
+    "grading": "選ぶ{A – C – B|A – B – C|B – A – C}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "組換え価は遺伝子間の距離にほぼ比例する。A–C 間（13％）≒ A–B 間（8％）＋ B–C 間（5％）なので、B が A と C の間にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "linkage"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "三点交雑",
+  "染色体地図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

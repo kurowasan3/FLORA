@@ -1,0 +1,65 @@
+{
+ "id": "HOM-KID-007",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-02",
+ "topic": "グルコースの再吸収の限界",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "血糖濃度を少しずつ上げていくと、ある濃度（約 1.8 mg/mL）をこえたところで尿中にグルコースが出始め、その後は血糖濃度に比例して尿中のグルコースが増えた。この結果から、細尿管でのグルコースの再吸収についてどのようなことがいえるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "グルコースの再吸収は輸送体（担体）によるため、再吸収できる量に上限があり、ろ過される量がその上限をこえると、こえた分が尿中に排出される。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "輸送体の数に限りがあるので、ろ過量が増えても再吸収量は一定以上に増えない（飽和する）。糖尿病で尿に糖が出るのは、血糖濃度が高くろ過量がこの上限をこえるため。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kidney-liver",
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "再吸収",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

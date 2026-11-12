@@ -1,0 +1,69 @@
+{
+ "id": "CEL-CST-001",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "細胞小器官のはたらき",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "呼吸を行い、ATP を合成する細胞小器官は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ミトコンドリア",
+    "grading": "語{ミトコンドリア}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ミトコンドリアは二重膜をもち、内膜のひだ（クリステ）とマトリックスで呼吸（クエン酸回路・電子伝達系）を行う。動物細胞にも植物細胞にもある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-MITO-PLANT"
+ ],
+ "tags": [
+  "細胞小器官"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "animal-cell"
+ }
+}

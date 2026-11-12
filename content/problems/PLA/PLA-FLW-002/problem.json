@@ -1,0 +1,71 @@
+{
+ "id": "PLA-FLW-002",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "光中断",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "限界暗期が 10 時間の短日植物を、明期 10 時間・暗期 14 時間の条件で育てた。暗期の中ごろに短時間の光を当てる（光中断）と、花芽を形成するか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "形成しない",
+    "grading": "選ぶ{形成する|形成しない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光中断で連続した暗期が 7 時間ずつに分かれ、限界暗期（10 時間）より短くなるので花芽を形成しない。花芽形成を決めるのは連続した暗期の長さ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [
+  "critical-night"
+ ],
+ "misconceptions": [
+  "MC-LONGDAY-LIGHT"
+ ],
+ "tags": [
+  "光中断"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "photoperiod"
+ }
+}

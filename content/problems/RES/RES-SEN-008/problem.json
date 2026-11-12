@@ -1,0 +1,67 @@
+{
+ "id": "RES-SEN-008",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "聴覚",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "音の高さの区別について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "高い音はうずまき管の基部、低い音は先端に近い部分の基底膜をよく振動させる",
+    "grading": "選ぶ{高い音はうずまき管の基部、低い音は先端に近い部分の基底膜をよく振動させる|高い音ほど聴細胞の活動電位が大きくなる|音の高さは半規管で区別される|音の高さは鼓膜の厚さで決まる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "基底膜は基部ほど幅が狭く硬いので高い音で、先端ほど広く柔らかいので低い音でよく振動する。どこの聴細胞が興奮したかで高さを区別する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "聴覚"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "ear"
+ }
+}

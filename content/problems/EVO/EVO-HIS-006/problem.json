@@ -1,0 +1,64 @@
+{
+ "id": "EVO-HIS-006",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-01",
+ "topic": "化学進化と RNA ワールド",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生命が誕生する前の化学進化の過程で、DNA よりも先に RNA が遺伝情報と触媒の両方の役割を担っていたとする「RNA ワールド仮説」がある。この仮説を支持する根拠を 1 つあげて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "（例）RNA には、リボザイムのように触媒としてはたらくものがある（リボソームでペプチド結合をつくる反応を触媒しているのも rRNA である）。RNA は遺伝情報をもつこともでき（RNA ウイルスなど）、1 種類の分子で遺伝と触媒の両方を担えるから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ほかに、DNA の材料のデオキシリボヌクレオチドはリボヌクレオチドから合成されること、ATP などのエネルギー物質がリボヌクレオチドであることなども根拠とされる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "history-of-life"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学進化",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "HOM-GLU-006",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "血糖濃度の調節のしくみ",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "食事をしてから数時間後、血糖濃度が下がり始めたとき、からだの中でどのような調節が起こって血糖濃度がもとに戻るか。感知する場所・神経・ホルモン・標的器官とそのはたらきにふれて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "血糖濃度の低下を間脳視床下部とすい臓のランゲルハンス島が感知する。ランゲルハンス島 A 細胞はグルカゴンを分泌し、視床下部は交感神経を通じて副腎髄質からアドレナリンを分泌させる。これらは肝臓のグリコーゲンの分解を促してグルコースを血液中に放出させる。また視床下部は脳下垂体前葉から副腎皮質刺激ホルモンを分泌させ、副腎皮質からの糖質コルチコイドがタンパク質からの糖の合成を促す。その結果、血糖濃度が上がる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "神経（交感神経）とホルモンの両方がはたらく。上げるしくみが複数あるのは、低血糖が脳の機能に重大な影響を与えるためと考えられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "血糖",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "glucose"
+ }
+}

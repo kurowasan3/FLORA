@@ -1,0 +1,67 @@
+{
+ "id": "EVO-PHY-008",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "菌類の系統",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子系統解析から、菌類（キノコ・カビ）はどのグループに最も近縁であるとされるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "動物",
+    "grading": "選ぶ{植物|動物|細菌|古細菌}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "菌類と動物は共通祖先をもつ（オピストコンタ）。細胞壁をもつので昔は植物の仲間とされたが、光合成をしない従属栄養生物。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "系統"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "domains"
+ }
+}

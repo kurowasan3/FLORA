@@ -1,0 +1,63 @@
+{
+ "id": "ECO-POP-002",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-02",
+ "topic": "環境収容力",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "個体群の成長曲線が S 字形になり、個体数がやがて一定の値で頭打ちになる。この、ある環境で生存できる最大の個体数を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "環境収容力",
+    "grading": "語{環境収容力}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "個体群密度が高くなると、食物や生活空間の不足・老廃物の蓄積などで出生率が下がり死亡率が上がる（密度効果）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "population"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "個体群"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": "MET-PHS-005",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "光補償点",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "陽生植物と陰生植物を比べたとき、陰生植物の特徴として正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "光補償点が低い",
+    "grading": "選ぶ{光補償点が高い|光補償点が低い|光飽和点が高い|呼吸速度が大きい}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "陰生植物は呼吸速度が小さく、光補償点・光飽和点がともに低い。そのため弱い光の下でも成長できる（林床の植物・陰樹の幼木）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis",
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光補償点"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

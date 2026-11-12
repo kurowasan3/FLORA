@@ -1,0 +1,64 @@
+{
+ "id": "CEL-MEM-004",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "浸透と細胞",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヒトの赤血球を蒸留水に入れるとどうなるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "吸水して膨らみ、破裂する（溶血）",
+    "grading": "選ぶ{吸水して膨らみ、破裂する|水が出て縮む|変化しない|原形質分離が起こる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "蒸留水は赤血球の内部より低張なので、水が浸透して入り、細胞壁のない赤血球は破裂する（溶血）。植物細胞は細胞壁があるので破裂せず、膨圧が生じる。原形質分離は植物細胞を高張液に入れたときの現象。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透",
+  "溶血"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

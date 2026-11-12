@@ -1,0 +1,64 @@
+{
+ "id": "GEN-MEI-007",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-06",
+ "topic": "伴性遺伝",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "赤緑色覚異常は X 染色体上の潜性遺伝子による。色覚が正常な父と、正常だが保因者である母の間に生まれる男子が赤緑色覚異常である確率は何％か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "50％",
+    "grading": "約{50|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "母は XᴬXᵃ、父は XᴬY。男子は母から X を 1 本受け取るので、Xᵃ を受け取る確率は 1/2 = 50％。女子は父から必ず Xᴬ を受け取るので発症しない（保因者は 1/2）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mendel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "伴性遺伝",
+  "確率"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

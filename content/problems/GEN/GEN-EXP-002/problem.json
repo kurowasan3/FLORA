@@ -1,0 +1,63 @@
+{
+ "id": "GEN-EXP-002",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "RNA の塩基",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "RNA にはあり、DNA にはない塩基は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ウラシル（U）",
+    "grading": "語{ウラシル|U}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "RNA では T（チミン）の代わりに U（ウラシル）が使われ、A と対をつくる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "RNA"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

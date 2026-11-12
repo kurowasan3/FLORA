@@ -1,0 +1,64 @@
+{
+ "id": "CEL-CST-007",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "ミクロメーターでの測定",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "接眼ミクロメーター 20 目盛りが、対物ミクロメーター（1 目盛り 10 µm）の 5 目盛りと一致した。同じ倍率で、ある細胞の長さが接眼ミクロメーター 36 目盛りであった。この細胞の長さは何 µm か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$90\\,\\mu\\mathrm m$",
+    "grading": "約{90|2} [µm]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "接眼ミクロメーター 1 目盛り $=\\dfrac{10\\times5}{20}=2.5\\,\\mu\\mathrm m$。細胞の長さ $=2.5\\times36=90\\,\\mu\\mathrm m$。倍率を変えると接眼ミクロメーター 1 目盛りの長さも変わるので、倍率ごとに求め直す。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ミクロメーター",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

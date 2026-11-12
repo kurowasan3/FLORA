@@ -1,0 +1,67 @@
+{
+ "id": "PLA-FLW-003",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "フロリゲン",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "葉でつくられ、師管を通って茎頂に運ばれて花芽の形成を促す物質（タンパク質）を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "フロリゲン",
+    "grading": "語{フロリゲン|FTタンパク質}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "シロイヌナズナでは FT タンパク質、イネでは Hd3a タンパク質がフロリゲンの実体。日長を感知するのは葉。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フロリゲン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "photoperiod"
+ }
+}

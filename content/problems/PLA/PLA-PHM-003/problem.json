@@ -1,0 +1,86 @@
+{
+ "id": "PLA-PHM-003",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "頂芽優勢",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある植物の頂芽を切り取った。次の量・はたらきはどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "茎を下へ運ばれるオーキシン"
+     },
+     {
+      "id": "2",
+      "tex": "側芽の成長"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "減る",
+    "grading": "オーキシン：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "2",
+    "tex": "増える（側芽が伸びる）",
+    "grading": "側芽の成長：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "頂芽でつくられたオーキシンは側芽の成長を抑えている（サイトカイニンの合成を抑えるなど）。頂芽を切るとオーキシンが来なくなり、側芽が伸びる。切り口にオーキシンを与えると、側芽は伸びない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "頂芽優勢",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "apical"
+ }
+}

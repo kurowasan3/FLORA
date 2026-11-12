@@ -1,0 +1,82 @@
+{
+ "id": "DEV-IND-006",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-03",
+ "topic": "眼の形成の誘導",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "イモリの眼の形成では、脳から突出した眼杯が表皮にはたらきかけて水晶体を誘導し、水晶体が表皮にはたらきかけて角膜を誘導する。眼杯を、本来は眼ができない腹部の表皮の下に移植すると、腹部の表皮はどうなると考えられるか。また、このように誘導が次々に起こることを何というか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "腹部の表皮"
+     },
+     {
+      "id": "2",
+      "tex": "名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水晶体（さらに角膜）が分化する",
+    "grading": "選ぶ{表皮のまま変化しない|水晶体（さらに角膜）が分化する|眼杯に分化する|神経管に分化する}=2"
+   },
+   {
+    "id": "2",
+    "tex": "誘導の連鎖",
+    "grading": "語{誘導の連鎖|誘導の連続}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "腹部の表皮も、眼杯の誘導に反応する能力（反応能）をもつ時期であれば水晶体に分化する。誘導された水晶体がさらに角膜を誘導する（誘導の連鎖）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘導",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

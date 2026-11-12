@@ -1,0 +1,82 @@
+{
+ "id": "MET-RSP-008",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "酵母の呼吸と発酵",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵母をグルコース溶液に入れ、酸素がある条件とない条件で培養した。酸素がない条件では、ある条件に比べてグルコースの消費量がおよそ何倍になれば同じ量の ATP が得られるか。ただし、酸素がある条件ではグルコース 1 分子から ATP 38 分子、ない条件では 2 分子が得られるとする。また、実際には酸素がある条件でもアルコール発酵が起こることがある理由をあげよ（パスツール効果に関連して）。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "倍率"
+     },
+     {
+      "id": "2",
+      "tex": "理由"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "19 倍",
+    "grading": "19"
+   },
+   {
+    "id": "2",
+    "tex": "酸素がある条件でも、グルコース濃度が高いと酵母は発酵も行う（呼吸の能力に限りがある・発酵の方が速く ATP を得られる）など",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$38\\div2=19$ 倍。酸素があると発酵が抑えられる現象をパスツール効果という。酵母はグルコースが多いと酸素があってもアルコール発酵を行う（クラブツリー効果）。記述は、呼吸と発酵が同時に起こりうることを指摘できていればよい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "発酵",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

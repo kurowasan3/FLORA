@@ -1,0 +1,63 @@
+{
+ "id": "RES-BEH-003",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-04",
+ "topic": "刷込み",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カモのひなが、ふ化後の一定の期間に最初に見た動くものを親と認識して後を追う学習を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "刷込み（インプリンティング）",
+    "grading": "語{刷込み|刷り込み|インプリンティング}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ローレンツが発見。学習できる時期が限られている（臨界期）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "behavior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "学習"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "EVO-PHY-001",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "分類階級",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生物の分類階級を、大きいものから順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ドメイン → 界 → 門 → 綱 → 目 → 科 → 属 → 種",
+    "grading": "並べる{目|門|種|界|科|ドメイン|綱|属}=6>4>2>7>1>5>8>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ヒトは 真核生物ドメイン・動物界・脊索動物門・哺乳綱・霊長目・ヒト科・ヒト属・ヒト。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分類階級"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "ranks"
+ }
+}

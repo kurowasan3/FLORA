@@ -1,0 +1,95 @@
+{
+ "id": "HOM-GLU-002",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "低血糖",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空腹で血糖濃度が下がった。次のホルモンの分泌量はどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "インスリン"
+     },
+     {
+      "id": "2",
+      "tex": "グルカゴン"
+     },
+     {
+      "id": "3",
+      "tex": "アドレナリン"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "減る",
+    "grading": "インスリン：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "グルカゴン：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "3",
+    "tex": "増える",
+    "grading": "アドレナリン：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "血糖濃度の低下は、すい臓 A 細胞と視床下部が感知する。A 細胞からグルカゴン、交感神経を通じて副腎髄質からアドレナリンが分泌され、肝臓のグリコーゲン分解が進む。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "血糖",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "glucose"
+ }
+}

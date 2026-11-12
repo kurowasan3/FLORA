@@ -1,0 +1,68 @@
+{
+ "id": "EVO-HIS-004",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-01",
+ "topic": "陸上進出の条件",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "古生代に生物が陸上に進出できるようになった大きな要因として、最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "大気中の酸素が増えてオゾン層ができ、有害な紫外線が地表に届きにくくなったこと",
+    "grading": "選ぶ{大気中の二酸化炭素が増えて温暖化したこと|大気中の酸素が増えてオゾン層ができ、有害な紫外線が地表に届きにくくなったこと|海水の塩分濃度が上がったこと|隕石の衝突で海が干上がったこと}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "オゾン層は紫外線を吸収する。陸上では乾燥を防ぐクチクラ・維管束・羊膜などの獲得も重要だった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "history-of-life",
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "陸上進出"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "eras"
+ }
+}

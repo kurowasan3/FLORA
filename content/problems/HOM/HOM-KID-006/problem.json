@@ -1,0 +1,95 @@
+{
+ "id": "HOM-KID-006",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-02",
+ "topic": "バソプレシン",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大量に汗をかいて体液の浸透圧が上がった。次の量はどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "バソプレシンの分泌量"
+     },
+     {
+      "id": "2",
+      "tex": "集合管での水の再吸収量"
+     },
+     {
+      "id": "3",
+      "tex": "尿量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "バソプレシン：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "水の再吸収：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "3",
+    "tex": "減る",
+    "grading": "尿量：選ぶ{増える|減る|変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "浸透圧の上昇を視床下部が感知し、脳下垂体後葉からバソプレシンが分泌される。集合管の細胞にアクアポリンが増えて水の再吸収が進み、濃い尿が少量出る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kidney-liver"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "バソプレシン",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "osmotic"
+ }
+}

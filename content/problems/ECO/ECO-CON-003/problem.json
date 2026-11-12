@@ -1,0 +1,63 @@
+{
+ "id": "ECO-CON-003",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-04",
+ "topic": "外来生物",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "外来生物が在来の生態系に大きな影響を与えやすい理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "移入先には天敵や競争相手がいないことが多いから",
+    "grading": "選ぶ{外来生物はすべて在来種より大きいから|移入先には天敵や競争相手がいないことが多いから|外来生物は光合成をしないから|外来生物は在来種と交雑できないから}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "天敵がいないと爆発的に増え、在来種を捕食したり競争で排除したりする（オオクチバス・マングースなど）。在来種と交雑して遺伝的多様性をそこなうこともある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "外来生物"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

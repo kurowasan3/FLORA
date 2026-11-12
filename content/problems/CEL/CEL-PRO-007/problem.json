@@ -1,0 +1,64 @@
+{
+ "id": "CEL-PRO-007",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-03",
+ "topic": "一次構造と立体構造",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある酵素を尿素などで処理して立体構造をほどく（変性させる）と活性を失ったが、尿素を除くと立体構造が自然に回復し、活性ももどった（アンフィンセンの実験）。この結果から、タンパク質の立体構造について何がいえるか説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "タンパク質の立体構造（とはたらき）は、アミノ酸の配列（一次構造）によって決まっている。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "尿素を除くと、ほかに何も加えなくても同じ立体構造に戻ったので、どう折りたたまれるかの情報はアミノ酸配列そのものにある。アミノ酸配列は遺伝子の塩基配列で決まるので、遺伝子がタンパク質のはたらきを決めていることになる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "論述",
+  "一次構造"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

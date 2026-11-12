@@ -1,0 +1,60 @@
+{
+ "id": "col-causal",
+ "schema": "flora.collection/1",
+ "title": "しくみを予測する：何が増え、何が減る？",
+ "description": "ホルモン・遺伝子発現・生態系の因果関係を予測する問題。解いたら「因果関係」で矢印をたどろう。",
+ "order": 3,
+ "items": [
+  {
+   "id": "CEL-ENZ-004"
+  },
+  {
+   "id": "DEV-IND-003"
+  },
+  {
+   "id": "ECO-CON-002"
+  },
+  {
+   "id": "ECO-POP-004"
+  },
+  {
+   "id": "EVO-MEC-005"
+  },
+  {
+   "id": "GEN-REG-002"
+  },
+  {
+   "id": "HOM-GLU-002"
+  },
+  {
+   "id": "HOM-GLU-005"
+  },
+  {
+   "id": "HOM-HOR-003"
+  },
+  {
+   "id": "HOM-IMM-004"
+  },
+  {
+   "id": "HOM-KID-006"
+  },
+  {
+   "id": "MET-PHS-007"
+  },
+  {
+   "id": "MET-RSP-007"
+  },
+  {
+   "id": "PLA-FLW-005"
+  },
+  {
+   "id": "PLA-PHM-003"
+  },
+  {
+   "id": "PLA-PHM-005"
+  },
+  {
+   "id": "RES-SEN-004"
+  }
+ ]
+}

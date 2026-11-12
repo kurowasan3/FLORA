@@ -1,0 +1,171 @@
+{
+ "schema": "flora.misconceptions/1",
+ "misconceptions": [
+  {
+   "id": "MC-MITO-PLANT",
+   "wrong": "植物細胞にはミトコンドリアがなく、葉緑体で呼吸する",
+   "right": "植物細胞にもミトコンドリアがあり、呼吸はミトコンドリアで行う（葉緑体は光合成）",
+   "concepts": [
+    "cell-structure",
+    "respiration"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-ENZ-HEAT",
+   "wrong": "酵素は温度を上げるほど反応が速くなる",
+   "right": "最適温度をこえると、タンパク質が変性して失活し、反応速度は急に下がる",
+   "concepts": [
+    "enzyme"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-ENZ-USEDUP",
+   "wrong": "酵素は反応すると使われてなくなる",
+   "right": "酵素は触媒なので反応の前後で変化せず、くり返しはたらく",
+   "concepts": [
+    "enzyme"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-PLANT-NORESP",
+   "wrong": "植物は昼は光合成だけをして、夜だけ呼吸する",
+   "right": "植物は昼も夜も呼吸している。昼は光合成速度が呼吸速度を上回るので、見かけ上 CO₂ を吸収している",
+   "concepts": [
+    "photosynthesis",
+    "respiration"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-O2-CO2",
+   "wrong": "光合成で出る酸素は二酸化炭素の酸素から来る",
+   "right": "光合成で出る O₂ は水（H₂O）の分解に由来する",
+   "concepts": [
+    "photosynthesis"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-DNA-DOUBLE",
+   "wrong": "体細胞分裂で染色体の数が2倍になる",
+   "right": "DNA 量は S 期に2倍になるが、分裂で2つの細胞に分けられるので、娘細胞の染色体数は母細胞と同じ",
+   "concepts": [
+    "cell-cycle"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-GENE-PROTEIN",
+   "wrong": "DNA の塩基配列はすべてタンパク質のアミノ酸配列を指定している",
+   "right": "真核生物ではイントロンや調節領域など、アミノ酸配列を指定しない部分が多い",
+   "concepts": [
+    "gene-expression"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-DOMINANT-COMMON",
+   "wrong": "顕性（優性）の形質は集団の中で多い",
+   "right": "顕性・潜性はヘテロ接合体での形質の現れ方で、集団の中での頻度とは関係ない",
+   "concepts": [
+    "mendel",
+    "evolution-mechanism"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-MEIOSIS-SEP2",
+   "wrong": "減数第二分裂で相同染色体が分かれる",
+   "right": "相同染色体が分かれるのは減数第一分裂。第二分裂では染色分体が分かれる",
+   "concepts": [
+    "meiosis"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-ANTIBODY-KILL",
+   "wrong": "抗体が病原体を直接殺す",
+   "right": "抗体は抗原と結合して無毒化・凝集させるだけ。最終的にはマクロファージなどの食作用で処理される",
+   "concepts": [
+    "immunity"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-INSULIN-LIVER",
+   "wrong": "インスリンは血液中のグルコースを分解して血糖濃度を下げる",
+   "right": "インスリンは細胞へのグルコースの取り込みとグリコーゲンの合成を促して血糖濃度を下げる",
+   "concepts": [
+    "homeostasis"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-STIM-STRONG",
+   "wrong": "強い刺激ほど1本のニューロンの活動電位が大きくなる",
+   "right": "1本のニューロンの活動電位の大きさは一定（全か無かの法則）。強さは活動電位の頻度で伝わる",
+   "concepts": [
+    "neuron"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-MUSCLE-SHORT",
+   "wrong": "筋収縮ではアクチンやミオシンのフィラメント自体が縮む",
+   "right": "フィラメントの長さは変わらず、アクチンがミオシンの間に滑り込むことで筋節が短くなる（暗帯の長さは変わらない）",
+   "concepts": [
+    "muscle"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-EVO-NEED",
+   "wrong": "生物は必要に応じて都合のよい変異を起こして進化する",
+   "right": "突然変異は目的と無関係にランダムに起こり、その中で有利なものが自然選択で残る",
+   "concepts": [
+    "evolution-mechanism"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-ENERGY-CYCLE",
+   "wrong": "エネルギーは物質と同じように生態系の中を循環する",
+   "right": "物質は循環するが、エネルギーは最終的に熱として生態系の外へ出ていき、循環しない",
+   "concepts": [
+    "ecosystem"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-SUCCESSION-SUN",
+   "wrong": "遷移の後期には陽樹が増える",
+   "right": "遷移の後期は林床が暗くなり、暗い所でも育つ陰樹の幼木が育って陰樹林（極相林）になる",
+   "concepts": [
+    "vegetation"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-LONGDAY-LIGHT",
+   "wrong": "長日植物は明期の長さを測って花芽をつくる",
+   "right": "花芽形成を決めるのは連続した暗期の長さ。光中断で暗期を切ると反応が変わる",
+   "concepts": [
+    "photoperiodism"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-HUMAN-CHIMP",
+   "wrong": "ヒトはチンパンジーから進化した",
+   "right": "ヒトとチンパンジーは共通の祖先から分かれた（およそ700万年前）。現生のチンパンジーが祖先ではない",
+   "concepts": [
+    "phylogeny",
+    "history-of-life"
+   ],
+   "remedy": []
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "id": "GEN-BIO-008",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-05",
+ "topic": "iPS 細胞",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "iPS 細胞について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "体細胞に少数の遺伝子を導入してつくった、多能性をもつ細胞",
+    "grading": "選ぶ{受精卵から発生した胚の内部の細胞を取り出してつくる|体細胞に少数の遺伝子を導入してつくった、多能性をもつ細胞|分化した細胞の遺伝情報を一部失わせてつくる|神経細胞にしか分化できない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ES 細胞は胚（胚盤胞の内部細胞塊）からつくるので倫理的な問題があるが、iPS 細胞は体細胞からつくれる。本人の細胞からつくれば拒絶反応も起こりにくい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biotech",
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "iPS細胞"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

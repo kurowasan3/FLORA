@@ -1,0 +1,67 @@
+{
+ "id": "HOM-HOR-004",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "負のフィードバック",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ホルモンの作用の結果が、そのホルモンの分泌を抑えるようにはたらく調節のしくみを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "負のフィードバック",
+    "grading": "語{負のフィードバック|フィードバック調節}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "チロキシン・糖質コルチコイドなどの分泌は負のフィードバックで一定に保たれる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フィードバック"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "thyroxine"
+ }
+}

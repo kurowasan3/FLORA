@@ -1,0 +1,63 @@
+{
+ "id": "DEV-FER-003",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-01",
+ "topic": "ウニの受精",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ウニの受精で起こるできごとを順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "先体反応 → 精子と卵の細胞膜の融合 → 表層反応（受精膜の形成） → 精核と卵核の融合",
+    "grading": "並べる{表層反応で受精膜ができる|精核と卵核が融合する|先体反応が起こる|精子と卵の細胞膜が融合する}=3>4>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "精子がゼリー層に触れると先体反応が起こり、先体突起が卵黄膜を通って卵の細胞膜と融合する。表層粒の内容物が放出されて受精膜ができ、ほかの精子の進入を防ぐ（多精拒否）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fertilization"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "受精"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "EVO-PHY-006",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "動物の系統",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "旧口動物に属するものをすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "イカ・ミミズ・バッタ",
+    "grading": "すべて選ぶ{イカ|ヒトデ|ミミズ|バッタ|ナメクジウオ}=1,3,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "軟体動物（イカ）・環形動物（ミミズ）・節足動物（バッタ）は旧口動物。棘皮動物（ヒトデ）・原索動物（ナメクジウオ）は新口動物。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "動物の系統"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "animals"
+ }
+}

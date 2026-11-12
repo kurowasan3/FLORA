@@ -1,0 +1,67 @@
+{
+ "id": "DEV-EMB-004",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-02",
+ "topic": "卵割の特徴",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "卵割の特徴として正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "割球が成長せずに分裂を続けるので、分裂ごとに小さくなる",
+    "grading": "選ぶ{割球は分裂のたびに成長してもとの大きさに戻る|割球が成長せずに分裂を続けるので、分裂ごとに小さくなる|間期が長く、細胞周期がゆっくりである|卵割では DNA の複製が起こらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "卵割は間期（特に G₁・G₂ 期）が短く、細胞が成長しないまま分裂する体細胞分裂。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "animal-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "卵割"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "develop"
+ }
+}

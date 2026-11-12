@@ -1,0 +1,67 @@
+{
+ "id": "DEV-EMB-001",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-02",
+ "topic": "原腸胚",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "発生の過程で、原口から細胞が陥入して原腸ができ、3 つの胚葉が分かれた時期の胚を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "原腸胚",
+    "grading": "語{原腸胚}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "受精卵 → 卵割 → 桑実胚 → 胞胚 → 原腸胚 → 神経胚 → 尾芽胚の順に進む。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "animal-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "発生"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "develop"
+ }
+}

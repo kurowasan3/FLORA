@@ -1,0 +1,86 @@
+{
+ "id": "HOM-HOR-003",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "チロキシンの調節",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "甲状腺を除去したラットでは、次のホルモンの分泌量はどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "甲状腺刺激ホルモン（TSH）"
+     },
+     {
+      "id": "2",
+      "tex": "甲状腺刺激ホルモン放出ホルモン（TRH）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "TSH：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "TRH：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "チロキシンは視床下部と脳下垂体前葉にはたらいて、TRH・TSH の分泌を抑えている（負のフィードバック）。甲状腺を除去するとチロキシンがなくなり、抑制が外れて TRH・TSH が増える。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フィードバック",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "thyroxine"
+ }
+}

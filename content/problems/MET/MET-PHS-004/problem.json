@@ -1,0 +1,66 @@
+{
+ "id": "MET-PHS-004",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "見かけの光合成速度",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある植物の葉 100 cm² あたりの CO₂ 吸収速度は、光の強さが十分なとき 16 mg/時間、暗黒では CO₂ を 4 mg/時間 放出していた。十分な光の下での（真の）光合成速度は、葉 100 cm² あたり何 mg/時間 か（CO₂ 量で答えよ）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "20 mg/時間",
+    "grading": "約{20|2} [mg/(100cm^2·時間)]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光合成速度 = 見かけの光合成速度 + 呼吸速度 = 16 + 4 = 20。光の下でも呼吸は続いているので、測定される CO₂ 吸収量は見かけの値になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-PLANT-NORESP"
+ ],
+ "tags": [
+  "光合成速度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "DEV-EMB-007",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-02",
+ "topic": "原口と動物の系統",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原腸胚の原口がのちに口になるか肛門になるかで、動物は 2 つのグループに分けられる。それぞれのグループの名称と、ヒトがどちらに属するかを答えよ。また、この分け方が系統を反映していると考えられる理由を述べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "原口が口になるのは旧口動物（軟体動物・環形動物・節足動物など）、原口が肛門になり口が別にできるのは新口動物（棘皮動物・脊索動物）。ヒトは新口動物。発生のしかたは共通祖先から受け継がれた性質であり、分子系統（rRNA などの塩基配列）の結果とも一致するから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "発生の初期の過程は大きく変化しにくく、共通祖先の性質を残していると考えられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "animal-development",
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "論述",
+  "系統"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "animals"
+ }
+}

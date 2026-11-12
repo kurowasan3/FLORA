@@ -1,0 +1,63 @@
+{
+ "id": "PLA-PHM-004",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "植物ホルモンのはたらき",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "植物ホルモンとそのはたらきの組合せとして誤っているものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "エチレン — 種子の休眠を維持する",
+    "grading": "選ぶ{ジベレリン — 種子の発芽を促す|アブシシン酸 — 気孔を閉じる|エチレン — 種子の休眠を維持する|サイトカイニン — 細胞分裂を促す|オーキシン — 細胞の伸長を促す}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "種子の休眠を維持するのはアブシシン酸。エチレンは果実の成熟や落葉・落果を促す気体のホルモン。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "植物ホルモン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

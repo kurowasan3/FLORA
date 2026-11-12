@@ -1,0 +1,64 @@
+{
+ "id": "MET-RSP-009",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "乳酸発酵と解糖",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "激しい運動をしている筋肉で、酸素の供給が不足したときに起こることとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "グルコースが乳酸に分解され、少量の ATP がつくられる（解糖）",
+    "grading": "選ぶ{グルコースがエタノールと CO₂ に分解される|グルコースが乳酸に分解され、少量の ATP がつくられる|電子伝達系だけがはたらき続ける|ATP がまったくつくられなくなる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酸素が不足すると電子伝達系が止まり、NADH が NAD⁺ に戻れなくなる。ピルビン酸を乳酸に還元することで NAD⁺ を再生し、解糖系で ATP をつくり続ける。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "解糖",
+  "発酵"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

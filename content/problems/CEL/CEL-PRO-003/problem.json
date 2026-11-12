@@ -1,0 +1,63 @@
+{
+ "id": "CEL-PRO-003",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-03",
+ "topic": "アミノ酸配列の数",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タンパク質は 20 種類のアミノ酸からなる。アミノ酸 3 個がつながったペプチドの配列は何通りありうるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "8000 通り",
+    "grading": "8000"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "各位置に 20 通りなので $20^3=8000$ 通り。アミノ酸 100 個なら $20^{100}$ 通りという膨大な種類になり、タンパク質の多様性のもとになる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

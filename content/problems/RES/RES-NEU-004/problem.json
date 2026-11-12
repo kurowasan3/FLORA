@@ -1,0 +1,70 @@
+{
+ "id": "RES-NEU-004",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "伝導速度",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "神経と筋をつないだ標本で、筋から 2 cm の点 A を刺激すると 4 ミリ秒後に、筋から 6 cm の点 B を刺激すると 5 ミリ秒後に筋が収縮した。この神経の伝導速度は何 m/s か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "40 m/s",
+    "grading": "約{40|2} [m/s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$v=\\dfrac{6-2}{5-4}\\,\\mathrm{cm/ms}=4\\,\\mathrm{cm/ms}=40\\,\\mathrm{m/s}$。2 点の差をとることで、シナプスでの伝達や筋の収縮にかかる時間が打ち消される。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [
+  "conduction-velocity"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "伝導速度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "conduction-velocity"
+ }
+}

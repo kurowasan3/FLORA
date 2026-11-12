@@ -1,0 +1,63 @@
+{
+ "id": "ECO-POP-003",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-02",
+ "topic": "種間関係",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "相利共生の例として正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "マメ科植物と根粒菌",
+    "grading": "選ぶ{ヒトとカイチュウ|マメ科植物と根粒菌|ゾウリムシとヒメゾウリムシ|ヤマメとイワナ}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "根粒菌は植物から有機物を受け取り、植物に窒素化合物を与える。カイチュウは寄生、ゾウリムシとヒメゾウリムシは種間競争、ヤマメとイワナはすみわけ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "population"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "種間関係"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

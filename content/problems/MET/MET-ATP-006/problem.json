@@ -1,0 +1,64 @@
+{
+ "id": "MET-ATP-006",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-01",
+ "topic": "ATP がエネルギーの通貨とよばれる理由",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ATP が「エネルギーの通貨」とよばれる理由を、異化と同化の関係にふれて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "異化（呼吸など）で取り出されたエネルギーはいったん ATP に蓄えられ、ATP の分解で放出されるエネルギーが同化や筋収縮・能動輸送などさまざまな生命活動に共通して使われる。エネルギーのやりとりを ATP が仲立ちするから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "どの生物も同じ ATP を使う（生物の共通性の1つ）。お金が物と物の交換を仲立ちするように、ATP がエネルギーの受け渡しを仲立ちする。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atp"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "論述",
+  "ATP"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

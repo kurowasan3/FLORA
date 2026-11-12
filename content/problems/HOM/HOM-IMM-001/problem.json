@@ -1,0 +1,67 @@
+{
+ "id": "HOM-IMM-001",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-05",
+ "topic": "抗原提示",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "取り込んだ抗原の断片を MHC 分子にのせて T 細胞に示すことを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "抗原提示",
+    "grading": "語{抗原提示}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "主に樹状細胞が抗原提示を行い、ヘルパー T 細胞を活性化する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "免疫"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "immune"
+ }
+}

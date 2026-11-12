@@ -1,0 +1,65 @@
+{
+ "id": "RES-BEH-005",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-04",
+ "topic": "慣れと鋭敏化",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アメフラシの水管に弱い刺激をくり返し与えると、えらを引っ込める反応がしだいに小さくなった（慣れ）。このとき、感覚ニューロンと運動ニューロンの間のシナプスで何が起こっているか。正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "感覚ニューロンの神経終末から放出される神経伝達物質の量が減る",
+    "grading": "選ぶ{感覚ニューロンの神経終末から放出される神経伝達物質の量が減る|運動ニューロンの受容体の数が増える|えらの筋肉が疲労して収縮しなくなる|感覚ニューロンが刺激を受容しなくなる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "慣れでは、感覚ニューロンの神経終末で Ca²⁺ の流入が減り、伝達物質の放出が減る。尾部に強い刺激を与えると逆に反応が大きくなる（鋭敏化）。学習はシナプスの伝達効率の変化として説明できる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "behavior",
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "学習",
+  "シナプス"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

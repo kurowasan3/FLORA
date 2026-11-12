@@ -1,0 +1,82 @@
+{
+ "id": "DEV-FER-002",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-01",
+ "topic": "配偶子の数",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一次精母細胞 50 個と一次卵母細胞 50 個がすべて減数分裂を終えると、精子と卵はそれぞれ何個できるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "精子"
+     },
+     {
+      "id": "2",
+      "tex": "卵"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "200 個",
+    "grading": "200"
+   },
+   {
+    "id": "2",
+    "tex": "50 個",
+    "grading": "50"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "一次精母細胞 1 個から精細胞 4 個（→ 精子 4 個）。一次卵母細胞 1 個から卵 1 個と極体 3 個（第一極体が分裂しない場合は 2 個）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fertilization"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "配偶子形成",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "id": "GEN-LNK-007",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-07",
+ "topic": "相引と相反",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "AAbb と aaBB を交配して得た F₁ を aabb と検定交雑した。A–B 間の組換え価が 20％のとき、子の [AB]:[Ab]:[aB]:[ab] の比を答えよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "1 : 4 : 4 : 1",
+    "grading": "1:4:4:1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "F₁ は Ab/aB（A と b、a と B が連鎖＝相反）。組換えのない配偶子は Ab と aB（各 40％）、組換えで生じるのは AB と ab（各 10％）。よって 1:4:4:1。どの組合せが組換え型かは、親の組合せで決まる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "linkage"
+ ],
+ "laws": [
+  "recombination-value"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "連鎖",
+  "相反"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

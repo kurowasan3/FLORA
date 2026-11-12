@@ -1,0 +1,63 @@
+{
+ "id": "ECO-VEG-008",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "バイオームと気候",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "年降水量が少ない地域で、気温が高い熱帯・亜熱帯に見られる、イネ科の草原に低木が点在するバイオームはどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "サバンナ",
+    "grading": "選ぶ{ステップ|サバンナ|砂漠|ツンドラ}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "降水量が少ないと森林が成立せず草原になる。熱帯ではサバンナ、温帯ではステップ。さらに少ないと砂漠。寒冷地ではツンドラ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "バイオーム"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "PLA-FLW-008",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "花芽形成の判定",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "限界暗期が 9 時間の長日植物を、明期 16 時間・暗期 8 時間で育てたものと、明期 12 時間・暗期 12 時間で育てたものがある。花芽を形成するのはどちらか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "明期 16 時間・暗期 8 時間",
+    "grading": "選ぶ{明期 16 時間・暗期 8 時間|明期 12 時間・暗期 12 時間|両方|どちらも形成しない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "長日植物は連続暗期が限界暗期（9 時間）以下で花芽を形成する。暗期 8 時間 ≦ 9 時間なので形成し、12 時間では形成しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [
+  "critical-night"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "限界暗期"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

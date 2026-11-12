@@ -1,0 +1,63 @@
+{
+ "id": "ECO-CON-004",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-04",
+ "topic": "生物多様性の階層",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生物多様性の3つの階層の組合せとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "遺伝的多様性・種多様性・生態系多様性",
+    "grading": "選ぶ{遺伝的多様性・種多様性・生態系多様性|個体多様性・種多様性・地域多様性|遺伝的多様性・形態多様性・行動多様性|細胞多様性・器官多様性・個体多様性}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ種の中の遺伝的な違い、種の豊富さ、生態系の種類の多さの 3 つ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生物多様性"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "HOM-GLU-004",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "食後の血糖濃度とインスリン",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "健康な人 A と、糖尿病の人 B・C に同量のグルコースを飲ませて、血糖濃度と血中インスリン濃度を測った。B はインスリン濃度がほとんど上がらず、C はインスリン濃度が A 以上に上がったのに、B・C とも血糖濃度が高いままだった。C の糖尿病の原因として適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "標的細胞がインスリンに反応しにくい（インスリンの受容体などの異常）",
+    "grading": "選ぶ{すい臓 B 細胞が破壊されていて、インスリンが分泌されない|標的細胞がインスリンに反応しにくい|グルカゴンが分泌されない|グルコースを吸収できない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "B はインスリンが分泌されないタイプ（1 型など）。C はインスリンは十分に出ているのに効かない（インスリン抵抗性、2 型の一部）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "糖尿病",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "glucose"
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "id": "MET-PHS-007",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "カルビン回路の中間体",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光を十分に当てて光合成をさせていた緑藻で、急に光を消した。直後に、次の物質の量はどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "PGA（ホスホグリセリン酸）"
+     },
+     {
+      "id": "2",
+      "tex": "RuBP（リブロースビスリン酸）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "PGA：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "減る",
+    "grading": "RuBP：選ぶ{増える|減る|変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光を消すと、チラコイドで ATP と NADPH がつくられなくなる。PGA を還元する反応（ATP・NADPH が必要）が止まるので PGA がたまる。CO₂ を固定する反応（RuBP + CO₂ → PGA）はしばらく続くが、RuBP の再生（ATP が必要）が止まるので RuBP は減る（カルビン・ベンソンの実験）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "カルビン回路",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "photo"
+ }
+}

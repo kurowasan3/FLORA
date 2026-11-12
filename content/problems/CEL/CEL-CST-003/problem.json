@@ -1,0 +1,68 @@
+{
+ "id": "CEL-CST-003",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "原核細胞と真核細胞",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原核細胞と真核細胞の両方に共通してみられるものを、すべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "細胞膜・リボソーム・DNA",
+    "grading": "すべて選ぶ{細胞膜|核膜|リボソーム|ミトコンドリア|DNA|小胞体}=1,3,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原核細胞（細菌など）は核膜や膜でできた細胞小器官（ミトコンドリア・小胞体など）をもたないが、細胞膜・リボソーム・DNA はすべての細胞に共通する。細菌の多くには細胞壁もある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "原核生物",
+  "真核生物"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "domains"
+ }
+}

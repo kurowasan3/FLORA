@@ -1,0 +1,67 @@
+{
+ "id": "EVO-PHY-003",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "3 ドメイン説",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "3 ドメイン説について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "古細菌は細菌よりも真核生物に近縁である",
+    "grading": "選ぶ{細菌と古細菌はどちらも原核生物なので、同じドメインに入る|古細菌は細菌よりも真核生物に近縁である|菌類は細菌のドメインに入る|ドメインはタンパク質の形態をもとに分けられた}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ウーズが rRNA の塩基配列をもとに、細菌・古細菌・真核生物の 3 つに分けた。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "3ドメイン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "domains"
+ }
+}

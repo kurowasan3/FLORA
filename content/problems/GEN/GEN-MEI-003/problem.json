@@ -1,0 +1,70 @@
+{
+ "id": "GEN-MEI-003",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-06",
+ "topic": "一遺伝子雑種",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "丸形（顕性 A）としわ形（潜性 a）のエンドウで、純系の丸形としわ形を交配して得た F₁ どうしを交配した。F₂ の丸形：しわ形の比を答えよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "3 : 1",
+    "grading": "3:1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "F₁ は Aa。配偶子は A:a = 1:1。F₂ は AA:Aa:aa = 1:2:1 で、表現型は丸:しわ = 3:1（分離の法則）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mendel"
+ ],
+ "laws": [
+  "segregation"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "メンデル",
+  "分離比"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "segregation"
+ }
+}

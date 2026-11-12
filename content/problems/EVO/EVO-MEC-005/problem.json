@@ -1,0 +1,86 @@
+{
+ "id": "EVO-MEC-005",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "工業暗化",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "イギリスの工業地帯で、すすで木の幹が黒くなった。オオシモフリエダシャク（ガ）の集団で、次の量はどう変化したか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "暗色型の生存率"
+     },
+     {
+      "id": "2",
+      "tex": "暗色型の遺伝子頻度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "暗色型の生存率：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "暗色型の遺伝子頻度：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黒い幹の上では明色型が鳥に見つかって食べられやすく、暗色型が残りやすい（自然選択）。大気汚染が改善されると、逆に明色型が増えた。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自然選択",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "selection"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "ECO-CON-006",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-04",
+ "topic": "里山と生物多様性",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "里山の雑木林は、定期的な伐採や落ち葉かきなど人の手が入ることで、多様な生物が生息する環境が保たれてきた。人の手が入らなくなると、生物多様性はどうなると考えられるか。遷移と関連づけて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "人の手が入らなくなると遷移が進み、雑木林は陰樹の多い暗い森林に変わっていく。林床が暗くなると、明るい環境を好むカタクリなどの植物や、それに依存する昆虫などが生育できなくなり、生物多様性が低下する。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "里山は、適度な攪乱が続くことで遷移の途中の状態が保たれた環境といえる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biodiversity",
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "里山",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

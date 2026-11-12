@@ -1,0 +1,45 @@
+{
+ "id": "col-genetics-calc",
+ "schema": "flora.collection/1",
+ "title": "遺伝の計算",
+ "description": "分離比・検定交雑・伴性遺伝・組換え価・ハーディ・ワインベルグ。",
+ "order": 2,
+ "items": [
+  {
+   "id": "GEN-MEI-003"
+  },
+  {
+   "id": "GEN-MEI-004"
+  },
+  {
+   "id": "GEN-MEI-005"
+  },
+  {
+   "id": "GEN-MEI-006"
+  },
+  {
+   "id": "GEN-MEI-007"
+  },
+  {
+   "id": "GEN-MEI-008"
+  },
+  {
+   "id": "GEN-LNK-002"
+  },
+  {
+   "id": "GEN-LNK-003"
+  },
+  {
+   "id": "GEN-LNK-004"
+  },
+  {
+   "id": "GEN-LNK-005"
+  },
+  {
+   "id": "EVO-MEC-002"
+  },
+  {
+   "id": "EVO-MEC-007"
+  }
+ ]
+}

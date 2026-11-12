@@ -1,0 +1,118 @@
+{
+ "id": "RES-SEN-002",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "眼の構造",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はヒトの眼の水平断面である。ア〜エの名称を答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア"
+     },
+     {
+      "id": "2",
+      "tex": "イ"
+     },
+     {
+      "id": "3",
+      "tex": "ウ"
+     },
+     {
+      "id": "4",
+      "tex": "エ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "ヒトの眼（水平断面）の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す、エは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水晶体",
+    "grading": "語{水晶体|レンズ}"
+   },
+   {
+    "id": "2",
+    "tex": "網膜",
+    "grading": "語{網膜}"
+   },
+   {
+    "id": "3",
+    "tex": "黄斑",
+    "grading": "語{黄斑}"
+   },
+   {
+    "id": "4",
+    "tex": "盲斑",
+    "grading": "語{盲斑}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黄斑には錐体細胞が集中し、視力が最も高い。盲斑は視神経が出ていく部分で、視細胞がない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "眼",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "eye"
+ }
+}

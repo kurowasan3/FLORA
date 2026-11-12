@@ -1,0 +1,82 @@
+{
+ "id": "GEN-REG-005",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-04",
+ "topic": "パフ",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ショウジョウバエのだ腺染色体で、ところどころ膨らんで見える部分を何というか。また、そこでは何が盛んに行われているか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "名称"
+     },
+     {
+      "id": "2",
+      "tex": "行われていること"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "パフ",
+    "grading": "語{パフ}"
+   },
+   {
+    "id": "2",
+    "tex": "転写（RNA の合成）",
+    "grading": "語{転写|RNA合成|RNAの合成|mRNAの合成}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "パフの位置は発生の時期によって変わり、エクジステロイド（脱皮ホルモン）を与えると新しいパフが現れる。ホルモンが遺伝子発現を調節している例。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-regulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "パフ",
+  "だ腺染色体"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

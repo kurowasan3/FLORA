@@ -1,0 +1,63 @@
+{
+ "id": "GEN-BIO-002",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-05",
+ "topic": "遺伝子組換えの手順",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大腸菌にヒトのインスリン遺伝子を導入してインスリンをつくらせる。手順を順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "同じ制限酵素で切る → DNA リガーゼでつなぐ → 大腸菌に取り込ませる → 目的の遺伝子をもつ大腸菌を選んで増やす",
+    "grading": "並べる{大腸菌に組換えプラスミドを取り込ませる|DNA リガーゼでつなぐ|インスリン遺伝子とプラスミドを同じ制限酵素で切る|抗生物質を含む培地で目的の大腸菌を選んで増やす}=3>2>1>4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "プラスミドがベクター（運び手）になる。プラスミドの抗生物質耐性遺伝子を目印にして、組換えプラスミドを取り込んだ大腸菌を選ぶ。真核生物の遺伝子にはイントロンがあるので、mRNA から逆転写でつくった cDNA を使う。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biotech"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝子組換え"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

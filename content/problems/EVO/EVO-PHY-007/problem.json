@@ -1,0 +1,68 @@
+{
+ "id": "EVO-PHY-007",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "分子時計",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "あるタンパク質のアミノ酸配列をヒトと比べると、違いはイヌで 5 か所、ニワトリで 15 か所、コイで 21 か所であった。ヒトとコイが分岐したのが約 4.2 億年前だとすると、ヒトとイヌが分岐したのは約何億年前と推定されるか。アミノ酸の置換は一定の速さで起こるとする。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 1.0 億年前",
+    "grading": "約{1.0|2} [億年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "置換数は分岐してからの時間に比例する（分子時計）。$4.2\\times\\dfrac{5}{21}=1.0$ 億年前。同様にニワトリとは $4.2\\times\\dfrac{15}{21}=3.0$ 億年前。違いが少ないほど近縁で、分岐が新しい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分子時計",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "vertebrates"
+ }
+}

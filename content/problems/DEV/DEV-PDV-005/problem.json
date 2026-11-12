@@ -1,0 +1,100 @@
+{
+ "id": "DEV-PDV-005",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-04",
+ "topic": "花の構造",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は被子植物の花の断面である。種子になる部分と果実になる部分を、図のア〜ウからそれぞれ選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "種子になる部分"
+     },
+     {
+      "id": "2",
+      "tex": "果実になる部分"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "被子植物の花の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ウ（胚珠）",
+    "grading": "選ぶ{ア|イ|ウ}=3"
+   },
+   {
+    "id": "2",
+    "tex": "イ（子房）",
+    "grading": "選ぶ{ア|イ|ウ}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アは柱頭、イは子房、ウは胚珠。受精後、胚珠は種子に、子房は果実になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "花",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "flower"
+ }
+}

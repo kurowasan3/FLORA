@@ -1,0 +1,63 @@
+{
+ "id": "EVO-MEC-010",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "適応放散と収束進化",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "収束進化（収れん）の例として適当なものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "オーストラリアのフクロモモンガと北半球のモモンガが似た形態をもつ",
+    "grading": "選ぶ{ガラパゴス諸島のフィンチのくちばしの形がさまざまに分かれた|オーストラリアのフクロモモンガ（有袋類）と北半球のモモンガ（真獣類）が似た形態をもつ|ヒトの腕とクジラの胸びれが同じ骨の構造をもつ|ウマの指の数が進化とともに減った}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "系統の異なる生物が似た環境に適応して似た形態になるのが収束進化。フィンチは適応放散、腕と胸びれは相同器官。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "収束進化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

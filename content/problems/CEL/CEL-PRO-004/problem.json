@@ -1,0 +1,64 @@
+{
+ "id": "CEL-PRO-004",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-03",
+ "topic": "変性",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タンパク質の変性について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "高温では立体構造が変化してはたらきを失う",
+    "grading": "選ぶ{変性するとペプチド結合が切れてアミノ酸になる|高温・強い酸などで立体構造が変化し、はたらきを失うことがある|変性したタンパク質は必ずもとに戻る|一次構造が変わることを変性という}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "変性は立体構造（二次〜四次構造）の変化で、一次構造（ペプチド結合）は切れない。はたらきを失うことを失活という。熱変性の多くは元に戻らない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-structure",
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "変性"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

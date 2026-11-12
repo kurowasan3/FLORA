@@ -1,0 +1,67 @@
+{
+ "id": "GEN-EXP-001",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "セントラルドグマ",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "遺伝情報が DNA → RNA → タンパク質へと一方向に流れるという原則を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "セントラルドグマ",
+    "grading": "語{セントラルドグマ}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "DNA から RNA をつくるのが転写、RNA の情報からタンパク質をつくるのが翻訳。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝子発現"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "expression"
+ }
+}

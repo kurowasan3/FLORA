@@ -1,0 +1,88 @@
+{
+ "id": "EVO-MEC-002",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "ハーディ・ワインベルグの法則",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハーディ・ワインベルグの法則が成り立つ集団で、潜性形質（aa）の個体が 16％であった。遺伝子 a の頻度と、ヘテロ接合体（Aa）の割合を求めよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "a の頻度"
+     },
+     {
+      "id": "2",
+      "tex": "Aa の割合"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0.4",
+    "grading": "約{0.4|1}"
+   },
+   {
+    "id": "2",
+    "tex": "48％",
+    "grading": "約{48|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$q^2=0.16$ より $q=0.4$、$p=0.6$。Aa は $2pq=2\\times0.6\\times0.4=0.48$（48％）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [
+  "hardy-weinberg"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "ハーディ・ワインベルグ",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "hardy-weinberg"
+ }
+}

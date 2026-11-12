@@ -1,0 +1,346 @@
+{
+ "schema": "flora.concepts/1",
+ "concepts": [
+  {
+   "id": "cell-structure",
+   "name": "細胞の構造（原核細胞・真核細胞・細胞小器官）",
+   "field": "CEL",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "membrane-transport",
+   "name": "生体膜と物質輸送（拡散・浸透・能動輸送）",
+   "field": "CEL",
+   "requires": [
+    "cell-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "protein-structure",
+   "name": "タンパク質の構造（一次〜四次構造）",
+   "field": "CEL",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "enzyme",
+   "name": "酵素の性質（基質特異性・最適温度・阻害）",
+   "field": "CEL",
+   "requires": [
+    "protein-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "atp",
+   "name": "ATPとエネルギーの受け渡し",
+   "field": "MET",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "respiration",
+   "name": "呼吸（解糖系・クエン酸回路・電子伝達系）と発酵",
+   "field": "MET",
+   "requires": [
+    "atp",
+    "enzyme"
+   ],
+   "laws": [
+    "respiration-eq",
+    "respiratory-quotient"
+   ]
+  },
+  {
+   "id": "photosynthesis",
+   "name": "光合成（チラコイドの反応・カルビン回路）",
+   "field": "MET",
+   "requires": [
+    "atp"
+   ],
+   "laws": [
+    "photosynthesis-eq"
+   ]
+  },
+  {
+   "id": "dna-structure",
+   "name": "DNAの構造と複製",
+   "field": "GEN",
+   "requires": [],
+   "laws": [
+    "chargaff"
+   ]
+  },
+  {
+   "id": "cell-cycle",
+   "name": "細胞周期と体細胞分裂",
+   "field": "GEN",
+   "requires": [
+    "dna-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "gene-expression",
+   "name": "転写・翻訳と遺伝暗号",
+   "field": "GEN",
+   "requires": [
+    "dna-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "gene-regulation",
+   "name": "遺伝子発現の調節（オペロン・調節タンパク質）",
+   "field": "GEN",
+   "requires": [
+    "gene-expression"
+   ],
+   "laws": []
+  },
+  {
+   "id": "biotech",
+   "name": "バイオテクノロジー（PCR・遺伝子組換え・電気泳動）",
+   "field": "GEN",
+   "requires": [
+    "dna-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "meiosis",
+   "name": "減数分裂と染色体の分配",
+   "field": "GEN",
+   "requires": [
+    "cell-cycle"
+   ],
+   "laws": []
+  },
+  {
+   "id": "mendel",
+   "name": "メンデルの遺伝の法則",
+   "field": "GEN",
+   "requires": [
+    "meiosis"
+   ],
+   "laws": [
+    "segregation",
+    "independent-assortment"
+   ]
+  },
+  {
+   "id": "linkage",
+   "name": "連鎖と組換え・染色体地図",
+   "field": "GEN",
+   "requires": [
+    "mendel"
+   ],
+   "laws": [
+    "recombination-value"
+   ]
+  },
+  {
+   "id": "fertilization",
+   "name": "配偶子形成と受精",
+   "field": "DEV",
+   "requires": [
+    "meiosis"
+   ],
+   "laws": []
+  },
+  {
+   "id": "animal-development",
+   "name": "動物の発生（卵割・原腸形成・胚葉）",
+   "field": "DEV",
+   "requires": [
+    "fertilization"
+   ],
+   "laws": []
+  },
+  {
+   "id": "induction",
+   "name": "誘導・形成体・位置情報（ホメオティック遺伝子）",
+   "field": "DEV",
+   "requires": [
+    "animal-development",
+    "gene-regulation"
+   ],
+   "laws": []
+  },
+  {
+   "id": "plant-development",
+   "name": "植物の発生（重複受精・胚と胚乳・ABCモデル）",
+   "field": "DEV",
+   "requires": [
+    "fertilization"
+   ],
+   "laws": []
+  },
+  {
+   "id": "body-fluid",
+   "name": "体液と循環（血液・リンパ・血液凝固）",
+   "field": "HOM",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "kidney-liver",
+   "name": "腎臓・肝臓のはたらき",
+   "field": "HOM",
+   "requires": [
+    "body-fluid"
+   ],
+   "laws": [
+    "reabsorption"
+   ]
+  },
+  {
+   "id": "hormone",
+   "name": "自律神経とホルモン（フィードバック）",
+   "field": "HOM",
+   "requires": [
+    "body-fluid"
+   ],
+   "laws": []
+  },
+  {
+   "id": "homeostasis",
+   "name": "血糖濃度・体温の調節",
+   "field": "HOM",
+   "requires": [
+    "hormone"
+   ],
+   "laws": []
+  },
+  {
+   "id": "immunity",
+   "name": "免疫（自然免疫・獲得免疫）",
+   "field": "HOM",
+   "requires": [
+    "body-fluid"
+   ],
+   "laws": []
+  },
+  {
+   "id": "receptor",
+   "name": "受容器と感覚（眼・耳）",
+   "field": "RES",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "neuron",
+   "name": "ニューロンの興奮と伝導・伝達",
+   "field": "RES",
+   "requires": [
+    "membrane-transport"
+   ],
+   "laws": [
+    "all-or-none",
+    "conduction-velocity"
+   ]
+  },
+  {
+   "id": "muscle",
+   "name": "筋収縮のしくみ（滑り説）",
+   "field": "RES",
+   "requires": [
+    "neuron",
+    "atp"
+   ],
+   "laws": []
+  },
+  {
+   "id": "behavior",
+   "name": "動物の行動（生得的行動・学習）",
+   "field": "RES",
+   "requires": [
+    "neuron"
+   ],
+   "laws": []
+  },
+  {
+   "id": "plant-hormone",
+   "name": "植物ホルモンと成長・屈性",
+   "field": "PLA",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "photoperiodism",
+   "name": "光受容体と花芽形成（光周性）",
+   "field": "PLA",
+   "requires": [
+    "plant-hormone"
+   ],
+   "laws": [
+    "critical-night"
+   ]
+  },
+  {
+   "id": "vegetation",
+   "name": "植生・遷移とバイオーム",
+   "field": "ECO",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "population",
+   "name": "個体群と生物群集（相互作用）",
+   "field": "ECO",
+   "requires": [],
+   "laws": [
+    "mark-recapture"
+   ]
+  },
+  {
+   "id": "ecosystem",
+   "name": "生態系の物質循環とエネルギーの流れ",
+   "field": "ECO",
+   "requires": [
+    "photosynthesis"
+   ],
+   "laws": [
+    "net-production"
+   ]
+  },
+  {
+   "id": "biodiversity",
+   "name": "生物多様性と生態系の保全",
+   "field": "ECO",
+   "requires": [
+    "ecosystem"
+   ],
+   "laws": []
+  },
+  {
+   "id": "history-of-life",
+   "name": "生命の起源と生物の変遷（地質時代）",
+   "field": "EVO",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "evolution-mechanism",
+   "name": "進化のしくみ（突然変異・選択・遺伝的浮動）",
+   "field": "EVO",
+   "requires": [
+    "mendel"
+   ],
+   "laws": [
+    "hardy-weinberg"
+   ]
+  },
+  {
+   "id": "phylogeny",
+   "name": "系統と分類（3ドメイン・分子系統）",
+   "field": "EVO",
+   "requires": [
+    "evolution-mechanism"
+   ],
+   "laws": []
+  }
+ ]
+}

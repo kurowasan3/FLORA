@@ -1,0 +1,65 @@
+{
+ "id": "EVO-MEC-008",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "中立説",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子レベルの変化（DNA の塩基やタンパク質のアミノ酸の置換）の多くは、生存に有利でも不利でもないと考えられている。このような変化が集団に広まるしくみと、分子時計に利用できる理由を説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "生存に有利でも不利でもない（中立的な）突然変異は自然選択を受けず、遺伝的浮動によって偶然に集団に広まったり消えたりする（中立説、木村資生）。中立的な置換はほぼ一定の速度で蓄積するので、2 つの生物の分子の違いの量から、分岐してからの時間を推定できる（分子時計）。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "タンパク質の機能に重要な部分ほど変化が自然選択で除かれやすく、置換速度は遅い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism",
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中立説",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

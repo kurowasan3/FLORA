@@ -1,0 +1,118 @@
+{
+ "id": "CEL-CST-002",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "動物細胞の構造",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は動物細胞の模式図である。ア〜エの名称をそれぞれ答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア"
+     },
+     {
+      "id": "2",
+      "tex": "イ"
+     },
+     {
+      "id": "3",
+      "tex": "ウ"
+     },
+     {
+      "id": "4",
+      "tex": "エ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "動物細胞の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す、エは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "核小体",
+    "grading": "語{核小体|仁}"
+   },
+   {
+    "id": "2",
+    "tex": "ゴルジ体",
+    "grading": "語{ゴルジ体}"
+   },
+   {
+    "id": "3",
+    "tex": "中心体",
+    "grading": "語{中心体}"
+   },
+   {
+    "id": "4",
+    "tex": "リソソーム",
+    "grading": "語{リソソーム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ア：核小体（rRNA を合成）、イ：ゴルジ体（タンパク質の修飾・分泌）、ウ：中心体（紡錘体形成の起点）、エ：リソソーム（加水分解酵素で分解）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "細胞小器官",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "animal-cell"
+ }
+}

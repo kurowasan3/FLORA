@@ -1,0 +1,63 @@
+{
+ "id": "ECO-VEG-002",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "極相",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "遷移が進み、構成する種がほとんど変化しなくなった安定した状態を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "極相（クライマックス）",
+    "grading": "語{極相|クライマックス}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "日本の暖温帯の極相林はシイ・カシなどの照葉樹林、冷温帯ではブナなどの夏緑樹林。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遷移"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "RES-BEH-001",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-04",
+ "topic": "かぎ刺激",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "繁殖期のイトヨの雄は、腹部が赤いものに対して攻撃行動を示す。このように特定の行動を引き起こす刺激を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "かぎ刺激（信号刺激）",
+    "grading": "語{かぎ刺激|信号刺激}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イトヨの雄は、形がイトヨに似ていなくても腹部が赤い模型を攻撃する（ティンバーゲン）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "behavior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生得的行動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

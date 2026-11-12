@@ -1,0 +1,95 @@
+{
+ "id": "DEV-PDV-006",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-04",
+ "topic": "種皮・胚・胚乳の遺伝子型",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "遺伝子型 aa の植物のめしべに、遺伝子型 AA の植物の花粉を受粉させた。できた種子の種皮・胚・胚乳の遺伝子型をそれぞれ答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "種皮"
+     },
+     {
+      "id": "2",
+      "tex": "胚"
+     },
+     {
+      "id": "3",
+      "tex": "胚乳"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "aa",
+    "grading": "語{aa}"
+   },
+   {
+    "id": "2",
+    "tex": "Aa",
+    "grading": "語{Aa}"
+   },
+   {
+    "id": "3",
+    "tex": "Aaa",
+    "grading": "語{Aaa|aaA}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "種皮は母親（めしべ）の体細胞である珠皮からできるので aa。胚は卵細胞 a ＋ 精細胞 A で Aa。胚乳は極核 a・a ＋ 精細胞 A で Aaa。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重複受精",
+  "遺伝子型"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "embryo-sac"
+ }
+}

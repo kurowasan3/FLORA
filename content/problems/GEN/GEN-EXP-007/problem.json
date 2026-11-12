@@ -1,0 +1,69 @@
+{
+ "id": "GEN-EXP-007",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "スプライシング",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真核生物の遺伝子発現について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "転写された RNA からイントロンが除かれて mRNA になる",
+    "grading": "選ぶ{転写と翻訳が同時に核の中で進む|転写された RNA からイントロンが除かれて mRNA になる|エキソンは翻訳されない部分である|1 つの遺伝子からは必ず 1 種類のタンパク質しかできない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "真核生物では核の中で転写とスプライシングが行われ、mRNA が細胞質に出て翻訳される。選択的スプライシングで1つの遺伝子から複数のタンパク質ができることもある。原核生物では転写と翻訳が同時に進む。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-GENE-PROTEIN"
+ ],
+ "tags": [
+  "スプライシング"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "expression"
+ }
+}

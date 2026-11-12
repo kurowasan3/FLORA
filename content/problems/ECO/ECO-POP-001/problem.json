@@ -1,0 +1,70 @@
+{
+ "id": "ECO-POP-001",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-02",
+ "topic": "標識再捕獲法",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある池でコイを 30 匹捕まえて標識をつけて放した。数日後に 40 匹捕まえると、そのうち 6 匹に標識がついていた。この池のコイの個体数を推定せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "200 匹",
+    "grading": "約{200|2} [匹]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$N=\\dfrac{30\\times40}{6}=200$ 匹。標識が外れない・個体の出入りがない・十分に混ざる、などが前提。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "population"
+ ],
+ "laws": [
+  "mark-recapture"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "標識再捕獲法",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "mark-recapture"
+ }
+}

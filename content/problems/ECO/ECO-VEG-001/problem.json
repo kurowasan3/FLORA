@@ -1,0 +1,63 @@
+{
+ "id": "ECO-VEG-001",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "一次遷移",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本の暖温帯で、溶岩流の跡から始まる一次遷移の順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "裸地 → 荒原（地衣類・コケ植物）→ 草原 → 低木林 → 陽樹林 → 混交林 → 陰樹林",
+    "grading": "並べる{陰樹林|草原|荒原|陽樹林|低木林|混交林}=3>2>5>4>6>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "土壌の形成とともに植物が入れかわり、林床が暗くなると陰樹の幼木だけが育って陰樹林（極相林）になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遷移"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

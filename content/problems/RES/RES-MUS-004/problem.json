@@ -1,0 +1,67 @@
+{
+ "id": "RES-MUS-004",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-03",
+ "topic": "筋収縮のしくみ",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "運動神経の興奮から筋収縮までの過程を順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "筋繊維が興奮する → 筋小胞体から Ca²⁺ が放出される → Ca²⁺ がトロポニンに結合する → ミオシン頭部がアクチンと結合し、アクチンをたぐり寄せる",
+    "grading": "並べる{ミオシン頭部がアクチンと結合してたぐり寄せる|筋小胞体から Ca²⁺ が放出される|運動神経からアセチルコリンが放出され、筋繊維が興奮する|Ca²⁺ がトロポニンに結合し、トロポミオシンがずれる}=3>2>4>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ミオシン頭部は ATP を分解するはたらき（ATP アーゼ）をもち、そのエネルギーで首振り運動をする。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "muscle"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "筋収縮"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "muscle"
+ }
+}

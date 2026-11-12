@@ -1,0 +1,63 @@
+{
+ "id": "PLA-PHM-002",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "光屈性",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マカラスムギの幼葉鞘に一方から光を当てると光の方へ曲がる。このしくみとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "先端でオーキシンが光の当たらない側へ移動し、陰側の伸長が促される",
+    "grading": "選ぶ{光がオーキシンを分解し、光の側の伸長が促される|先端でオーキシンが光の当たらない側へ移動し、陰側の伸長が促される|光の当たる側でオーキシンが多くつくられる|光の当たらない側の細胞が分裂する}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光を受容するのは先端の青色光受容体フォトトロピン。オーキシンが陰側に移動して下へ運ばれ、陰側の細胞がよく伸びる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光屈性"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

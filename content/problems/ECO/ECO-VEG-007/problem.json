@@ -1,0 +1,65 @@
+{
+ "id": "ECO-VEG-007",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "ギャップ更新",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "極相林の中でも、陽樹が生育している場所が見られることがある。その理由を「ギャップ」という語を用いて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "極相林でも、台風や寿命などで高木が倒れると林冠に穴（ギャップ）ができ、林床に強い光が届く。大きなギャップでは陽樹の種子が発芽・成長できるので、極相林の中にも陽樹が見られる（ギャップ更新）。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ギャップの形成と回復がくり返されることで、極相林の中にもさまざまな遷移段階の場所がモザイク状に存在し、種の多様性が保たれる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation",
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ギャップ",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

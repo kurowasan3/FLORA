@@ -1,0 +1,63 @@
+{
+ "id": "ECO-POP-008",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-02",
+ "topic": "種間関係の判断",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カクレウオはナマコの体内にすみかを得るが、ナマコは利益も害も受けない。このような関係を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "片利共生",
+    "grading": "選ぶ{相利共生|片利共生|寄生|種間競争}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "一方だけが利益を受け、もう一方は利益も害も受けない関係が片利共生。一方が利益を受け、もう一方が害を受けるのが寄生。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "population"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "種間関係"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

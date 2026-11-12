@@ -1,0 +1,67 @@
+{
+ "id": "EVO-PHY-009",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-03",
+ "topic": "形質の獲得と系統",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「維管束」を獲得したのは、植物の系統樹のどこか。最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "コケ植物と分かれたあと、シダ植物と種子植物の共通祖先",
+    "grading": "選ぶ{緑藻類と陸上植物の共通祖先|コケ植物と分かれたあと、シダ植物と種子植物の共通祖先|種子植物の共通祖先|被子植物だけ}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "維管束はシダ植物・裸子植物・被子植物に共通し、コケ植物にはない。よってコケ植物が分かれた後、維管束植物の共通祖先で獲得されたと考える。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "phylogeny"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "系統樹"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "plants"
+ }
+}

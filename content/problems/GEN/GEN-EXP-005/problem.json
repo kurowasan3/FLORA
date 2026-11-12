@@ -1,0 +1,85 @@
+{
+ "id": "GEN-EXP-005",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "開始コドン",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "翻訳を開始するコドンは何か。また、それが指定するアミノ酸は何か。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "開始コドン"
+     },
+     {
+      "id": "2",
+      "tex": "アミノ酸"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "AUG",
+    "grading": "語{AUG}"
+   },
+   {
+    "id": "2",
+    "tex": "メチオニン",
+    "grading": "語{メチオニン|Met}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "AUG はメチオニンを指定し、翻訳の開始点にもなる。終止コドンは UAA・UAG・UGA で、対応する tRNA がない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝暗号"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "expression"
+ }
+}

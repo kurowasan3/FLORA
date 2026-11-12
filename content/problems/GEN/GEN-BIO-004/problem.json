@@ -1,0 +1,63 @@
+{
+ "id": "GEN-BIO-004",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-05",
+ "topic": "電気泳動",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA を寒天ゲルで電気泳動すると、どうなるか。正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "陽極側へ移動し、短い DNA ほど遠くまで移動する",
+    "grading": "選ぶ{陰極側へ移動し、長い DNA ほど遠くまで移動する|陽極側へ移動し、短い DNA ほど遠くまで移動する|陽極側へ移動し、長い DNA ほど遠くまで移動する|DNA の長さによらず同じ距離だけ移動する}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "DNA はリン酸が負に帯電しているので陽極へ移動する。ゲルの網目の中では、短い DNA ほど速く進む。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biotech"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気泳動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

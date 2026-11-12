@@ -1,0 +1,69 @@
+{
+ "id": "CEL-CST-004",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "植物細胞と動物細胞",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "植物細胞にはあるが、動物細胞にはふつう見られない構造を、すべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "細胞壁・葉緑体・発達した液胞",
+    "grading": "すべて選ぶ{細胞壁|葉緑体|ミトコンドリア|発達した液胞|ゴルジ体|中心体}=1,2,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ミトコンドリア・ゴルジ体は両方にある。中心体は動物細胞にあり、被子植物の細胞にはない（コケ植物・シダ植物の一部にはある）。細胞壁・葉緑体・発達した液胞は植物細胞の特徴。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-MITO-PLANT"
+ ],
+ "tags": [
+  "細胞小器官"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "plant-cell"
+ }
+}

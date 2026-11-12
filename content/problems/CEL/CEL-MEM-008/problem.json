@@ -1,0 +1,69 @@
+{
+ "id": "CEL-MEM-008",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "ナトリウムポンプと静止電位",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "神経細胞にナトリウムポンプを阻害する薬剤を与えると、しばらくのあいだは活動電位が発生するが、やがて発生しなくなる。この理由を、細胞内外の Na⁺・K⁺ の濃度に着目して説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ポンプが止まっても、すでにある Na⁺・K⁺ の濃度差によってしばらくは活動電位が生じる。しかし興奮のたびに Na⁺ が流入し K⁺ が流出して濃度差が小さくなり、ポンプで回復できないため、やがて活動電位が生じなくなる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "活動電位は、Na⁺ が細胞外に多く K⁺ が細胞内に多いという濃度差をエネルギー源として生じる（チャネルを通る受動輸送）。この濃度差をつくり維持しているのがナトリウムポンプ（能動輸送）。1回の興奮で動くイオンはわずかなので、ポンプを止めてもすぐには興奮できなくならない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport",
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ナトリウムポンプ",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "action"
+ }
+}

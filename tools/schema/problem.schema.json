@@ -1,0 +1,601 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "flora.problem/1",
+ "title": "FLORA 問題（正規データ）",
+ "type": "object",
+ "required": [
+  "id",
+  "schema",
+  "field",
+  "unit",
+  "level",
+  "format",
+  "statement",
+  "figures",
+  "answer",
+  "solutions",
+  "concepts",
+  "laws",
+  "misconceptions",
+  "tags",
+  "provenance",
+  "quality"
+ ],
+ "additionalProperties": false,
+ "$defs": {
+  "block": {
+   "type": "object",
+   "required": [
+    "type"
+   ],
+   "properties": {
+    "type": {
+     "enum": [
+      "text",
+      "figure",
+      "parts",
+      "simulation"
+     ]
+    }
+   },
+   "allOf": [
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "text"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "tex"
+      ],
+      "properties": {
+       "type": true,
+       "tex": {
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "figure"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "ref"
+      ],
+      "properties": {
+       "type": true,
+       "ref": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+       },
+       "placement": {
+        "enum": [
+         "block",
+         "float-right",
+         "side-by-side"
+        ]
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "parts"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "items"
+      ],
+      "properties": {
+       "type": true,
+       "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "type": "object",
+         "required": [
+          "id",
+          "tex"
+         ],
+         "additionalProperties": false,
+         "properties": {
+          "id": {
+           "type": "string",
+           "pattern": "^[0-9]+[a-z]?$"
+          },
+          "tex": {
+           "type": "string"
+          },
+          "figures": {
+           "type": "array",
+           "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+           }
+          }
+         }
+        }
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "simulation"
+       }
+      }
+     },
+     "then": {
+      "properties": {
+       "type": true,
+       "caption": {
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    }
+   ]
+  }
+ },
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[A-Z]{3}-[A-Z]{3}-\\d{3,}$",
+   "description": "<分野3字>-<単元略号3字>-<番号>。一度使ったら変えない・再利用しない"
+  },
+  "schema": {
+   "const": "flora.problem/1"
+  },
+  "field": {
+   "type": "string",
+   "pattern": "^[A-Z]{3}$"
+  },
+  "unit": {
+   "type": "string",
+   "pattern": "^[A-Z]{3}-\\d{2}$"
+  },
+  "topic": {
+   "type": "string"
+  },
+  "course": {
+   "enum": [
+    "生物基礎",
+    "生物"
+   ]
+  },
+  "level": {
+   "type": "integer",
+   "minimum": 0,
+   "maximum": 5,
+   "description": "0=基礎 1=標準 2=入試基礎 3=国公立2次 4=難関 5=最難関"
+  },
+  "minutes": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "format": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "enum": [
+     "qa",
+     "choice",
+     "order",
+     "causal",
+     "calc",
+     "experiment",
+     "written",
+     "label"
+    ]
+   },
+   "description": "qa=一問一答、choice=正誤・選択、order=順序・過程、causal=因果関係、calc=計算、experiment=実験考察、written=論述、label=図の名称"
+  },
+  "examStyle": {
+   "enum": [
+    "common-test",
+    "national-2nd",
+    "private",
+    "original"
+   ]
+  },
+  "statement": {
+   "type": "object",
+   "required": [
+    "blocks"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "blocks": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "$ref": "#/$defs/block"
+     }
+    }
+   }
+  },
+  "figures": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "role",
+     "kind",
+     "format",
+     "alt"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+     },
+     "role": {
+      "enum": [
+       "question",
+       "answer",
+       "both"
+      ],
+      "description": "answer の図は答え合わせまで表示しない"
+     },
+     "kind": {
+      "enum": [
+       "apparatus",
+       "circuit",
+       "diagram",
+       "graph",
+       "photo",
+       "ray",
+       "scheme",
+       "sim-initial",
+       "state",
+       "structure",
+       "table",
+       "vector",
+       "waveform"
+      ]
+     },
+     "format": {
+      "enum": [
+       "svg",
+       "png",
+       "webp",
+       "plot-json"
+      ]
+     },
+     "src": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*\\.(svg|png|webp|json)$",
+      "description": "問題フォルダ内のファイル名（Base64 は不可）"
+     },
+     "alt": {
+      "type": "string",
+      "minLength": 4
+     },
+     "caption": {
+      "type": "string"
+     },
+     "width": {
+      "type": "integer",
+      "minimum": 80,
+      "maximum": 1200
+     },
+     "smiles": {
+      "type": "string",
+      "description": "構造式の図：tools/structgen.py がこの SMILES から SVG を作る"
+     }
+    },
+    "allOf": [
+     {
+      "if": {
+       "properties": {
+        "format": {
+         "enum": [
+          "svg",
+          "png",
+          "webp",
+          "plot-json"
+         ]
+        }
+       }
+      },
+      "then": {
+       "required": [
+        "src"
+       ]
+      }
+     },
+     {
+      "if": {
+       "properties": {
+        "format": {
+         "enum": [
+          "sim-plot",
+          "sim-snapshot"
+         ]
+        }
+       }
+      },
+      "then": {
+       "required": [
+        "sim"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "answer": {
+   "type": "object",
+   "required": [
+    "parts"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "parts": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "tex"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "type": "string",
+        "pattern": "^([0-9]+[a-z]?|main)$"
+       },
+       "tex": {
+        "type": "string"
+       },
+       "grading": {
+        "type": "string",
+        "description": "入力用の答え（js/answer.js の書式。単位は [m/s]）"
+       },
+       "wrong": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "value",
+          "misconception"
+         ],
+         "properties": {
+          "value": {
+           "type": "string"
+          },
+          "misconception": {
+           "type": "string",
+           "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "solutions": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "kind",
+     "blocks"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^(main|alt\\d+|note\\d*)$"
+     },
+     "kind": {
+      "enum": [
+       "main",
+       "alt",
+       "note"
+      ]
+     },
+     "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "$ref": "#/$defs/block"
+      }
+     }
+    }
+   }
+  },
+  "idea": {
+   "type": "object",
+   "required": [
+    "tex"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "tex": {
+     "type": "string"
+    }
+   }
+  },
+  "hints": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "choices": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "tex"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "tex": {
+      "type": "string"
+     },
+     "misconception": {
+      "type": "string",
+      "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+     }
+    }
+   }
+  },
+  "concepts": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+   }
+  },
+  "laws": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+   }
+  },
+  "misconceptions": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+   }
+  },
+  "tags": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "related": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "created": {
+     "type": "string",
+     "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "method": {
+     "type": "string"
+    }
+   }
+  },
+  "quality": {
+   "type": "object",
+   "required": [
+    "status",
+    "checks"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "status": {
+     "enum": [
+      "draft",
+      "review",
+      "published",
+      "hidden"
+     ]
+    },
+    "checks": {
+     "type": "object",
+     "additionalProperties": false,
+     "properties": {
+      "schema": {
+       "type": "boolean"
+      },
+      "units": {
+       "type": "boolean"
+      },
+      "figures": {
+       "enum": [
+        false,
+        "auto",
+        "human"
+       ]
+      },
+      "human": {
+       "type": "boolean"
+      },
+      "biology": {
+       "type": "boolean",
+       "description": "内容を確かめた（計算・資料・因果の向きなど）"
+      }
+     }
+    },
+    "verified": {
+     "type": "boolean"
+    },
+    "issues": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "learn": {
+   "type": "object",
+   "required": [
+    "page"
+   ],
+   "additionalProperties": false,
+   "description": "解いたあとに開く学ぶのページ",
+   "properties": {
+    "page": {
+     "enum": [
+      "labels",
+      "cards",
+      "anim",
+      "causal",
+      "tree",
+      "laws"
+     ]
+    },
+    "key": {
+     "type": "string"
+    },
+    "label": {
+     "type": "string"
+    }
+   }
+  }
+ }
+}

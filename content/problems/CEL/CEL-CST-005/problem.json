@@ -1,0 +1,68 @@
+{
+ "id": "CEL-CST-005",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "細胞内共生説",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ミトコンドリアと葉緑体がかつて独立した原核生物であったとする説（細胞内共生説）の根拠として、適当でないものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "リン脂質とタンパク質からなる膜をもつ（すべての生体膜に共通するので根拠にならない）",
+    "grading": "選ぶ{独自の DNA をもつ|二重の膜で包まれている|細胞内で分裂によってふえる|リン脂質とタンパク質からなる膜をもつ|原核生物に似たリボソームをもつ}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "独自の DNA・独自のリボソーム（原核生物型）・分裂による増殖・二重膜（内膜はもとの細菌の膜、外膜は取り込んだ細胞の膜に由来）が根拠になる。リン脂質の膜はすべての生体膜に共通するので、共生の根拠にはならない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure",
+  "history-of-life"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "細胞内共生説"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "mitochondria"
+ }
+}

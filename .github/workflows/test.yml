@@ -1,0 +1,19 @@
+# push・プルリクエストのたびに検査する（node tests/run.mjs と、ブラウザでの通し操作）
+# 注意：GitHub の Web 画面の「Upload files」でフォルダをドラッグすると、「.」で始まるこの .github フォルダが
+# 落ちることがある。Actions タブに何も出ないときは、.github/workflows/test.yml を個別にアップロードする。
+name: test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install jsonschema
+      - run: npm install --no-save playwright@1 && npx playwright install --with-deps chromium
+      - run: node tests/run.mjs --e2e

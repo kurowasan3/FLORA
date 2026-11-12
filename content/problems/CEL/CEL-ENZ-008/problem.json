@@ -1,0 +1,66 @@
+{
+ "id": "CEL-ENZ-008",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "温度と反応速度",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素反応の速度は、ある温度までは温度とともに大きくなるが、それより高温では急に小さくなる。温度を上げると速くなる理由と、高温で急に遅くなる理由をそれぞれ説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "温度が高いと分子の運動が活発になり、酵素と基質が衝突して反応する頻度が増すため速くなる。高温では酵素（タンパク質）の立体構造が変化（変性）して活性部位の形が変わり、基質と結合できなくなる（失活する）ため急に遅くなる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "一般の化学反応と同じく温度で反応は速くなるが、酵素はタンパク質なので熱変性する。その境目が最適温度（ヒトの酵素では 35〜40 ℃ 付近が多い）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ENZ-HEAT"
+ ],
+ "tags": [
+  "論述",
+  "最適温度"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

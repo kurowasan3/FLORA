@@ -1,0 +1,63 @@
+{
+ "id": "MET-ATP-004",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-01",
+ "topic": "独立栄養生物",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "無機物だけから有機物を合成できる生物を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "独立栄養生物",
+    "grading": "語{独立栄養生物}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光合成を行う植物・藻類・シアノバクテリアや、化学合成を行う細菌（亜硝酸菌・硝酸菌など）が独立栄養生物。動物・菌類は従属栄養生物。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atp"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "栄養"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

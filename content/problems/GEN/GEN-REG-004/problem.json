@@ -1,0 +1,63 @@
+{
+ "id": "GEN-REG-004",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-04",
+ "topic": "真核生物の転写調節",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真核生物の転写の調節について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "RNA ポリメラーゼは基本転写因子とともにプロモーターに結合する",
+    "grading": "選ぶ{RNA ポリメラーゼは単独でプロモーターに結合して転写を始める|RNA ポリメラーゼは基本転写因子とともにプロモーターに結合する|ヒストンに強く巻きついた DNA ほど転写されやすい|調節タンパク質は必ず転写を抑制する}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "クロマチンがほどけた部分は転写されやすい。調節タンパク質（転写因子）には転写を促進するもの（アクチベーター）も抑制するものもあり、離れた調節領域（エンハンサーなど）に結合してはたらく。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-regulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "転写調節"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

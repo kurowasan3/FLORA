@@ -1,0 +1,64 @@
+{
+ "id": "PLA-FLW-006",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "春化",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "秋まきコムギを春にまくと、夏になっても花芽を形成しない。この理由を説明せよ。また、春にまいて花を咲かせるにはどのような処理をすればよいか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "秋まきコムギは、一定期間の低温を経験しないと花芽を形成できない（春化）。春まきでは冬の低温を経験しないので花芽ができない。種子を発芽させてから数週間低温（数 ℃）で処理（春化処理）してからまけばよい。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "春化を経た植物が長日条件になると花芽を形成する。低温と日長の両方を組み合わせて、春に開花する時期を決めている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "春化",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

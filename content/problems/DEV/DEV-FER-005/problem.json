@@ -1,0 +1,65 @@
+{
+ "id": "DEV-FER-005",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-01",
+ "topic": "卵の大きさの意味",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "卵形成で細胞質が不均等に分かれ、大きな卵と小さな極体ができることには、どのような利点があるか。精子形成と比べて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "卵は発生に必要な栄養（卵黄）や mRNA・タンパク質などを蓄える必要があるので、細胞質を 1 つの卵に集めることで、発生に必要な物質を十分にもった大きな卵をつくることができる。一方、精子は運動して卵に到達することが役割なので、細胞質を減らした小さな細胞を数多くつくる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "極体は、染色体数を半分にするために DNA を捨てる役割を果たしている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fertilization",
+  "animal-development"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "論述",
+  "卵形成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

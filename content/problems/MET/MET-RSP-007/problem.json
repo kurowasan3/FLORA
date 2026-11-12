@@ -1,0 +1,95 @@
+{
+ "id": "MET-RSP-007",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "電子伝達系の阻害",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸素が十分にある条件で呼吸している細胞に、電子伝達系を阻害するシアン化物を与えた。直後に次の量はどう変化するか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ミトコンドリアでの ATP 合成量"
+     },
+     {
+      "id": "2",
+      "tex": "NAD⁺ の量"
+     },
+     {
+      "id": "3",
+      "tex": "CO₂ の放出量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "減る",
+    "grading": "ATP 合成：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "2",
+    "tex": "減る（NADH がたまる）",
+    "grading": "NAD⁺：選ぶ{増える|減る|変わらない}=2"
+   },
+   {
+    "id": "3",
+    "tex": "減る",
+    "grading": "CO₂ 放出：選ぶ{増える|減る|変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "電子伝達系が止まると H⁺ の濃度勾配ができず ATP 合成が止まる。また NADH が NAD⁺ に戻れないので、NAD⁺ を必要とするクエン酸回路も止まり CO₂ の放出も減る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電子伝達系",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "respiration"
+ }
+}

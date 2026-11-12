@@ -1,0 +1,68 @@
+{
+ "id": "GEN-REG-003",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-04",
+ "topic": "調節遺伝子の突然変異",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ラクトースオペロンの調節遺伝子に突然変異が起こり、オペレーターに結合できないリプレッサーしかつくられなくなった大腸菌がある。この大腸菌では、β-ガラクトシダーゼはどのような条件で合成されるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ラクトースの有無にかかわらず常に合成される",
+    "grading": "選ぶ{ラクトースがあるときだけ合成される|ラクトースの有無にかかわらず常に合成される|まったく合成されない|グルコースがあるときだけ合成される}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "リプレッサーがオペレーターに結合できないので、転写を抑えるしくみがはたらかず、常に転写される（ただしグルコースがあると転写は低くなる）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-regulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オペロン",
+  "突然変異"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "lacoperon"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "HOM-BLD-007",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-01",
+ "topic": "組織液とリンパ",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "毛細血管から血しょうの一部がしみ出して組織液になり、その大部分は再び毛細血管に戻る。戻らなかった組織液はどうなるか。また、リンパ管がふさがるとからだにどのような変化が起こるか説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "残りの組織液はリンパ管に入ってリンパ液となり、リンパ節を通って最終的に鎖骨下静脈で血液に合流する。リンパ管がふさがると組織液が回収されずに組織にたまり、むくみ（浮腫）が起こる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "リンパ節では、リンパ球やマクロファージが病原体を除くはたらきもある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "body-fluid",
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "論述",
+  "体液"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

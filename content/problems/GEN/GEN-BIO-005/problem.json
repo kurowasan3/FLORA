@@ -1,0 +1,63 @@
+{
+ "id": "GEN-BIO-005",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-05",
+ "topic": "PCR の温度",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "PCR 法の 1 サイクルは、(1) 約 95 ℃、(2) 約 55 ℃、(3) 約 72 ℃ の 3 段階からなる。それぞれで起こることの正しい組合せを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "(1) 2 本鎖がほどける (2) プライマーが結合する (3) DNA ポリメラーゼが鎖を伸ばす",
+    "grading": "選ぶ{(1) プライマーが結合 (2) 2 本鎖がほどける (3) 鎖を伸ばす|(1) 2 本鎖がほどける (2) プライマーが結合 (3) 鎖を伸ばす|(1) 鎖を伸ばす (2) 2 本鎖がほどける (3) プライマーが結合|(1) 2 本鎖がほどける (2) 鎖を伸ばす (3) プライマーが結合}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "高温で水素結合が切れて 1 本鎖になり、温度を下げるとプライマーが相補的な部分に結合し、耐熱性 DNA ポリメラーゼの最適温度付近で伸長する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biotech"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "PCR"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

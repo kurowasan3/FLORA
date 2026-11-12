@@ -1,0 +1,66 @@
+{
+ "id": "CEL-ENZ-009",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "カタラーゼの実験",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "過酸化水素水に、ブタの肝臓片・煮沸した肝臓片・酸化マンガン(IV)をそれぞれ加えた。気体が発生しないものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "煮沸した肝臓片",
+    "grading": "選ぶ{ブタの肝臓片|煮沸した肝臓片|酸化マンガン(IV)}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "肝臓に含まれるカタラーゼは $\\ce{2H2O2 -> 2H2O + O2}$ を触媒する。煮沸すると変性・失活する。酸化マンガン(IV) は無機触媒なので煮沸の影響を受けない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ENZ-HEAT"
+ ],
+ "tags": [
+  "酵素",
+  "実験"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": "ECO-CON-005",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-04",
+ "topic": "中規模攪乱説",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "岩礁海岸で、波による攪乱の頻度が異なる場所の種数を調べると、攪乱がきわめて少ない場所と非常に多い場所では種数が少なく、中程度の場所で最も多かった。攪乱が少ない場所で種数が少なくなる理由として適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "競争に強い少数の種が空間を独占するから",
+    "grading": "選ぶ{攪乱で多くの生物が死ぬから|競争に強い少数の種が空間を独占するから|攪乱がないと栄養塩類が供給されないから|攪乱がないと光が届かないから}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "攪乱が多すぎると、攪乱に耐える少数の種しか生きられない。中程度の攪乱は、強い種による独占を防ぎつつ多くの種の定着を可能にする（中規模攪乱説）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "攪乱",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

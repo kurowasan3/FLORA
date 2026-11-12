@@ -1,0 +1,63 @@
+{
+ "id": "MET-RSP-005",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "アルコール発酵",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵母が酸素のない条件でグルコースを分解するとき、エタノールとともに生じる気体は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "二酸化炭素（CO₂）",
+    "grading": "語{二酸化炭素|CO2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{C6H12O6 -> 2C2H5OH + 2CO2}$。ピルビン酸から CO₂ がとれてアセトアルデヒドになり、NADH によって還元されてエタノールになる（NAD⁺ が再生されて解糖系が続く）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "発酵"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "DEV-IND-004",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-03",
+ "topic": "ホメオティック遺伝子",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ショウジョウバエで、触角の位置に脚ができるなど、からだのある部分が別の部分に置きかわる突然変異を起こす遺伝子の総称を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ホメオティック遺伝子",
+    "grading": "語{ホメオティック遺伝子|Hox遺伝子}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ホメオティック遺伝子は体節ごとの形態を決める調節遺伝子。動物に広く共通する（ヒトでは Hox 遺伝子群）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホメオティック遺伝子"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

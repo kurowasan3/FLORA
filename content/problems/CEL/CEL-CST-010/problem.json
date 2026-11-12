@@ -1,0 +1,63 @@
+{
+ "id": "CEL-CST-010",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "大きさの比較",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のものを小さい順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "インフルエンザウイルス（約 0.1 µm）→ 大腸菌（約 3 µm）→ ヒトの赤血球（約 8 µm）→ ゾウリムシ（約 200 µm）",
+    "grading": "並べる{ヒトの赤血球|ゾウリムシ|インフルエンザウイルス|大腸菌}=3>4>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光学顕微鏡の分解能は約 0.2 µm なので、ウイルスは電子顕微鏡でないと見えない。大腸菌は光学顕微鏡で見える。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大きさ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

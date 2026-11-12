@@ -1,0 +1,67 @@
+{
+ "id": "ECO-VEG-003",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "陰樹林になる理由",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "遷移の後期に陽樹林が陰樹林に変わる理由として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "陽樹の幼木は暗い林床では育たないが、陰樹の幼木は育つから",
+    "grading": "選ぶ{陰樹は陽樹より背が高くなるから|陽樹の幼木は暗い林床では育たないが、陰樹の幼木は育つから|陰樹は土壌を肥やすから|陽樹は寿命が短く、種子をつくらないから}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "陰樹は光補償点が低く、弱い光でも成長できる。陽樹林の林床は暗いので、陽樹は次の世代が育たない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation",
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-SUCCESSION-SUN"
+ ],
+ "tags": [
+  "遷移",
+  "陰樹"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

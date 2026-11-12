@@ -1,0 +1,69 @@
+{
+ "id": "HOM-GLU-001",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-04",
+ "topic": "血糖濃度を下げるホルモン",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "血糖濃度を下げるはたらきをもつ唯一のホルモンは何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "インスリン",
+    "grading": "語{インスリン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "すい臓ランゲルハンス島の B 細胞から分泌され、細胞のグルコース取り込みと、肝臓・筋肉でのグリコーゲン合成を促す。血糖濃度を上げるホルモンはグルカゴン・アドレナリン・糖質コルチコイドなど複数ある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "homeostasis"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-INSULIN-LIVER"
+ ],
+ "tags": [
+  "血糖"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "glucose"
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "ECO-CON-008",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-04",
+ "topic": "自然浄化",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "河川に有機物を多く含む汚水が流れ込んだ地点の下流で見られる変化として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "流入直後は細菌が増えて溶存酸素が減り、下流に行くにつれて有機物が分解されて溶存酸素が回復する",
+    "grading": "選ぶ{流入直後から溶存酸素が増え、藻類が増える|流入直後は細菌が増えて溶存酸素が減り、下流に行くにつれて有機物が分解されて溶存酸素が回復する|下流に行くほど有機物が増える|汚水の流入は生物に影響しない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "有機物を分解する細菌が呼吸で酸素を消費する。分解が進むと NH₄⁺ などの栄養塩類が増えて藻類が増え、光合成で酸素も回復する（自然浄化）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "biodiversity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自然浄化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

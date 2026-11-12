@@ -1,0 +1,88 @@
+{
+ "id": "MET-RSP-006",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "呼吸商",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある種子の呼吸で、吸収した O₂ が 50 mL、放出した CO₂ が 35 mL であった。呼吸商を求め、主な呼吸基質を答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "呼吸商"
+     },
+     {
+      "id": "2",
+      "tex": "主な呼吸基質"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0.70",
+    "grading": "約{0.7|2}"
+   },
+   {
+    "id": "2",
+    "tex": "脂肪",
+    "grading": "選ぶ{炭水化物|脂肪|タンパク質}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "呼吸商 = CO₂/O₂ = 35/50 = 0.70。炭水化物は 1.0、タンパク質は約 0.8、脂肪は約 0.7 なので、脂肪を多く含む種子（ゴマ・ヒマワリなど）と考えられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [
+  "respiratory-quotient"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "呼吸商",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "respiratory-quotient"
+ }
+}

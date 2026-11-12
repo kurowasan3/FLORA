@@ -1,0 +1,68 @@
+{
+ "id": "GEN-DNA-005",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-01",
+ "topic": "メセルソンとスタールの実験",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "¹⁵N だけを含む培地で何世代も培養した大腸菌を、¹⁴N の培地に移して分裂させた。DNA を密度勾配遠心法で分けたとき、2 回分裂後の DNA の重い（¹⁵N/¹⁵N）：中間（¹⁵N/¹⁴N）：軽い（¹⁴N/¹⁴N）の比を答えよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "0 : 1 : 1",
+    "grading": "0:1:1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "半保存的複製では、1 回目の分裂後はすべて中間。2 回目にはもとの ¹⁵N 鎖 2 本がそれぞれ ¹⁴N 鎖と対になり（中間 2 本）、新しい ¹⁴N 鎖どうしの DNA が 2 本できる。よって 0:1:1。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "dna-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "半保存的複製",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "replication"
+ }
+}

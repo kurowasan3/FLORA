@@ -1,0 +1,6 @@
+# 手元だけのもの
+*.xlsx
+.DS_Store
+node_modules/
+__pycache__/
+reports/

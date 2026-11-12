@@ -1,0 +1,64 @@
+{
+ "id": "GEN-REG-008",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-04",
+ "topic": "原核生物と真核生物の遺伝子発現",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原核生物の遺伝子発現の特徴として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "転写と翻訳が同時に（並行して）進む",
+    "grading": "選ぶ{転写された RNA からイントロンが除かれる|転写と翻訳が同時に（並行して）進む|翻訳は核の中で行われる|RNA ポリメラーゼは基本転写因子がないとはたらかない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原核生物には核膜がなく、ふつうイントロンもないので、転写途中の mRNA にリボソームが結合して翻訳が始まる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-regulation",
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝子発現"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

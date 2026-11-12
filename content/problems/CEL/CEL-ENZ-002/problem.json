@@ -1,0 +1,66 @@
+{
+ "id": "CEL-ENZ-002",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-04",
+ "topic": "酵素の性質",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素について正しいものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "反応の前後で変化せず、くり返しはたらく",
+    "grading": "選ぶ{反応すると酵素自身も分解されてなくなる|反応の前後で変化せず、くり返しはたらく|温度が高いほど反応が速くなり続ける|どの pH でも同じようにはたらく}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酵素は生体触媒で、くり返しはたらく。最適温度・最適 pH があり、それをこえると立体構造が変化して失活する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enzyme"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ENZ-USEDUP",
+  "MC-ENZ-HEAT"
+ ],
+ "tags": [
+  "酵素"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

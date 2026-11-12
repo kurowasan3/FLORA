@@ -1,0 +1,67 @@
+{
+ "id": "EVO-HIS-008",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-01",
+ "topic": "大気と生物の変化",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の大気と生物の変化を古い順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "シアノバクテリアが酸素を放出 → 海水中の鉄が酸化されて沈殿（縞状鉄鉱層）→ 大気中に酸素がたまる → オゾン層ができる → 生物が陸上に進出",
+    "grading": "並べる{オゾン層ができる|大気中に酸素がたまる|生物が陸上に進出する|シアノバクテリアが酸素を放出する|海水中の鉄が酸化されて沈殿する}=4>5>2>1>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "シアノバクテリアの酸素はまず海水中の鉄イオンの酸化に使われ、縞状鉄鉱層をつくった。その後、大気中に酸素が蓄積し、オゾン層が形成された。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "history-of-life"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生命の歴史"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "eras"
+ }
+}

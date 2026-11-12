@@ -1,0 +1,68 @@
+{
+ "id": "GEN-MEI-009",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-06",
+ "topic": "配偶子の染色体の組合せ",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2n = 8 の生物で、乗換えが起こらないとすると、減数分裂でできる配偶子の染色体の組合せは何通りあるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "16 通り",
+    "grading": "16"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "相同染色体 4 対のそれぞれから、父方・母方のどちらか一方が配偶子に入るので $2^4=16$ 通り。ヒト（2n = 46）では $2^{23}$ 通り（約 840 万通り）になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mendel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "減数分裂",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "meiosis"
+ }
+}

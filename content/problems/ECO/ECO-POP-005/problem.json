@@ -1,0 +1,63 @@
+{
+ "id": "ECO-POP-005",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-02",
+ "topic": "生存曲線",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "多数の卵を産み、親が保護しないので、幼い時期の死亡率が非常に高い動物の生存曲線の型はどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "早死型",
+    "grading": "選ぶ{晩死型|平均型|早死型}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "魚類・無脊椎動物の多くは早死型。哺乳類のように少数の子を親が保護する動物は晩死型。小鳥やは虫類は平均型に近い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "population"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生存曲線"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

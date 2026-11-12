@@ -1,0 +1,63 @@
+{
+ "id": "CEL-CST-009",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-01",
+ "topic": "生物の共通性",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "すべての生物に共通する特徴として適当でないものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "核をもつ",
+    "grading": "選ぶ{細胞膜で包まれた細胞からなる|DNA を遺伝情報としてもつ|ATP を使ってエネルギーを受け渡す|核膜に包まれた核をもつ|代謝を行う}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原核生物（細菌など）は核膜に包まれた核をもたない。細胞・DNA・ATP・代謝・恒常性などは全生物に共通する。ウイルスは細胞をもたず、自分だけで代謝もしないので、ふつう生物とはみなさない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生物の共通性"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

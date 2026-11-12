@@ -1,0 +1,69 @@
+{
+ "id": "HOM-IMM-002",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-05",
+ "topic": "体液性免疫",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "体液性免疫の過程を順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "樹状細胞が抗原を取り込む → ヘルパー T 細胞に抗原提示 → ヘルパー T 細胞が B 細胞を活性化 → B 細胞が形質細胞になり抗体を産生",
+    "grading": "並べる{B 細胞が形質細胞になり、抗体を産生する|ヘルパー T 細胞が B 細胞を活性化する|樹状細胞が抗原を取り込む|樹状細胞がヘルパー T 細胞に抗原を提示する}=3>4>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "抗体は抗原と結合して無毒化・凝集させ、マクロファージの食作用で除かれる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ANTIBODY-KILL"
+ ],
+ "tags": [
+  "体液性免疫"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "immune"
+ }
+}

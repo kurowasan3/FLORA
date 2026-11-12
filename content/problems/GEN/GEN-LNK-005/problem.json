@@ -1,0 +1,64 @@
+{
+ "id": "GEN-LNK-005",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-07",
+ "topic": "F₂ の表現型の比（連鎖）",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "A と B、a と b が完全に連鎖している（組換えが起こらない）AaBb どうしを交配した。子の表現型 [AB]:[ab] の比を答えよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "3 : 1",
+    "grading": "3:1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "配偶子は AB:ab = 1:1。子は AABB:AaBb:aabb = 1:2:1 となり、[AB]:[ab] = 3:1。独立なら 9:3:3:1 になるので、比の違いで連鎖を見分けられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "linkage"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "連鎖",
+  "分離比"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

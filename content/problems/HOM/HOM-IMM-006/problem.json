@@ -1,0 +1,63 @@
+{
+ "id": "HOM-IMM-006",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-05",
+ "topic": "自然免疫",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "自然免疫にかかわる細胞やしくみとして適当でないものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "記憶細胞",
+    "grading": "選ぶ{好中球の食作用|マクロファージの食作用|NK（ナチュラルキラー）細胞|皮膚の角質層やリゾチーム|記憶細胞}=5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "記憶細胞は獲得免疫でつくられる。自然免疫は物理的・化学的防御と、食細胞や NK 細胞による非特異的な防御。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自然免疫"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

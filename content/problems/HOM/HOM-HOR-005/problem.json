@@ -1,0 +1,65 @@
+{
+ "id": "HOM-HOR-005",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "水溶性ホルモンと脂溶性ホルモン",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ステロイドホルモン（糖質コルチコイドなど）の作用のしかたとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "細胞膜を通過し、細胞内の受容体と結合して遺伝子の転写を調節する",
+    "grading": "選ぶ{細胞膜の受容体と結合し、細胞内にセカンドメッセンジャーをつくる|細胞膜を通過し、細胞内の受容体と結合して遺伝子の転写を調節する|血液中で分解されて標的細胞に吸収される|神経を通って標的細胞に伝わる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "脂溶性のステロイドホルモンやチロキシンは細胞膜を通過し、細胞内の受容体と結合して転写を調節する。水溶性のペプチドホルモン（インスリンなど）やアドレナリンは細胞膜の受容体に結合する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone",
+  "gene-regulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホルモン",
+  "受容体"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "id": "MET-RSP-004",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "呼吸でできる ATP",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グルコース 1 分子が呼吸で完全に分解されたとき、解糖系・クエン酸回路・電子伝達系でつくられる ATP は、それぞれ最大何分子か（教科書の値で答えよ）。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "解糖系"
+     },
+     {
+      "id": "2",
+      "tex": "クエン酸回路"
+     },
+     {
+      "id": "3",
+      "tex": "電子伝達系"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 分子",
+    "grading": "2"
+   },
+   {
+    "id": "2",
+    "tex": "2 分子",
+    "grading": "2"
+   },
+   {
+    "id": "3",
+    "tex": "34 分子（最大）",
+    "grading": "34"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "合計で最大 38 分子（実際には膜を通す輸送などに使うため約 30 分子程度とされる）。解糖系は差し引きで 2 分子。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [
+  "respiration-eq"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "呼吸",
+  "ATP"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "etc"
+ }
+}

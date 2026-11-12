@@ -1,0 +1,100 @@
+{
+ "id": "HOM-BLD-002",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-01",
+ "topic": "心臓の構造",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はヒトの心臓を前から見た模式図である。全身へ血液を送り出す部屋と、肺から戻った血液が入る部屋を、図のア〜エからそれぞれ選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "全身へ送り出す部屋"
+     },
+     {
+      "id": "2",
+      "tex": "肺から戻った血液が入る部屋"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "ヒトの心臓の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す、エは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "エ（左心室）",
+    "grading": "選ぶ{ア|イ|ウ|エ}=4"
+   },
+   {
+    "id": "2",
+    "tex": "ウ（左心房）",
+    "grading": "選ぶ{ア|イ|ウ|エ}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アは右心房、イは右心室、ウは左心房、エは左心室。図の左側がからだの右側にあたる。肺静脈 → 左心房 → 左心室 → 大動脈 → 全身 → 大静脈 → 右心房 → 右心室 → 肺動脈 → 肺。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "body-fluid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "心臓",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "heart"
+ }
+}

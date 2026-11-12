@@ -1,0 +1,63 @@
+{
+ "id": "MET-PHS-006",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "光と温度の影響",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光の強さが弱いときは、温度を上げても光合成速度はほとんど変わらない。一方、光が十分に強いときは、温度を上げると光合成速度が大きくなる（ある温度まで）。この理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "弱光では光の強さ（チラコイドの反応）が限定要因、強光ではカルビン回路の酵素反応が限定要因になるから",
+    "grading": "選ぶ{弱光では温度が限定要因で、強光では光が限定要因になるから|弱光では光の強さが限定要因であり、強光では酵素反応（カルビン回路）の速さが限定要因になるから|光が強いと葉の温度が下がるから|温度は光合成に影響しないから}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "最も不足している要因が全体の速度を決める（限定要因）。光が弱いと光化学反応が律速になり、温度に影響されにくい。光が十分だと、温度の影響を受ける酵素反応（カルビン回路）が律速になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "限定要因"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

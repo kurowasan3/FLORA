@@ -1,0 +1,65 @@
+{
+ "id": "GEN-EXP-008",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "遺伝暗号の解読",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "人工的に合成した mRNA（UUU…と U だけが並ぶもの）を、大腸菌の抽出液（リボソーム・tRNA・アミノ酸などを含む）に加えると、フェニルアラニンだけがつながったポリペプチドができた（ニーレンバーグの実験）。次に、CA のくり返し（CACACA…）の mRNA を加えると、2 種類のアミノ酸（ヒスチジンとトレオニン）が交互につながったポリペプチドができた。CACACA… から 2 種類のアミノ酸が交互につながることが、遺伝暗号が 3 塩基でできていることとどう対応するか説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "CACACA… を 3 塩基ずつ読むと CAC・ACA・CAC・ACA… と 2 種類のコドンが交互に現れるので、2 種類のアミノ酸が交互につながる。（2 塩基ずつなら 1 種類、4 塩基ずつでも 1 種類のコドンのくり返しになる。）",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "3 塩基ずつ区切ると CAC と ACA が交互に現れ、ヒスチジン（CAC）とトレオニン（ACA）が交互に並ぶ。偶数塩基ずつ読む暗号ならすべて同じコドンになるので、この結果は 3 塩基（奇数）の暗号と矛盾しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遺伝暗号",
+  "実験考察",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

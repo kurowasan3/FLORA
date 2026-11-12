@@ -1,0 +1,67 @@
+{
+ "id": "RES-NEU-003",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "活動電位の発生",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "活動電位が発生するときのできごとを順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Na⁺ チャネルが開き Na⁺ が流入する → 膜電位が逆転する → Na⁺ チャネルが閉じ K⁺ チャネルが開く → K⁺ が流出して電位が下がる",
+    "grading": "並べる{K⁺ が流出して電位が下がる|膜電位が逆転する|Na⁺ チャネルが閉じ、K⁺ チャネルが開く|Na⁺ チャネルが開き、Na⁺ が流入する}=4>2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "その後、一時的に静止電位より低くなる（過分極）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "活動電位"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "action"
+ }
+}

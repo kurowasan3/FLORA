@@ -1,0 +1,1597 @@
+{
+ "schema": "flora.causal/1",
+ "nets": [
+  {
+   "id": "glucose",
+   "title": "血糖濃度の調節",
+   "unit": "HOM-04",
+   "desc": "血糖濃度の変化を、間脳視床下部とすい臓のランゲルハンス島が感知し、自律神経とホルモンで元に戻す（糖質コルチコイドによる経路は省略）。",
+   "nodes": [
+    {
+     "id": "glu",
+     "label": "血糖濃度",
+     "col": 1.5,
+     "row": 0
+    },
+    {
+     "id": "gcg",
+     "label": "グルカゴン\n（A細胞）",
+     "col": 0,
+     "row": 1.4
+    },
+    {
+     "id": "sym",
+     "label": "交感神経",
+     "col": 1,
+     "row": 1.4
+    },
+    {
+     "id": "para",
+     "label": "副交感神経",
+     "col": 2,
+     "row": 1.4
+    },
+    {
+     "id": "ins",
+     "label": "インスリン\n（B細胞）",
+     "col": 3,
+     "row": 1.4
+    },
+    {
+     "id": "glyc",
+     "label": "グリコーゲン\nの分解",
+     "col": 0,
+     "row": 2.8
+    },
+    {
+     "id": "adr",
+     "label": "アドレナリン\n（副腎髄質）",
+     "col": 1,
+     "row": 2.8
+    },
+    {
+     "id": "take",
+     "label": "グルコースの\n取り込み・\nグリコーゲン合成",
+     "col": 3,
+     "row": 2.9
+    }
+   ],
+   "edges": [
+    {
+     "from": "glu",
+     "to": "sym",
+     "sign": -1,
+     "note": "血糖濃度の低下を視床下部が感知し、交感神経がはたらく"
+    },
+    {
+     "from": "glu",
+     "to": "para",
+     "sign": 1,
+     "note": "血糖濃度の上昇を視床下部が感知し、副交感神経がはたらく"
+    },
+    {
+     "from": "glu",
+     "to": "ins",
+     "sign": 1,
+     "note": "B細胞は血糖濃度の上昇を直接感知する"
+    },
+    {
+     "from": "glu",
+     "to": "gcg",
+     "sign": -1,
+     "note": "A細胞は血糖濃度の低下を直接感知する"
+    },
+    {
+     "from": "sym",
+     "to": "adr",
+     "sign": 1
+    },
+    {
+     "from": "sym",
+     "to": "gcg",
+     "sign": 1
+    },
+    {
+     "from": "para",
+     "to": "ins",
+     "sign": 1
+    },
+    {
+     "from": "adr",
+     "to": "glyc",
+     "sign": 1,
+     "note": "肝臓のグリコーゲン分解を促す"
+    },
+    {
+     "from": "gcg",
+     "to": "glyc",
+     "sign": 1,
+     "note": "肝臓のグリコーゲン分解を促す"
+    },
+    {
+     "from": "ins",
+     "to": "take",
+     "sign": 1,
+     "note": "肝臓・筋肉などの細胞"
+    },
+    {
+     "from": "glyc",
+     "to": "glu",
+     "sign": 1,
+     "fb": true
+    },
+    {
+     "from": "take",
+     "to": "glu",
+     "sign": -1,
+     "fb": true
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "low",
+     "title": "空腹・激しい運動で血糖濃度が下がった",
+     "start": "glu",
+     "dir": -1,
+     "ask": [
+      "ins",
+      "gcg",
+      "adr",
+      "glyc"
+     ],
+     "explain": "血糖濃度を上げるしくみ（グルカゴン・アドレナリン）がはたらき、インスリンの分泌は減る。"
+    },
+    {
+     "id": "high",
+     "title": "食後に血糖濃度が上がった",
+     "start": "glu",
+     "dir": 1,
+     "ask": [
+      "ins",
+      "take",
+      "gcg",
+      "glyc"
+     ],
+     "explain": "インスリンが増えてグルコースの取り込みが進み、血糖濃度を上げるホルモンは減る。"
+    },
+    {
+     "id": "type1",
+     "title": "すい臓B細胞が破壊された（1型糖尿病）",
+     "start": "ins",
+     "dir": -1,
+     "ask": [
+      "take",
+      "glu"
+     ],
+     "explain": "インスリンが分泌されず、細胞がグルコースを取り込めないので血糖濃度が高いままになる。"
+    },
+    {
+     "id": "sympa",
+     "title": "交感神経を強く刺激した",
+     "start": "sym",
+     "dir": 1,
+     "ask": [
+      "adr",
+      "gcg",
+      "glyc",
+      "glu"
+     ],
+     "explain": "アドレナリン・グルカゴンが増えてグリコーゲンが分解され、血糖濃度が上がる。"
+    }
+   ]
+  },
+  {
+   "id": "temperature",
+   "title": "体温の調節",
+   "unit": "HOM-04",
+   "desc": "体温の変化を間脳視床下部が感知し、熱の放散と熱の発生を調節する。",
+   "nodes": [
+    {
+     "id": "out",
+     "label": "外気温",
+     "col": 1.5,
+     "row": 0
+    },
+    {
+     "id": "temp",
+     "label": "体温",
+     "col": 1.5,
+     "row": 1.2
+    },
+    {
+     "id": "sym",
+     "label": "交感神経",
+     "col": 0,
+     "row": 2.4
+    },
+    {
+     "id": "tsh",
+     "label": "甲状腺刺激\nホルモン",
+     "col": 2,
+     "row": 2.4
+    },
+    {
+     "id": "sweat",
+     "label": "発汗",
+     "col": 3,
+     "row": 2.4
+    },
+    {
+     "id": "vaso",
+     "label": "皮膚の血管\nの収縮",
+     "col": 0,
+     "row": 3.7
+    },
+    {
+     "id": "adr",
+     "label": "アドレナリン",
+     "col": 1,
+     "row": 3.7
+    },
+    {
+     "id": "thy",
+     "label": "チロキシン",
+     "col": 2,
+     "row": 3.7
+    },
+    {
+     "id": "meta",
+     "label": "熱の発生\n（代謝・ふるえ）",
+     "col": 1.5,
+     "row": 5.0
+    },
+    {
+     "id": "loss",
+     "label": "熱の放散",
+     "col": 3,
+     "row": 5.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "out",
+     "to": "temp",
+     "sign": 1
+    },
+    {
+     "from": "temp",
+     "to": "sym",
+     "sign": -1,
+     "note": "体温が下がると交感神経がはたらく"
+    },
+    {
+     "from": "temp",
+     "to": "tsh",
+     "sign": -1
+    },
+    {
+     "from": "temp",
+     "to": "meta",
+     "sign": -1,
+     "note": "骨格筋のふるえ（体温が下がると）"
+    },
+    {
+     "from": "temp",
+     "to": "sweat",
+     "sign": 1,
+     "note": "体温が上がると汗腺を刺激"
+    },
+    {
+     "from": "sym",
+     "to": "vaso",
+     "sign": 1
+    },
+    {
+     "from": "sym",
+     "to": "adr",
+     "sign": 1,
+     "note": "副腎髄質から"
+    },
+    {
+     "from": "tsh",
+     "to": "thy",
+     "sign": 1
+    },
+    {
+     "from": "vaso",
+     "to": "loss",
+     "sign": -1,
+     "note": "皮膚を流れる血液が減る"
+    },
+    {
+     "from": "sweat",
+     "to": "loss",
+     "sign": 1,
+     "note": "気化熱"
+    },
+    {
+     "from": "adr",
+     "to": "meta",
+     "sign": 1
+    },
+    {
+     "from": "thy",
+     "to": "meta",
+     "sign": 1
+    },
+    {
+     "from": "meta",
+     "to": "temp",
+     "sign": 1,
+     "fb": true
+    },
+    {
+     "from": "loss",
+     "to": "temp",
+     "sign": -1,
+     "fb": true
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "cold",
+     "title": "寒い所に出た",
+     "start": "out",
+     "dir": -1,
+     "ask": [
+      "temp",
+      "vaso",
+      "loss",
+      "thy",
+      "meta"
+     ],
+     "explain": "熱の放散を減らし（血管の収縮・発汗の停止）、熱の発生を増やす（骨格筋のふるえ・ホルモンによる代謝の促進）。"
+    },
+    {
+     "id": "hot",
+     "title": "暑い所に出た",
+     "start": "out",
+     "dir": 1,
+     "ask": [
+      "vaso",
+      "sweat",
+      "loss",
+      "meta"
+     ],
+     "explain": "皮膚の血管が拡張し、発汗が増えて熱の放散が増える。代謝は抑えられる。"
+    }
+   ]
+  },
+  {
+   "id": "thyroxine",
+   "title": "チロキシンの分泌の調節",
+   "unit": "HOM-03",
+   "desc": "チロキシンは、視床下部→脳下垂体前葉→甲状腺の順に分泌が促され、チロキシン自身が上位の分泌を抑える（負のフィードバック）。",
+   "nodes": [
+    {
+     "id": "trh",
+     "label": "放出ホルモン\n（視床下部）",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "tsh",
+     "label": "甲状腺刺激ホルモン\n（脳下垂体前葉）",
+     "col": 1,
+     "row": 1.4
+    },
+    {
+     "id": "thy",
+     "label": "チロキシン\n（甲状腺）",
+     "col": 1,
+     "row": 2.8
+    },
+    {
+     "id": "meta",
+     "label": "代謝",
+     "col": 1,
+     "row": 4.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "trh",
+     "to": "tsh",
+     "sign": 1
+    },
+    {
+     "from": "tsh",
+     "to": "thy",
+     "sign": 1
+    },
+    {
+     "from": "thy",
+     "to": "meta",
+     "sign": 1
+    },
+    {
+     "from": "thy",
+     "to": "trh",
+     "sign": -1,
+     "fb": true,
+     "note": "負のフィードバック"
+    },
+    {
+     "from": "thy",
+     "to": "tsh",
+     "sign": -1,
+     "fb": true,
+     "note": "負のフィードバック"
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "remove",
+     "title": "甲状腺を除去した",
+     "start": "thy",
+     "dir": -1,
+     "ask": [
+      "meta",
+      "trh",
+      "tsh"
+     ],
+     "explain": "チロキシンがなくなると、フィードバックによる抑制がなくなり、放出ホルモンと甲状腺刺激ホルモンの分泌が増える。"
+    },
+    {
+     "id": "inject",
+     "title": "チロキシンを注射した",
+     "start": "thy",
+     "dir": 1,
+     "ask": [
+      "meta",
+      "trh",
+      "tsh"
+     ],
+     "explain": "チロキシンが多いと、負のフィードバックで上位のホルモンの分泌が減る。"
+    },
+    {
+     "id": "pit",
+     "title": "脳下垂体前葉を除去した",
+     "start": "tsh",
+     "dir": -1,
+     "ask": [
+      "thy",
+      "meta",
+      "trh"
+     ],
+     "explain": "甲状腺刺激ホルモンがなくなるとチロキシンが減り、抑制がなくなるので放出ホルモンは増える。"
+    }
+   ]
+  },
+  {
+   "id": "osmotic",
+   "title": "体液の浸透圧の調節",
+   "unit": "HOM-02",
+   "desc": "体液の浸透圧を視床下部が感知し、バソプレシンで集合管での水の再吸収を調節する。",
+   "nodes": [
+    {
+     "id": "osm",
+     "label": "体液の浸透圧",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "adh",
+     "label": "バソプレシン\n（脳下垂体後葉）",
+     "col": 0,
+     "row": 1
+    },
+    {
+     "id": "thirst",
+     "label": "のどの渇き（飲水）",
+     "col": 2,
+     "row": 1
+    },
+    {
+     "id": "aqp",
+     "label": "集合管での\n水の再吸収",
+     "col": 0,
+     "row": 2
+    },
+    {
+     "id": "urine",
+     "label": "尿量",
+     "col": 0,
+     "row": 3
+    },
+    {
+     "id": "blood",
+     "label": "血液量",
+     "col": 2,
+     "row": 2.2
+    },
+    {
+     "id": "aldo",
+     "label": "鉱質コルチコイド",
+     "col": 2,
+     "row": 3.2
+    },
+    {
+     "id": "na",
+     "label": "細尿管での\nNa⁺ の再吸収",
+     "col": 1,
+     "row": 3.8
+    }
+   ],
+   "edges": [
+    {
+     "from": "osm",
+     "to": "adh",
+     "sign": 1,
+     "note": "視床下部の神経分泌細胞が分泌し、脳下垂体後葉から放出"
+    },
+    {
+     "from": "osm",
+     "to": "thirst",
+     "sign": 1
+    },
+    {
+     "from": "adh",
+     "to": "aqp",
+     "sign": 1,
+     "note": "アクアポリンが細胞膜に移動する"
+    },
+    {
+     "from": "aqp",
+     "to": "urine",
+     "sign": -1
+    },
+    {
+     "from": "aqp",
+     "to": "osm",
+     "sign": -1,
+     "fb": true
+    },
+    {
+     "from": "thirst",
+     "to": "osm",
+     "sign": -1,
+     "fb": true
+    },
+    {
+     "from": "blood",
+     "to": "aldo",
+     "sign": -1,
+     "note": "血液量が減ると副腎皮質から分泌"
+    },
+    {
+     "from": "aldo",
+     "to": "na",
+     "sign": 1
+    },
+    {
+     "from": "na",
+     "to": "blood",
+     "sign": 1,
+     "fb": true,
+     "note": "Na⁺ とともに水も戻る"
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "sweat",
+     "title": "大量に汗をかいた",
+     "start": "osm",
+     "dir": 1,
+     "ask": [
+      "adh",
+      "aqp",
+      "urine",
+      "thirst"
+     ],
+     "explain": "浸透圧が上がるとバソプレシンが増え、水の再吸収が増えて尿量が減る。"
+    },
+    {
+     "id": "drink",
+     "title": "大量の水を飲んだ",
+     "start": "osm",
+     "dir": -1,
+     "ask": [
+      "adh",
+      "aqp",
+      "urine"
+     ],
+     "explain": "浸透圧が下がるとバソプレシンが減り、うすい尿が多く出る。"
+    },
+    {
+     "id": "di",
+     "title": "バソプレシンが分泌されなくなった（尿崩症）",
+     "start": "adh",
+     "dir": -1,
+     "ask": [
+      "aqp",
+      "urine",
+      "osm",
+      "thirst"
+     ],
+     "explain": "水が再吸収されず、うすい尿が大量に出て、体液の浸透圧が上がり、のどが渇く。"
+    },
+    {
+     "id": "bleed",
+     "title": "出血して血液量が減った",
+     "start": "blood",
+     "dir": -1,
+     "ask": [
+      "aldo",
+      "na"
+     ],
+     "explain": "鉱質コルチコイドが増えて Na⁺ の再吸収が増え、水も一緒に戻る。"
+    }
+   ]
+  },
+  {
+   "id": "lacoperon",
+   "title": "ラクトースオペロン",
+   "unit": "GEN-04",
+   "desc": "大腸菌は、ラクトースがあるときだけラクトースを分解する酵素の遺伝子を転写する。",
+   "nodes": [
+    {
+     "id": "lac",
+     "label": "ラクトース",
+     "col": 0,
+     "row": 0
+    },
+    {
+     "id": "glu",
+     "label": "グルコース",
+     "col": 2,
+     "row": 0
+    },
+    {
+     "id": "rep",
+     "label": "リプレッサーの\nオペレーターへの結合",
+     "col": 0,
+     "row": 1.2
+    },
+    {
+     "id": "tr",
+     "label": "RNAポリメラーゼ\nによる転写",
+     "col": 1,
+     "row": 2.4
+    },
+    {
+     "id": "enz",
+     "label": "β-ガラクトシダーゼ\nなどの合成",
+     "col": 1,
+     "row": 3.6
+    },
+    {
+     "id": "deg",
+     "label": "ラクトースの分解",
+     "col": 1,
+     "row": 4.8
+    }
+   ],
+   "edges": [
+    {
+     "from": "lac",
+     "to": "rep",
+     "sign": -1,
+     "note": "ラクトースの代謝産物がリプレッサーに結合し、オペレーターから外す"
+    },
+    {
+     "from": "rep",
+     "to": "tr",
+     "sign": -1,
+     "note": "リプレッサーが結合していると RNA ポリメラーゼが転写できない"
+    },
+    {
+     "from": "glu",
+     "to": "tr",
+     "sign": -1,
+     "note": "グルコースがあると転写されにくい"
+    },
+    {
+     "from": "tr",
+     "to": "enz",
+     "sign": 1
+    },
+    {
+     "from": "enz",
+     "to": "deg",
+     "sign": 1
+    },
+    {
+     "from": "deg",
+     "to": "lac",
+     "sign": -1,
+     "fb": true
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "add",
+     "title": "培地にラクトースを加えた（グルコースなし）",
+     "start": "lac",
+     "dir": 1,
+     "ask": [
+      "rep",
+      "tr",
+      "enz"
+     ],
+     "explain": "リプレッサーがオペレーターから外れ、酵素の遺伝子が転写される。"
+    },
+    {
+     "id": "mut",
+     "title": "調節遺伝子が欠損してリプレッサーがつくられない",
+     "start": "rep",
+     "dir": -1,
+     "ask": [
+      "tr",
+      "enz"
+     ],
+     "explain": "ラクトースがなくても、常に酵素がつくられる。"
+    },
+    {
+     "id": "gluc",
+     "title": "培地にグルコースを加えた",
+     "start": "glu",
+     "dir": 1,
+     "ask": [
+      "tr",
+      "enz"
+     ],
+     "explain": "グルコースがあると、ラクトースがあっても転写されにくい（まずグルコースを使う）。"
+    }
+   ]
+  },
+  {
+   "id": "germination",
+   "title": "種子の発芽",
+   "unit": "PLA-01",
+   "desc": "吸水した種子では、胚でつくられたジベレリンが糊粉層にはたらき、アミラーゼでデンプンを分解する。",
+   "nodes": [
+    {
+     "id": "water",
+     "label": "吸水",
+     "col": 0,
+     "row": 0
+    },
+    {
+     "id": "aba",
+     "label": "アブシシン酸",
+     "col": 2,
+     "row": 0
+    },
+    {
+     "id": "gib",
+     "label": "ジベレリン（胚）",
+     "col": 0,
+     "row": 1.2
+    },
+    {
+     "id": "dorm",
+     "label": "休眠",
+     "col": 2,
+     "row": 1.2
+    },
+    {
+     "id": "amy",
+     "label": "アミラーゼの合成\n（糊粉層）",
+     "col": 0,
+     "row": 2.4
+    },
+    {
+     "id": "sugar",
+     "label": "デンプンの分解\n（糖ができる）",
+     "col": 0,
+     "row": 3.6
+    },
+    {
+     "id": "grow",
+     "label": "胚の成長（発芽）",
+     "col": 1,
+     "row": 4.6
+    }
+   ],
+   "edges": [
+    {
+     "from": "water",
+     "to": "gib",
+     "sign": 1
+    },
+    {
+     "from": "gib",
+     "to": "amy",
+     "sign": 1,
+     "note": "アミラーゼの遺伝子の発現を促す"
+    },
+    {
+     "from": "aba",
+     "to": "amy",
+     "sign": -1
+    },
+    {
+     "from": "aba",
+     "to": "dorm",
+     "sign": 1
+    },
+    {
+     "from": "gib",
+     "to": "dorm",
+     "sign": -1
+    },
+    {
+     "from": "amy",
+     "to": "sugar",
+     "sign": 1
+    },
+    {
+     "from": "sugar",
+     "to": "grow",
+     "sign": 1,
+     "note": "糖が胚の成長に使われる"
+    },
+    {
+     "from": "dorm",
+     "to": "grow",
+     "sign": -1
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "ga",
+     "title": "種子にジベレリンを与えた",
+     "start": "gib",
+     "dir": 1,
+     "ask": [
+      "amy",
+      "sugar",
+      "grow",
+      "dorm"
+     ],
+     "explain": "ジベレリンはアミラーゼの合成を促し、休眠を打破する。"
+    },
+    {
+     "id": "aba",
+     "title": "種子にアブシシン酸を与えた",
+     "start": "aba",
+     "dir": 1,
+     "ask": [
+      "dorm",
+      "amy",
+      "grow"
+     ],
+     "explain": "アブシシン酸は休眠を維持し、発芽を抑える。"
+    },
+    {
+     "id": "emb",
+     "title": "吸水させた種子から胚を取り除いた",
+     "start": "gib",
+     "dir": -1,
+     "ask": [
+      "amy",
+      "sugar"
+     ],
+     "explain": "ジベレリンをつくる胚がないので、アミラーゼがつくられずデンプンが分解されない。"
+    }
+   ]
+  },
+  {
+   "id": "apical",
+   "title": "頂芽優勢",
+   "unit": "PLA-01",
+   "desc": "頂芽でつくられたオーキシンが下へ移動し、側芽の成長を抑える。",
+   "nodes": [
+    {
+     "id": "apex",
+     "label": "頂芽",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "aux",
+     "label": "オーキシン",
+     "col": 1,
+     "row": 1.2
+    },
+    {
+     "id": "cyt",
+     "label": "サイトカイニン",
+     "col": 2,
+     "row": 2
+    },
+    {
+     "id": "lat",
+     "label": "側芽の成長",
+     "col": 1,
+     "row": 3
+    }
+   ],
+   "edges": [
+    {
+     "from": "apex",
+     "to": "aux",
+     "sign": 1,
+     "note": "頂芽でつくられ、極性移動で下へ"
+    },
+    {
+     "from": "aux",
+     "to": "cyt",
+     "sign": -1,
+     "note": "茎でのサイトカイニンの合成を抑える"
+    },
+    {
+     "from": "aux",
+     "to": "lat",
+     "sign": -1
+    },
+    {
+     "from": "cyt",
+     "to": "lat",
+     "sign": 1
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "cut",
+     "title": "頂芽を切り取った",
+     "start": "apex",
+     "dir": -1,
+     "ask": [
+      "aux",
+      "cyt",
+      "lat"
+     ],
+     "explain": "オーキシンが来なくなり、側芽が成長を始める。"
+    },
+    {
+     "id": "paste",
+     "title": "頂芽を切り取って、切り口にオーキシンを含む寒天をのせた",
+     "start": "aux",
+     "dir": 1,
+     "ask": [
+      "cyt",
+      "lat"
+     ],
+     "explain": "オーキシンがあれば、頂芽がなくても側芽の成長は抑えられる。"
+    }
+   ]
+  },
+  {
+   "id": "photoperiod",
+   "title": "光周性と花芽形成（短日植物）",
+   "unit": "PLA-02",
+   "desc": "短日植物は、連続した暗期が限界暗期より長いと、葉でフロリゲンをつくって花芽を形成する。",
+   "nodes": [
+    {
+     "id": "brk",
+     "label": "光中断（暗期の\n途中の光）",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "night",
+     "label": "連続した暗期の長さ",
+     "col": 1,
+     "row": 1.2
+    },
+    {
+     "id": "leaf",
+     "label": "葉（光周期の感知）",
+     "col": 0,
+     "row": 1.6
+    },
+    {
+     "id": "flo",
+     "label": "フロリゲンの合成",
+     "col": 1,
+     "row": 2.4
+    },
+    {
+     "id": "flower",
+     "label": "花芽形成",
+     "col": 1,
+     "row": 3.6
+    }
+   ],
+   "edges": [
+    {
+     "from": "brk",
+     "to": "night",
+     "sign": -1,
+     "note": "暗期が2つに分かれる"
+    },
+    {
+     "from": "night",
+     "to": "flo",
+     "sign": 1,
+     "note": "短日植物では、限界暗期より長いと合成"
+    },
+    {
+     "from": "leaf",
+     "to": "flo",
+     "sign": 1,
+     "note": "日長を感知するのは葉"
+    },
+    {
+     "from": "flo",
+     "to": "flower",
+     "sign": 1,
+     "note": "師管を通って茎頂へ"
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "break",
+     "title": "暗期の途中で短時間光を当てた",
+     "start": "brk",
+     "dir": 1,
+     "ask": [
+      "night",
+      "flo",
+      "flower"
+     ],
+     "explain": "連続した暗期が短くなるので、短日植物は花芽を形成しない。"
+    },
+    {
+     "id": "leaf",
+     "title": "葉をすべて取り除いた",
+     "start": "leaf",
+     "dir": -1,
+     "ask": [
+      "flo",
+      "flower"
+     ],
+     "explain": "日長を感知してフロリゲンをつくる葉がないので、花芽はできない。"
+    }
+   ]
+  },
+  {
+   "id": "eutrophication",
+   "title": "富栄養化",
+   "unit": "ECO-04",
+   "desc": "生活排水などで窒素・リンが増えると、湖や海の生態系が大きく変わる。",
+   "nodes": [
+    {
+     "id": "nut",
+     "label": "栄養塩類（N・P）",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "phyto",
+     "label": "植物プランクトン",
+     "col": 1,
+     "row": 1.2
+    },
+    {
+     "id": "trans",
+     "label": "水の透明度",
+     "col": 2,
+     "row": 2.2
+    },
+    {
+     "id": "dead",
+     "label": "遺体（有機物）",
+     "col": 0,
+     "row": 2.2
+    },
+    {
+     "id": "decomp",
+     "label": "分解者による\n酸素の消費",
+     "col": 0,
+     "row": 3.4
+    },
+    {
+     "id": "sub",
+     "label": "沈水植物",
+     "col": 2,
+     "row": 3.4
+    },
+    {
+     "id": "o2",
+     "label": "溶存酸素",
+     "col": 1,
+     "row": 4.4
+    },
+    {
+     "id": "fish",
+     "label": "魚類",
+     "col": 1,
+     "row": 5.4
+    }
+   ],
+   "edges": [
+    {
+     "from": "nut",
+     "to": "phyto",
+     "sign": 1,
+     "note": "赤潮・アオコの原因"
+    },
+    {
+     "from": "phyto",
+     "to": "trans",
+     "sign": -1
+    },
+    {
+     "from": "trans",
+     "to": "sub",
+     "sign": 1,
+     "note": "水底に届く光が減る"
+    },
+    {
+     "from": "phyto",
+     "to": "dead",
+     "sign": 1
+    },
+    {
+     "from": "dead",
+     "to": "decomp",
+     "sign": 1
+    },
+    {
+     "from": "decomp",
+     "to": "o2",
+     "sign": -1
+    },
+    {
+     "from": "sub",
+     "to": "o2",
+     "sign": 1,
+     "note": "光合成で酸素を出す"
+    },
+    {
+     "from": "o2",
+     "to": "fish",
+     "sign": 1
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "sewage",
+     "title": "生活排水が大量に流れ込んだ",
+     "start": "nut",
+     "dir": 1,
+     "ask": [
+      "phyto",
+      "trans",
+      "dead",
+      "o2",
+      "fish"
+     ],
+     "explain": "植物プランクトンが大発生し、その遺体の分解で酸素が使われ、魚類が死ぬ。"
+    },
+    {
+     "id": "treat",
+     "title": "下水処理で窒素とリンを取り除いた",
+     "start": "nut",
+     "dir": -1,
+     "ask": [
+      "phyto",
+      "trans",
+      "sub"
+     ],
+     "explain": "植物プランクトンが減り、透明度が上がって沈水植物が回復する。"
+    }
+   ]
+  },
+  {
+   "id": "kelp",
+   "title": "キーストーン種（ラッコ・ウニ・ケルプ）",
+   "unit": "ECO-02",
+   "desc": "ラッコはウニを食べ、ウニはケルプ（海藻）を食べる。ケルプの林には多くの魚がすむ。",
+   "nodes": [
+    {
+     "id": "orca",
+     "label": "シャチ",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "otter",
+     "label": "ラッコ",
+     "col": 1,
+     "row": 1.2
+    },
+    {
+     "id": "urchin",
+     "label": "ウニ",
+     "col": 1,
+     "row": 2.4
+    },
+    {
+     "id": "kelp",
+     "label": "ケルプ（海藻）",
+     "col": 1,
+     "row": 3.6
+    },
+    {
+     "id": "fish",
+     "label": "ケルプの林にすむ魚",
+     "col": 1,
+     "row": 4.8
+    }
+   ],
+   "edges": [
+    {
+     "from": "orca",
+     "to": "otter",
+     "sign": -1,
+     "note": "捕食"
+    },
+    {
+     "from": "otter",
+     "to": "urchin",
+     "sign": -1,
+     "note": "捕食"
+    },
+    {
+     "from": "urchin",
+     "to": "kelp",
+     "sign": -1,
+     "note": "食害"
+    },
+    {
+     "from": "kelp",
+     "to": "fish",
+     "sign": 1,
+     "note": "すみかと食物"
+    },
+    {
+     "from": "kelp",
+     "to": "urchin",
+     "sign": 1,
+     "fb": true,
+     "note": "ウニの食物"
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "orca",
+     "title": "シャチがラッコを多く捕食するようになった",
+     "start": "orca",
+     "dir": 1,
+     "ask": [
+      "otter",
+      "urchin",
+      "kelp",
+      "fish"
+     ],
+     "explain": "ラッコが減るとウニが増え、ケルプが食べつくされ、魚も減る（間接効果）。"
+    },
+    {
+     "id": "protect",
+     "title": "ラッコを保護して数が増えた",
+     "start": "otter",
+     "dir": 1,
+     "ask": [
+      "urchin",
+      "kelp",
+      "fish"
+     ],
+     "explain": "ウニが減ってケルプの林が回復し、そこにすむ生物も増える。"
+    }
+   ]
+  },
+  {
+   "id": "hiv",
+   "title": "HIV と獲得免疫",
+   "unit": "HOM-05",
+   "desc": "HIV はヘルパー T 細胞に感染して破壊する。ヘルパー T 細胞は獲得免疫の司令塔。",
+   "nodes": [
+    {
+     "id": "hiv",
+     "label": "HIV の感染",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "th",
+     "label": "ヘルパーT細胞",
+     "col": 1,
+     "row": 1.2
+    },
+    {
+     "id": "b",
+     "label": "B細胞の活性化",
+     "col": 0,
+     "row": 2.4
+    },
+    {
+     "id": "kt",
+     "label": "キラーT細胞\nの活性化",
+     "col": 2,
+     "row": 2.4
+    },
+    {
+     "id": "ab",
+     "label": "抗体の産生",
+     "col": 0,
+     "row": 3.6
+    },
+    {
+     "id": "def",
+     "label": "病原体の排除",
+     "col": 1,
+     "row": 4.6
+    },
+    {
+     "id": "opp",
+     "label": "日和見感染",
+     "col": 1,
+     "row": 5.8
+    }
+   ],
+   "edges": [
+    {
+     "from": "hiv",
+     "to": "th",
+     "sign": -1,
+     "note": "感染して破壊する"
+    },
+    {
+     "from": "th",
+     "to": "b",
+     "sign": 1
+    },
+    {
+     "from": "th",
+     "to": "kt",
+     "sign": 1
+    },
+    {
+     "from": "b",
+     "to": "ab",
+     "sign": 1,
+     "note": "形質細胞に分化"
+    },
+    {
+     "from": "ab",
+     "to": "def",
+     "sign": 1,
+     "note": "体液性免疫"
+    },
+    {
+     "from": "kt",
+     "to": "def",
+     "sign": 1,
+     "note": "細胞性免疫"
+    },
+    {
+     "from": "def",
+     "to": "opp",
+     "sign": -1,
+     "note": "ふだんは問題にならない病原体でも発病"
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "aids",
+     "title": "HIV に感染してエイズを発症した",
+     "start": "hiv",
+     "dir": 1,
+     "ask": [
+      "th",
+      "b",
+      "kt",
+      "ab",
+      "def",
+      "opp"
+     ],
+     "explain": "ヘルパー T 細胞が減ると、体液性免疫・細胞性免疫の両方がはたらかなくなる。"
+    },
+    {
+     "id": "thymus",
+     "title": "生まれてすぐに胸腺を除去した（マウス）",
+     "start": "th",
+     "dir": -1,
+     "ask": [
+      "ab",
+      "kt",
+      "opp"
+     ],
+     "explain": "T 細胞が成熟できず、獲得免疫がはたらかない。"
+    }
+   ]
+  },
+  {
+   "id": "respiration",
+   "title": "呼吸の電子伝達系",
+   "unit": "MET-02",
+   "desc": "電子伝達系がはたらくには O₂ が必要。止まると NAD⁺ が再生されず、クエン酸回路も止まる。",
+   "nodes": [
+    {
+     "id": "o2",
+     "label": "O₂",
+     "col": 0,
+     "row": 0
+    },
+    {
+     "id": "cn",
+     "label": "シアン化物\n（電子伝達の阻害）",
+     "col": 2,
+     "row": 0
+    },
+    {
+     "id": "etc",
+     "label": "電子伝達系",
+     "col": 1,
+     "row": 1.2
+    },
+    {
+     "id": "grad",
+     "label": "H⁺ の濃度勾配",
+     "col": 0,
+     "row": 2.4
+    },
+    {
+     "id": "nad",
+     "label": "NAD⁺ の再生",
+     "col": 2,
+     "row": 2.4
+    },
+    {
+     "id": "atp",
+     "label": "ATP の合成",
+     "col": 0,
+     "row": 3.6
+    },
+    {
+     "id": "tca",
+     "label": "クエン酸回路",
+     "col": 2,
+     "row": 3.6
+    },
+    {
+     "id": "co2",
+     "label": "CO₂ の放出",
+     "col": 2,
+     "row": 4.8
+    }
+   ],
+   "edges": [
+    {
+     "from": "o2",
+     "to": "etc",
+     "sign": 1,
+     "note": "電子の最終的な受け取り手"
+    },
+    {
+     "from": "cn",
+     "to": "etc",
+     "sign": -1
+    },
+    {
+     "from": "etc",
+     "to": "grad",
+     "sign": 1
+    },
+    {
+     "from": "etc",
+     "to": "nad",
+     "sign": 1,
+     "note": "NADH が電子を渡して NAD⁺ に戻る"
+    },
+    {
+     "from": "grad",
+     "to": "atp",
+     "sign": 1,
+     "note": "ATP 合成酵素"
+    },
+    {
+     "from": "nad",
+     "to": "tca",
+     "sign": 1,
+     "note": "NAD⁺ がないと反応が進まない"
+    },
+    {
+     "from": "tca",
+     "to": "co2",
+     "sign": 1
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "anox",
+     "title": "酸素がなくなった",
+     "start": "o2",
+     "dir": -1,
+     "ask": [
+      "etc",
+      "atp",
+      "nad",
+      "tca",
+      "co2"
+     ],
+     "explain": "電子伝達系が止まり、NAD⁺ が再生されないのでクエン酸回路も止まる（解糖系は発酵で続けられる）。"
+    },
+    {
+     "id": "cyan",
+     "title": "シアン化物を与えた",
+     "start": "cn",
+     "dir": 1,
+     "ask": [
+      "etc",
+      "grad",
+      "atp",
+      "co2"
+     ],
+     "explain": "電子伝達が止まるので、O₂ があっても ATP がほとんどつくられない。"
+    }
+   ]
+  },
+  {
+   "id": "selection",
+   "title": "自然選択（オオシモフリエダシャク）",
+   "unit": "EVO-02",
+   "desc": "工業地帯で木の幹がすすで黒くなると、鳥に見つかりにくい暗色型が増えた（工業暗化）。",
+   "nodes": [
+    {
+     "id": "soot",
+     "label": "すすによる幹の黒化",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "dark",
+     "label": "暗色型の生存率",
+     "col": 0,
+     "row": 1.2
+    },
+    {
+     "id": "light",
+     "label": "明色型の生存率",
+     "col": 2,
+     "row": 1.2
+    },
+    {
+     "id": "freq",
+     "label": "暗色型の遺伝子頻度",
+     "col": 1,
+     "row": 2.6
+    }
+   ],
+   "edges": [
+    {
+     "from": "soot",
+     "to": "dark",
+     "sign": 1,
+     "note": "幹の上で目立たない"
+    },
+    {
+     "from": "soot",
+     "to": "light",
+     "sign": -1,
+     "note": "鳥に見つかりやすい"
+    },
+    {
+     "from": "dark",
+     "to": "freq",
+     "sign": 1
+    },
+    {
+     "from": "light",
+     "to": "freq",
+     "sign": -1
+    }
+   ],
+   "scenarios": [
+    {
+     "id": "ind",
+     "title": "工業化が進んで大気汚染が増えた",
+     "start": "soot",
+     "dir": 1,
+     "ask": [
+      "dark",
+      "light",
+      "freq"
+     ],
+     "explain": "暗色型が残りやすくなり、暗色型の遺伝子頻度が上がる。"
+    },
+    {
+     "id": "clean",
+     "title": "大気汚染の規制で幹が明るくなった",
+     "start": "soot",
+     "dir": -1,
+     "ask": [
+      "dark",
+      "light",
+      "freq"
+     ],
+     "explain": "明色型が有利になり、暗色型の遺伝子頻度は下がる（実際に下がった）。"
+    }
+   ]
+  }
+ ]
+}

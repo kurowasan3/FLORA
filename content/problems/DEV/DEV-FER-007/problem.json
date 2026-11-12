@@ -1,0 +1,64 @@
+{
+ "id": "DEV-FER-007",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-01",
+ "topic": "精子の構造",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "精子の中片部に多く含まれ、べん毛の運動のエネルギーを供給する細胞小器官は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ミトコンドリア",
+    "grading": "選ぶ{ゴルジ体|ミトコンドリア|リソソーム|中心体}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "頭部には核と先体（ゴルジ体由来）、中片部にはミトコンドリア、尾部にはべん毛がある。べん毛の基部には中心体がある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fertilization",
+  "cell-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "精子"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

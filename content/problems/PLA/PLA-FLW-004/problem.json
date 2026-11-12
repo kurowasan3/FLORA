@@ -1,0 +1,63 @@
+{
+ "id": "PLA-FLW-004",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "光発芽種子",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "レタスの種子に、赤色光 → 遠赤色光 → 赤色光 の順に短時間ずつ光を当てた。発芽するか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "発芽する（最後に当てたのが赤色光なので）",
+    "grading": "選ぶ{発芽する|発芽しない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "フィトクロムは赤色光で活性型（Pfr）、遠赤色光で不活性型（Pr）になる。最後に当てた光で決まり、赤色光が最後なら発芽する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フィトクロム"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

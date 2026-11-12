@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<path d="M40 150C40 120 70 110 86 128C100 138 104 160 92 172C76 190 40 182 40 150Z" class="fsoma"/>
+<path d="M50 130L20 98M20 98L8 104M20 98L18 82M60 122L52 76M52 76L40 70M52 76L64 62M84 126L104 92M104 92L118 90M44 170L14 196M14 196L6 214M70 182L66 222M66 222L52 232M66 222L82 236" class="den"/>
+<circle cx="66" cy="152" r="10" class="fn"/>
+<path d="M100 150H330" class="axon"/>
+<rect x="128" y="139" width="34" height="22" rx="10" class="fmy"/><rect x="170" y="139" width="34" height="22" rx="10" class="fmy"/><rect x="212" y="139" width="34" height="22" rx="10" class="fmy"/><rect x="254" y="139" width="34" height="22" rx="10" class="fmy"/>
+<path d="M330 150L360 124M330 150L366 150M330 150L360 178" class="axon"/>
+<circle cx="363" cy="122" r="5" class="fknob"/><circle cx="370" cy="150" r="5" class="fknob"/><circle cx="363" cy="180" r="5" class="fknob"/>
+<ellipse cx="150" cy="143" rx="4" ry="2.5" class="fdot"/>
+</svg>

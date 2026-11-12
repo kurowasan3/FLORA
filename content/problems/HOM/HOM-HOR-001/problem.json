@@ -1,0 +1,63 @@
+{
+ "id": "HOM-HOR-001",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "交感神経のはたらき",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "交感神経がはたらいたときの変化として正しいものをすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "心臓の拍動が速くなる・瞳孔が拡大する・気管支が拡張する",
+    "grading": "すべて選ぶ{心臓の拍動が速くなる|瞳孔が拡大する|胃腸のぜん動が促進される|気管支が拡張する|排尿が促進される}=1,2,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "交感神経は活動時にはたらき、心拍・血圧の上昇、瞳孔拡大、気管支拡張、消化管の運動抑制などを起こす。副交感神経はその逆（拮抗的支配）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自律神経"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

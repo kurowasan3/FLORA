@@ -1,0 +1,63 @@
+{
+ "id": "MET-ATP-007",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-01",
+ "topic": "高エネルギーリン酸結合",
+ "course": "生物基礎",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ATP のリン酸どうしの結合で、切れると多くのエネルギーを放出するものを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "高エネルギーリン酸結合",
+    "grading": "語{高エネルギーリン酸結合}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ATP → ADP ＋ リン酸 のとき、1 mol あたり約 30 kJ のエネルギーが放出される。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atp"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ATP"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

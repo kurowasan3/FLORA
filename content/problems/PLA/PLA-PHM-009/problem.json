@@ -1,0 +1,64 @@
+{
+ "id": "PLA-PHM-009",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-01",
+ "topic": "屈性の実験",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マカラスムギの幼葉鞘の先端の少し下に、物質を通さない雲母片を半分だけ差し込み、一方向から光を当てた。雲母片を光の当たる側に差し込んだものと、光の当たらない側に差し込んだもののうち、光の方へ曲がらないのはどちらか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "光の当たらない側に雲母片を差し込んだもの",
+    "grading": "選ぶ{光の当たる側に差し込んだもの|光の当たらない側に差し込んだもの|どちらも曲がる|どちらも曲がらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "オーキシンは先端で光の当たらない側へ移動し、陰側を下へ運ばれて陰側の伸長を促す。陰側の下降を雲母片でさえぎると陰側がよく伸びないので曲がらない。光の当たる側をさえぎっても、陰側は運ばれるので曲がる（ボイセン・イェンセンの実験）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plant-hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光屈性",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

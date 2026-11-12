@@ -1,0 +1,63 @@
+{
+ "id": "ECO-VEG-006",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-01",
+ "topic": "垂直分布",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "本州中部の山地で、標高の低い方から順に正しく並んでいるものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "丘陵帯（照葉樹林）→ 山地帯（夏緑樹林）→ 亜高山帯（針葉樹林）→ 高山帯（高山草原）",
+    "grading": "選ぶ{丘陵帯（照葉樹林）→ 山地帯（夏緑樹林）→ 亜高山帯（針葉樹林）→ 高山帯|丘陵帯（夏緑樹林）→ 山地帯（照葉樹林）→ 亜高山帯（針葉樹林）→ 高山帯|丘陵帯（照葉樹林）→ 山地帯（針葉樹林）→ 亜高山帯（夏緑樹林）→ 高山帯|丘陵帯（針葉樹林）→ 山地帯（夏緑樹林）→ 亜高山帯（照葉樹林）→ 高山帯}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "標高が 100 m 上がるごとに気温は約 0.5〜0.6 ℃ 下がるので、緯度による水平分布と似た順に植生が変わる。亜高山帯の上限が森林限界。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vegetation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "垂直分布"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

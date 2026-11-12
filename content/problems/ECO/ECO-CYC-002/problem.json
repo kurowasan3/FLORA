@@ -1,0 +1,88 @@
+{
+ "id": "ECO-CYC-002",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-03",
+ "topic": "純生産量と成長量",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある森林の 1 年間の総生産量が 25、呼吸量が 15、被食量が 1、枯死量が 5 であった（単位はすべて kg/(m²·年)）。純生産量と成長量を求めよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "純生産量"
+     },
+     {
+      "id": "2",
+      "tex": "成長量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "10",
+    "grading": "約{10|2} [kg/(m^2·年)]"
+   },
+   {
+    "id": "2",
+    "tex": "4",
+    "grading": "約{4|1} [kg/(m^2·年)]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "純生産量 = 総生産量 − 呼吸量 = 25 − 15 = 10。成長量 = 純生産量 −（被食量 + 枯死量）= 10 − 6 = 4。極相林では成長量がほぼ 0 になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ecosystem"
+ ],
+ "laws": [
+  "net-production"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "生産量",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "laws",
+  "key": "net-production"
+ }
+}

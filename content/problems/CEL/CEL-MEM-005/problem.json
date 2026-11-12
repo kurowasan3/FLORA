@@ -1,0 +1,64 @@
+{
+ "id": "CEL-MEM-005",
+ "schema": "flora.problem/1",
+ "field": "CEL",
+ "unit": "CEL-02",
+ "topic": "原形質分離",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タマネギの表皮細胞を、濃度の異なるスクロース水溶液に浸して顕微鏡で観察した。0.2 mol/L では変化がなく、0.4 mol/L では一部の細胞で、0.6 mol/L ではほぼすべての細胞で原形質分離が見られた。この細胞の細胞液の浸透圧について、最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "0.2 mol/L 以上 0.4 mol/L 以下のスクロース水溶液の浸透圧にほぼ等しい",
+    "grading": "選ぶ{0.2 mol/L のスクロース水溶液より低い|0.2〜0.4 mol/L のスクロース水溶液の間（0.4 mol/L 付近）|0.6 mol/L のスクロース水溶液より高い|どの溶液とも比べられない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原形質分離は外液が細胞液より高張のときに起こる。0.4 mol/L で一部の細胞が原形質分離を始めたので、細胞液の浸透圧はおよそ 0.4 mol/L のスクロース水溶液と同じくらい（細胞ごとに少しずつ違う）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "membrane-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "原形質分離",
+  "浸透圧"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "ECO-POP-006",
+ "schema": "flora.problem/1",
+ "field": "ECO",
+ "unit": "ECO-02",
+ "topic": "競争的排除",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ゾウリムシとヒメゾウリムシをそれぞれ単独で培養すると、どちらも一定の個体数まで増えた。同じ容器で混合培養すると、ヒメゾウリムシだけが残った。一方、ゾウリムシとミドリゾウリムシを混合培養すると、両種が共存した（ミドリゾウリムシは容器の底の方、ゾウリムシは上の方で多く見られた）。両者の結果の違いを説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ゾウリムシとヒメゾウリムシは生態的地位（食物や生活空間）がほぼ同じなので、競争に強いヒメゾウリムシが残り、ゾウリムシは排除された（競争的排除）。ミドリゾウリムシとゾウリムシは、生活場所や食物などの生態的地位が異なる（すみわけている）ので、競争が弱く共存できた。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "生態的地位が重なるほど種間競争は激しくなる。ガウゼの実験。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "population"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "種間競争",
+  "論述",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

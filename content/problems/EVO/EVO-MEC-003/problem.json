@@ -1,0 +1,69 @@
+{
+ "id": "EVO-MEC-003",
+ "schema": "flora.problem/1",
+ "field": "EVO",
+ "unit": "EVO-02",
+ "topic": "ハーディ・ワインベルグの条件",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハーディ・ワインベルグの法則が成り立つための条件として誤っているものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "自然選択がはたらく",
+    "grading": "選ぶ{集団が十分に大きい|突然変異が起こらない|他の集団との移出入がない|自然選択がはたらく|自由に交配が行われる}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "自然選択がはたらくと遺伝子頻度が変化する。これらの条件のどれかが崩れることが、進化（遺伝子頻度の変化）の原因になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "evolution-mechanism"
+ ],
+ "laws": [
+  "hardy-weinberg"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "ハーディ・ワインベルグ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "tree",
+  "key": "popgen"
+ }
+}

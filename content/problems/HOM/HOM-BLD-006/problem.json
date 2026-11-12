@@ -1,0 +1,67 @@
+{
+ "id": "HOM-BLD-006",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-01",
+ "topic": "ペースメーカー",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "右心房の上部にあり、自動的に周期的な興奮を発生して心臓の拍動のリズムをつくる部分を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "洞房結節",
+    "grading": "語{洞房結節|ペースメーカー}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "心臓は神経から切り離しても拍動を続ける（自動性）。拍動の速さは自律神経で調節される（交感神経で速く、副交感神経で遅く）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "body-fluid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "心臓"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "heart"
+ }
+}

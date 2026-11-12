@@ -1,0 +1,64 @@
+{
+ "id": "RES-SEN-006",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-01",
+ "topic": "暗順応",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "明るい屋外から暗い室内に入ると、はじめは何も見えないが、しばらくすると見えるようになる。このしくみを、視細胞と視物質にふれて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "明るい所では桿体細胞のロドプシンが光で分解されて少なくなっている。暗い所に入ると、ロドプシンが再合成されて蓄積し、感度の高い桿体細胞がはたらくようになるので、しだいに見えるようになる（暗順応）。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "最初の数分は錐体細胞の感度が上がり、その後、桿体細胞の感度が大きく上がる。ロドプシンの合成にはビタミン A が必要。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "receptor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "暗順応",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

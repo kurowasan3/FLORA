@@ -1,0 +1,63 @@
+{
+ "id": "HOM-BLD-004",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-01",
+ "topic": "血液凝固",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "血液凝固の過程を順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "血小板などから凝固因子が放出される → トロンビンができる → フィブリノーゲンがフィブリンになる → フィブリンが血球をからめて血ぺいになる",
+    "grading": "並べる{フィブリンが血球をからめて血ぺいができる|トロンビンがはたらいてフィブリノーゲンがフィブリンになる|血管が傷つき、血小板が集まって凝固因子を放出する}=3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "傷が修復されると、フィブリンを分解する線溶（フィブリン溶解）によって血ぺいが取り除かれる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "body-fluid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "血液凝固"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": "MET-PHS-008",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "C4 植物",
+ "course": "生物",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "C4 植物（トウモロコシなど）は、強い光・高温の環境で C3 植物より光合成速度が大きい。その理由を、CO₂ の取り込みかたにふれて説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "C4 植物は葉肉細胞で CO₂ を親和性の高い酵素で C4 化合物として固定し、維管束鞘細胞に運んで CO₂ を放出する。そのため維管束鞘細胞のカルビン回路のまわりの CO₂ 濃度が高く保たれ、高温で気孔を閉じ気味にしても、ルビスコが効率よく CO₂ を固定できるから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "高温・乾燥では蒸散を防ぐため気孔が閉じ気味になり、葉の内部の CO₂ 濃度が下がる。C3 植物ではルビスコが O₂ と反応する光呼吸が増えて効率が下がるが、C4 植物は CO₂ を濃縮してこれを防ぐ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "C4植物",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

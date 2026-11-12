@@ -1,0 +1,68 @@
+{
+ "id": "HOM-IMM-005",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-05",
+ "topic": "二次応答",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マウスに抗原 A を注射し、4 週間後に抗原 A と抗原 B を同時に注射した。2 回目の注射後、抗原 A に対する抗体と抗原 B に対する抗体の産生のようすとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "抗原 A に対する抗体はすばやく大量に、抗原 B に対する抗体は 1 回目の A のときと同様にゆっくり少量つくられる",
+    "grading": "選ぶ{A・B どちらの抗体もすばやく大量につくられる|A の抗体はすばやく大量に、B の抗体はゆっくり少量つくられる|A の抗体はつくられず、B の抗体だけがつくられる|A・B どちらの抗体もゆっくり少量つくられる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 回目の A の注射で A に対する記憶細胞ができているので、A には二次応答が起こる。B は初めてなので一次応答。記憶は抗原ごとに特異的。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二次応答",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "immune"
+ }
+}

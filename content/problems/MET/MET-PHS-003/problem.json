@@ -1,0 +1,118 @@
+{
+ "id": "MET-PHS-003",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "葉の断面",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は葉の断面である。ア〜エの名称を答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア"
+     },
+     {
+      "id": "2",
+      "tex": "イ"
+     },
+     {
+      "id": "3",
+      "tex": "ウ"
+     },
+     {
+      "id": "4",
+      "tex": "エ"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "葉の断面の図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す、エは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "さく状組織",
+    "grading": "語{さく状組織|柵状組織}"
+   },
+   {
+    "id": "2",
+    "tex": "海綿状組織",
+    "grading": "語{海綿状組織|海綿組織}"
+   },
+   {
+    "id": "3",
+    "tex": "孔辺細胞",
+    "grading": "語{孔辺細胞}"
+   },
+   {
+    "id": "4",
+    "tex": "木部（道管）",
+    "grading": "語{木部|道管}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "さく状組織は細長い細胞が密に並び、葉緑体が多い。海綿状組織はすき間が多く気体の通り道。孔辺細胞が気孔を開閉する。維管束は葉の表側に木部、裏側に師部がある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "葉",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "leaf"
+ }
+}

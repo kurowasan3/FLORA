@@ -1,0 +1,64 @@
+{
+ "id": "MET-PHS-010",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-03",
+ "topic": "光合成色素の分離",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ホウレンソウの葉の色素をペーパークロマトグラフィー（展開液：石油エーテルとアセトンの混合液）で分離した。Rf 値の大きい（原点から遠くまで移動した）ものから並べたとき、最も上に来るのはどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "カロテン（橙色）",
+    "grading": "選ぶ{クロロフィル a|クロロフィル b|カロテン|キサントフィル}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "展開液によく溶ける（極性が小さい）色素ほど遠くまで移動する。一般にカロテン（橙）＞ キサントフィル（黄）＞ クロロフィル a（青緑）＞ クロロフィル b（黄緑）の順。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photosynthesis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光合成色素",
+  "実験"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

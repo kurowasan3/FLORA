@@ -1,0 +1,68 @@
+{
+ "id": "HOM-HOR-006",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-03",
+ "topic": "フィードバックの実験",
+ "course": "生物基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "正常なラットにチロキシンを長期間注射し続けると、甲状腺が小さく（萎縮）なった。この理由を説明せよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "チロキシンが多くなると、負のフィードバックで視床下部の TRH・脳下垂体前葉の TSH の分泌が抑えられる。甲状腺は TSH の刺激を受けなくなるので、はたらきが低下して萎縮する。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "TSH は甲状腺のホルモン分泌を促すだけでなく、甲状腺の成長も促している。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hormone"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フィードバック",
+  "論述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "thyroxine"
+ }
+}

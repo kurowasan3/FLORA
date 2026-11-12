@@ -1,0 +1,100 @@
+{
+ "id": "MET-RSP-002",
+ "schema": "flora.problem/1",
+ "field": "MET",
+ "unit": "MET-02",
+ "topic": "ミトコンドリアの構造",
+ "course": "生物",
+ "level": 0,
+ "minutes": 1,
+ "format": [
+  "label"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はミトコンドリアの模式図である。クエン酸回路の反応が行われる場所と、電子伝達系がある場所を、図のア〜ウからそれぞれ選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "クエン酸回路"
+     },
+     {
+      "id": "2",
+      "tex": "電子伝達系"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "ミトコンドリアの図。アは図の一部を指す、イは図の一部を指す、ウは図の一部を指す"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "イ（マトリックス）",
+    "grading": "選ぶ{ア|イ|ウ}=2"
+   },
+   {
+    "id": "2",
+    "tex": "ウ（内膜）",
+    "grading": "選ぶ{ア|イ|ウ}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アは外膜、イはマトリックス、ウは内膜（クリステ）。クエン酸回路の酵素はマトリックスに、電子伝達系と ATP 合成酵素は内膜にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "respiration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "呼吸",
+  "図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "mitochondria"
+ }
+}

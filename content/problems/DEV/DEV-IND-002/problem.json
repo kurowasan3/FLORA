@@ -1,0 +1,64 @@
+{
+ "id": "DEV-IND-002",
+ "schema": "flora.problem/1",
+ "field": "DEV",
+ "unit": "DEV-03",
+ "topic": "中胚葉誘導",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "experiment"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カエルの胞胚の動物極側の領域（予定外胚葉）だけを切り出して培養すると表皮になったが、植物極側の領域（予定内胚葉）と接して培養すると、動物極側の細胞から筋肉や脊索などができた。この現象を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "中胚葉誘導",
+    "grading": "語{中胚葉誘導}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ニューコープの実験。予定内胚葉が接する予定外胚葉を中胚葉に誘導する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘導",
+  "実験考察"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "HOM-IMM-003",
+ "schema": "flora.problem/1",
+ "field": "HOM",
+ "unit": "HOM-05",
+ "topic": "細胞性免疫",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "細胞性免疫によるものを1つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "移植した皮膚が脱落する（拒絶反応）",
+    "grading": "選ぶ{ヘビ毒に対する血清療法|移植した皮膚が脱落する（拒絶反応）|花粉症|母乳を通して子に抗体が移ること}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "拒絶反応はキラー T 細胞が移植片を非自己として攻撃する細胞性免疫。血清療法・母乳の抗体は体液性免疫（抗体）、花粉症は IgE 抗体によるアレルギー。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "immunity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "細胞性免疫"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "GEN-DNA-006",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-01",
+ "topic": "岡崎フラグメント",
+ "course": "生物基礎",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA の複製で、ラギング鎖が短い断片（岡崎フラグメント）として不連続に合成される理由として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "DNA ポリメラーゼは 5′→3′ の方向にしか鎖を伸ばせないから",
+    "grading": "選ぶ{DNA ポリメラーゼは 5′→3′ の方向にしか鎖を伸ばせないから|ラギング鎖の鋳型には水素結合がないから|ヘリカーゼがラギング鎖を切断するから|ラギング鎖では RNA が合成されるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "2 本の鋳型鎖は逆向きなので、一方（リーディング鎖）はほどける方向に連続して合成できるが、もう一方はほどけた部分から逆向きに短く合成するしかない。断片は DNA リガーゼでつながれる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "dna-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "複製"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "replication"
+ }
+}

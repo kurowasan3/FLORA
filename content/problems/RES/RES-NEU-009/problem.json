@@ -1,0 +1,85 @@
+{
+ "id": "RES-NEU-009",
+ "schema": "flora.problem/1",
+ "field": "RES",
+ "unit": "RES-02",
+ "topic": "反射",
+ "course": "生物",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "膝の下をたたくと足がはね上がるように、大脳を経由せずに起こる無意識の反応を何というか。また、この反応の中枢はどこか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応"
+     },
+     {
+      "id": "2",
+      "tex": "中枢"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "反射（膝蓋腱反射）",
+    "grading": "語{反射|膝蓋腱反射|しつがい腱反射}"
+   },
+   {
+    "id": "2",
+    "tex": "脊髄",
+    "grading": "語{脊髄}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "受容器 → 感覚神経 → 脊髄 → 運動神経 → 効果器 という経路（反射弓）で、大脳を通らないので速い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "neuron"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反射"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "labels",
+  "key": "brain"
+ }
+}

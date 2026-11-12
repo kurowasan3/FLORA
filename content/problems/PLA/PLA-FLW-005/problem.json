@@ -1,0 +1,86 @@
+{
+ "id": "PLA-FLW-005",
+ "schema": "flora.problem/1",
+ "field": "PLA",
+ "unit": "PLA-02",
+ "topic": "フロリゲンと接ぎ木",
+ "course": "生物",
+ "level": 2,
+ "minutes": 4,
+ "format": [
+  "causal"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "短日植物のオナモミで、1 枚の葉だけを短日処理し、残りの部分は長日条件においた。次の量はどうなるか（短日処理しない場合と比べて）。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "短日処理した葉でのフロリゲンの合成"
+     },
+     {
+      "id": "2",
+      "tex": "茎頂での花芽形成"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "増える",
+    "grading": "フロリゲンの合成：選ぶ{増える|減る|変わらない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "増える（花芽ができる）",
+    "grading": "花芽形成：選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "日長を感知するのは葉で、1 枚の葉の短日処理でもフロリゲンが合成されて師管で運ばれ、花芽が形成される。環状除皮で師管を除くと花芽はできない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "photoperiodism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フロリゲン",
+  "因果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "causal",
+  "key": "photoperiod"
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "GEN-EXP-003",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-03",
+ "topic": "転写",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA の鋳型鎖の塩基配列が 3′-TACGGA-5′ のとき、転写されてできる mRNA の塩基配列を 5′ 側から書け。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "5′-AUGCCU-3′",
+    "grading": "語{AUGCCU|5′-AUGCCU-3′|5'-AUGCCU-3'}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "鋳型鎖に相補的で、T の代わりに U を使う。mRNA は 5′→3′ の向きに合成されるので、5′-AUGCCU-3′。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gene-expression"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "転写"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "expression"
+ }
+}

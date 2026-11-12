@@ -1,0 +1,67 @@
+{
+ "id": "GEN-DNA-007",
+ "schema": "flora.problem/1",
+ "field": "GEN",
+ "unit": "GEN-01",
+ "topic": "複製の手順",
+ "course": "生物基礎",
+ "level": 1,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA の複製が進む順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ヘリカーゼが 2 本鎖をほどく → プライマーが合成される → DNA ポリメラーゼがヌクレオチドをつなぐ → DNA リガーゼが断片をつなぐ",
+    "grading": "並べる{DNA リガーゼが断片をつなぐ|プライマーが合成される|ヘリカーゼが 2 本鎖をほどく|DNA ポリメラーゼがヌクレオチドをつなぐ}=3>2>4>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "DNA ポリメラーゼは何もないところから合成を始められないので、短い RNA のプライマーを起点にする。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "dna-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "複製"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "FLORA 学ぶのデータをもとに作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "biology": true
+  }
+ },
+ "learn": {
+  "page": "anim",
+  "key": "replication"
+ }
+}
