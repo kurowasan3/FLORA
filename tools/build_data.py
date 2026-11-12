@@ -253,6 +253,8 @@ def build_learn(content, out, version):
         w = t['term']
         dg = [d['id'] for d in dgs if any(w == p['label'] or w in p.get('alt', []) for p in d['pins'])]
         an = [a['id'] for a in z['anims'] if any(w in st['name'] or w in st['text'] for st in a['stages'])]
+        if len(w) < 2 or len(an) > 4:  # 「核」「細胞」のような語はどこにでも出てくるので結びつけない
+            an = []
         terms.append({**t, **({'dg': dg} if dg else {}), **({'an': an} if an else {})})
     z['terms'] = terms
     dump(out / 'learn.json', z)
